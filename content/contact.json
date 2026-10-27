@@ -1,32 +1,32 @@
 {
   "title": "Contact Us",
   "eyebrow": "We answer quickly",
-  "intro": "One number, one email, one gate. Call or WhatsApp the office and a person answers; the enquiry form is read every morning before 09:00.",
+  "intro": "One number, one email, one gate. Call or WhatsApp +255 777 427 140 and a person answers; the enquiry form is read every morning before 09:00.",
   "cards": [
-    { "icon": "pin", "title": "Visit the campus", "lines": ["Kisakasaka Road, near Kizimbani", "Makunducha 'B', Kati District", "Zanzibar Urban/West, Tanzania"], "actionLabel": "Open in Maps", "actionHref": "https://www.google.com/maps/search/?api=1&query=Kisakasaka%2C%20Zanzibar" },
-    { "icon": "phone", "title": "Call or WhatsApp", "lines": ["+255 777 427 140 — main office", "+255 713 427 140 — admissions desk", "WhatsApp messages & voice notes welcome"], "actionLabel": "Chat on WhatsApp", "actionHref": "https://wa.me/255777427140" },
-    { "icon": "mail", "title": "Write to us", "lines": ["info@leadersinternationalschool.ac.tz", "admissions@leadersinternationalschool.ac.tz", "Replies within one working day"], "actionLabel": "Send an email", "actionHref": "mailto:info@leadersinternationalschool.ac.tz" },
+    { "icon": "pin", "title": "Visit the campus", "lines": ["Kisakasaka, near Kombeni", "Wilaya Magharibi 'B'", "Zanzibar, Tanzania"], "actionLabel": "Open in Maps", "actionHref": "https://www.google.com/maps/search/?api=1&query=Kisakasaka%2C%20Kombeni%2C%20Zanzibar" },
+    { "icon": "phone", "title": "Call or WhatsApp", "lines": ["+255 777 427 140", "Main office & admissions desk", "WhatsApp messages & voice notes welcome"], "actionLabel": "Chat on WhatsApp", "actionHref": "https://wa.me/255777427140" },
+    { "icon": "mail", "title": "Write to us", "lines": ["info@leaderinternationalschool.ac.tz", "leadersinternationalerp@gmail.com", "Replies within one working day"], "actionLabel": "Send an email", "actionHref": "mailto:info@leaderinternationalschool.ac.tz" },
     { "icon": "clock", "title": "Office hours", "lines": ["Mon–Fri 7:30–17:00", "Sat (admissions) 9:00–13:00", "Holidays 8:30–14:00"], "actionLabel": "P.O. Box 1455, Zanzibar", "actionHref": "/resources" }
   ],
   "departments": [
-    { "name": "Front office & general enquiries", "email": "info@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140", "handles": "Attendance, letters, certificates, timetables, visitors." },
-    { "name": "Admissions (NECTA & Cambridge)", "email": "admissions@leadersinternationalschool.ac.tz", "phone": "+255 713 427 140", "handles": "January 2027 intake, assessments, Open Day tours, transfers." },
-    { "name": "Bursary & fees", "email": "fees@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140 ext. 2", "handles": "2026/2027 fee schedule, 12-month instalments, receipts." },
+    { "name": "Front office & general enquiries", "email": "info@leaderinternationalschool.ac.tz", "phone": "+255 777 427 140", "handles": "Attendance, letters, certificates, timetables, visitors." },
+    { "name": "Admissions (NECTA & Cambridge)", "email": "info@leaderinternationalschool.ac.tz", "phone": "+255 777 427 140", "handles": "January 2027 intake, assessments, Open Day tours, transfers." },
+    { "name": "Bursary & fees", "email": "info@leaderinternationalschool.ac.tz", "phone": "+255 777 427 140", "handles": "2026/2027 fee schedule, 12-month instalments, receipts." },
     { "name": "Human Resources & Recruitment", "email": "leadersinternationalerp@gmail.com", "phone": "+255 777 427 140", "handles": "Teacher & staff job applications (deadline 4 December 2026)." },
-    { "name": "Pastoral care & counselling", "email": "pastoral@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140 ext. 4", "handles": "Wellbeing, safeguarding, learning support, parent meetings." },
-    { "name": "Transport", "email": "transport@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140 ext. 5", "handles": "Routes, pickups, bus attendants, route changes." }
+    { "name": "Pastoral care & counselling", "email": "info@leaderinternationalschool.ac.tz", "phone": "+255 777 427 140", "handles": "Wellbeing, safeguarding, learning support, parent meetings." },
+    { "name": "Transport", "email": "info@leaderinternationalschool.ac.tz", "phone": "+255 777 427 140", "handles": "Routes, pickups, bus attendants, route changes." }
   ],
   "gettingHere": {
     "title": "Finding us",
-    "text": "We are four kilometres inland from Stone Town on Kisakasaka Road, past the Kizimbani junction. The visitor gate is the second entrance, marked by a blue flag pole and a stone sign.",
-    "landmarks": ["5 minutes from Kizimbani crossroads", "12 minutes from Stone Town by car", "15 minutes from Abeid Amani Karume International Airport", "Dala-dala routes 04 and 07 stop at Kisakasaka stage, then a five-minute walk"],
-    "parking": "Twenty visitor spaces inside the gate on weekdays before 08:00 and after 13:30; during the school day use the Open Day bay beside the library."
+    "text": "We are located in Kisakasaka, Zanzibar, near Kombeni in Wilaya Magharibi 'B'. The visitor gate is marked by the school sign and flag pole.",
+    "landmarks": ["Near Kombeni, Kisakasaka", "Wilaya Magharibi 'B', Zanzibar", "15 minutes from Abeid Amani Karume International Airport", "Easy access from Stone Town & Fumba Road corridor"],
+    "parking": "Visitor parking is available inside the gate on weekdays and Saturday mornings."
   },
   "careers": {
     "title": "We Are Hiring — Join Our Team",
     "deadline": "4th December 2026",
     "text": "Be part of a dedicated team shaping future leaders! We are recruiting passionate educators for our Cambridge and NECTA wings as well as key administrative and IT specialists ahead of the January 2027 intake.",
-    "email": "info@leadersinternationalschool.ac.tz",
+    "email": "info@leaderinternationalschool.ac.tz",
     "altEmail": "leadersinternationalerp@gmail.com",
     "phone": "+255 777 427 140",
     "requirements": ["Academic documents & certificates", "Updated Curriculum Vitae (CV)", "Cover letter stating the position applied for"],

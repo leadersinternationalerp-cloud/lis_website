@@ -27,8 +27,8 @@ export function SectionHead({
     >
       <div className={cx("max-w-2xl", align === "center" && "mx-auto")}>
         {eyebrow ? (
-          <p className={cx("mb-2.5 flex items-center gap-2.5 text-[.72rem] font-semibold uppercase tracking-[.22em] font-display", align === "center" && "justify-center", tone === "light" ? "text-gold-300" : "text-navy-500")}>
-            <span className={cx("h-px w-8", tone === "light" ? "bg-gold-400/70" : "bg-navy-300")} />
+          <p className={cx("mb-2.5 flex items-center gap-2.5 text-[.72rem] font-bold uppercase tracking-[.22em] font-display", align === "center" && "justify-center", tone === "light" ? "text-sky-300" : "text-sky-600")}>
+            <span className={cx("h-[2px] w-8 rounded-full", tone === "light" ? "bg-sky-400" : "bg-sky-400")} />
             {eyebrow}
           </p>
         ) : null}

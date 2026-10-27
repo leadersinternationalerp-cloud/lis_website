@@ -4,6 +4,8 @@
 # next.js
 /.next/
 /out/
+/cpanel-public_html.zip
+/.cpanel-api-backup/
 /next-env.d.ts
 
 # production

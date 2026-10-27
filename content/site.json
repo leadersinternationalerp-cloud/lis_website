@@ -8,7 +8,7 @@
       "line3": "ZANZIBAR"
     },
     "tagline": "Learning Today, Leading Tomorrow",
-    "crestMotto": "Learn Today, Lead Tomorrow",
+    "crestMotto": "Learning Today, Leading Tomorrow",
     "established": 2009,
     "accreditation": "Licensed by the President's Office — Ministry of Education, Science and Technology (Zanzibar)",
     "legalName": "Leaders International School — Kisakasaka, Zanzibar"
@@ -30,23 +30,21 @@
   },
   "location": {
     "label": "Kisakasaka, Zanzibar",
-    "street": "Kisakasaka Road, near Kizimbani",
-    "area": "Makunducha 'B', Kati District",
+    "street": "Kisakasaka, near Kombeni",
+    "area": "Wilaya Magharibi 'B'",
     "city": "Zanzibar Urban/West",
     "country": "Tanzania",
     "postalHint": "P.O. Box 1455, Zanzibar",
     "lat": -6.1482,
     "lng": 39.2685,
-    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kisakasaka%2C%20Zanzibar",
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kisakasaka%2C%20Kombeni%2C%20Zanzibar",
     "osmMapUrl": "https://www.openstreetmap.org/?mlat=-6.1482&mlon=39.2685#map=15/-6.1482/39.2685"
   },
   "contact": {
-    "email": "info@leadersinternationalschool.ac.tz",
-    "admissionsEmail": "admissions@leadersinternationalschool.ac.tz",
+    "email": "info@leaderinternationalschool.ac.tz",
+    "admissionsEmail": "info@leaderinternationalschool.ac.tz",
     "phoneDisplay": "+255 777 427 140",
     "phoneHref": "tel:+255777427140",
-    "phoneAltDisplay": "+255 713 427 140",
-    "phoneAltHref": "tel:+255713427140",
     "whatsappHref": "https://wa.me/255777427140",
     "officeHours": [
       {
@@ -88,7 +86,7 @@
   ],
   "portal": {
     "label": "Portal Login",
-    "href": "https://portal.leadersinternationalschool.ac.tz",
+    "href": "https://portal.leaderinternationalschool.ac.tz",
     "note": "Parents: view report cards, fees and attendance."
   },
   "notice": {
@@ -344,7 +342,7 @@
       {
         "icon": "bus",
         "title": "Safe transport across Urban West",
-        "text": "Monitored school bus routes across Kisakasaka, Kizimbani, and Stone Town corridors with a female attendant on every vehicle."
+        "text": "Monitored school bus routes across Kisakasaka, Kombeni, and Stone Town corridors with a female attendant on every vehicle."
       }
     ]
   },

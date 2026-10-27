@@ -29,26 +29,26 @@ export function PageHero({
       {image ? (
         <div className="absolute inset-0 opacity-25">
           <Img src={image} alt="" sizes="100vw" className="object-cover" cdnWidth={1400} />
-          <div className="absolute inset-0 bg-[linear-gradient(105deg,rgb(2_19_44/.96)_18%,rgb(0_39_92/.72)_62%,rgb(2_19_44/.9))]" />
+          <div className="absolute inset-0 bg-[linear-gradient(105deg,rgb(1_19_38/.96)_18%,rgb(0_40_72/.74)_62%,rgb(17_102_112/.82))]" />
         </div>
       ) : null}
-      <div className="pointer-events-none absolute -left-24 bottom-[-30%] h-[360px] w-[360px] rounded-full bg-gold-500/12 blur-3xl" />
+      <div className="pointer-events-none absolute -left-24 bottom-[-30%] h-[360px] w-[360px] rounded-full bg-sky-400/20 blur-3xl" />
       <div className={cx("shell relative", align === "center" && "text-center")}>
         <nav aria-label="Breadcrumb" className={cx("mb-5 flex flex-wrap items-center gap-1.5 text-[.8rem] text-navy-200", align === "center" && "justify-center")}>
-          <Link href="/" className="transition hover:text-gold-300">Home</Link>
+          <Link href="/" className="transition hover:text-sky-300">Home</Link>
           {(crumbs ?? []).map((c) => (
             <span key={c.label} className="flex items-center gap-1.5">
-              <Icon name="chevron-right" size={12} className="text-navy-400" />
-              {c.href ? <Link href={c.href} className="transition hover:text-gold-300">{c.label}</Link> : <span className="font-semibold text-gold-300">{c.label}</span>}
+              <Icon name="chevron-right" size={12} className="text-sky-400/70" />
+              {c.href ? <Link href={c.href} className="transition hover:text-sky-300">{c.label}</Link> : <span className="font-semibold text-sky-300">{c.label}</span>}
             </span>
           ))}
         </nav>
         <div className={cx("max-w-3xl", align === "center" && "mx-auto")}>
           {eyebrow ? (
-            <p className={cx("eyebrow eyebrow-gold mb-3 flex items-center gap-2.5", align === "center" && "justify-center")}>
-              <span className="h-px w-8 bg-gold-400/70" />
+            <p className={cx("eyebrow eyebrow-sky mb-3 flex items-center gap-2.5", align === "center" && "justify-center")}>
+              <span className="h-[2px] w-8 rounded-full bg-sky-400" />
               {eyebrow}
-              {align === "center" ? <span className="h-px w-8 bg-gold-400/70" /> : null}
+              {align === "center" ? <span className="h-[2px] w-8 rounded-full bg-sky-400" /> : null}
             </p>
           ) : null}
           <h1 className="display text-[clamp(2.1rem,5.2vw,3.5rem)] text-white">{title}</h1>
@@ -56,7 +56,7 @@ export function PageHero({
           {actions ? <div className={cx("mt-8 flex flex-wrap items-center gap-3", align === "center" && "justify-center")}>{actions}</div> : null}
         </div>
       </div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-[linear-gradient(to_right,transparent,rgb(253_203_36/.55),transparent)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[2px] bg-[linear-gradient(to_right,transparent,rgb(56_192_200/.75),rgb(253_203_36/.65),transparent)]" />
     </section>
   );
 }

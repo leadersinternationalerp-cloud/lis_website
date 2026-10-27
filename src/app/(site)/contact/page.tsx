@@ -155,7 +155,7 @@ export default function ContactPage() {
           <SectionHead
             eyebrow={`Recruitment · Apply by ${contact.careers.deadline}`}
             title="Current recruitment posters"
-            lead="Click any poster to view full size. Send your CV and academic certificates to info@leadersinternationalschool.ac.tz or leadersinternationalerp@gmail.com."
+            lead="Click any poster to view full size. Send your CV and academic certificates to info@leaderinternationalschool.ac.tz or leadersinternationalerp@gmail.com."
           />
           <div className="mt-9 grid gap-6 md:grid-cols-3">
             {contact.careers.posters.map((poster, i) => (

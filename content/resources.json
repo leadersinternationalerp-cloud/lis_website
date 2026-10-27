@@ -103,7 +103,6 @@
     "Academics",
     "Careers"
   ],
-  "downloadsNote": "Documents are hosted directly on the site. Download the official 2026/2027 Fee Structure PDF above for full annual and monthly fee tables.",
   "termDates": [
     {
       "term": "January 2027 Intake — Term 1",
@@ -200,9 +199,9 @@
         "text": "#ffe394"
       },
       {
-        "label": "Crest: navy & gold",
-        "hex": "#00275c",
-        "text": "#fdcb24"
+        "label": "Crest: navy, light blue & gold",
+        "hex": "#38C0C8",
+        "text": "#002848"
       }
     ]
   }

@@ -35,9 +35,11 @@ export default async function ResourcesPage() {
       <section id="documents" className="scroll-mt-28 py-14 lg:py-16">
         <div className="shell">
           <ResourceBrowser documents={resources.documents} categories={resources.categories} />
-          <p className="mt-6 flex items-start gap-2.5 rounded-xl bg-navy-50 p-4 text-[.88rem] leading-relaxed text-navy-800">
-            <Icon name="sparkles" size={16} className="mt-0.5 shrink-0 text-gold-600" />{resources.downloadsNote}
-          </p>
+          {resources.downloadsNote ? (
+            <p className="mt-6 flex items-start gap-2.5 rounded-xl bg-navy-50 p-4 text-[.88rem] leading-relaxed text-navy-800">
+              <Icon name="sparkles" size={16} className="mt-0.5 shrink-0 text-gold-600" />{resources.downloadsNote}
+            </p>
+          ) : null}
         </div>
       </section>
 

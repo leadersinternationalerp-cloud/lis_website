@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { getNewsSlugs } from "@/lib/content";
 import { absolute } from "@/lib/seo";
 
+export const dynamic = "force-static";
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const now = new Date();
   const statics = [

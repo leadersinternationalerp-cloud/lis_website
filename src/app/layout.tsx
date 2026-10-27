@@ -25,7 +25,14 @@ export const metadata: Metadata = {
   keywords: site.seo.keywords,
   applicationName: site.school.name,
   authors: [{ name: site.school.name }],
-  icons: { icon: "/crest.svg", apple: "/crest.svg" },
+  icons: {
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo.png", sizes: "108x108", type: "image/png" },
+      { url: "/crest.svg", type: "image/svg+xml" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
