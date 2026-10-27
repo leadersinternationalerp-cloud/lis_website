@@ -1,0 +1,229 @@
+{
+  "hero": {
+    "eyebrow": "About LIS",
+    "title": "A school built on attention, not assembly lines",
+    "text": "Since 2009 we have taught Zanzibari children to read widely, reason clearly and take responsibility for the person next to them. Today our Kisakasaka campus brings together our NECTA National Wing and our Cambridge International Wing under one caring roof.",
+    "image": "/media/gallery-culture-day.jpg"
+  },
+  "missionVision": [
+    {
+      "icon": "target",
+      "title": "Our mission",
+      "text": "To give every learner an excellent, accessible and values-based education in Kisakasaka — taught in small classes across NECTA and Cambridge streams, measured honestly, and open to families of every background on Zanzibar."
+    },
+    {
+      "icon": "eye",
+      "title": "Our vision",
+      "text": "A generation of Zanzibari leaders who are fluent in science, languages, and their own culture, leaving primary school with the confidence to excel anywhere in the world."
+    },
+    {
+      "icon": "compass",
+      "title": "Our promise",
+      "text": "No child slips through unnoticed. Every pupil has a dedicated class teacher, a term-by-term learning plan, warm meals on campus, and daily character guidance."
+    }
+  ],
+  "values": [
+    {
+      "icon": "book",
+      "title": "Integrity",
+      "text": "We tell students the truth about their work, and we tell parents the truth about theirs."
+    },
+    {
+      "icon": "star",
+      "title": "Excellence",
+      "text": "Marks are not the only goal, but high standards are how character and curiosity are built."
+    },
+    {
+      "icon": "globe",
+      "title": "Global-mindedness",
+      "text": "NECTA and Cambridge curricula side by side; Swahili, English and Arabic on the same shelf."
+    },
+    {
+      "icon": "heart",
+      "title": "Compassion",
+      "text": "Daily Madrasa, moral reflection, and community care projects in our surrounding wards."
+    },
+    {
+      "icon": "shield",
+      "title": "Respect & safety",
+      "text": "A signed safeguarding policy, zero tolerance for bullying, and pastoral care on staff."
+    },
+    {
+      "icon": "users",
+      "title": "Community",
+      "text": "Parents are partners, not customers. Our doors are open every week for parent conversations."
+    }
+  ],
+  "story": {
+    "title": "How LIS grew",
+    "items": [
+      {
+        "year": "2009",
+        "title": "Two classrooms in Kisakasaka",
+        "text": "Forty-one nursery and Grade 1 pupils, three teachers, and a rented hall."
+      },
+      {
+        "year": "2013",
+        "title": "First primary cohort completes",
+        "text": "Our primary class sat the leaving examination with the second-highest average in the district."
+      },
+      {
+        "year": "2017",
+        "title": "Science & ICT laboratories open",
+        "text": "Dedicated practical science and computer rooms commissioned for upper primary learners."
+      },
+      {
+        "year": "2021",
+        "title": "Library & Madrasa expansion",
+        "text": "Expanded campus library, hot school kitchen, and integrated daily Madrasa programme."
+      },
+      {
+        "year": "2025",
+        "title": "Cambridge International Wing",
+        "text": "Launch of our Cambridge Assessment International Education Primary stream (Years 1–6) alongside NECTA Grades 1–6."
+      },
+      {
+        "year": "2026/27",
+        "title": "Growing for the January 2027 intake",
+        "text": "650+ learners across Baby Class, Nursery, NECTA Grades 1–6, and Cambridge Years 1–6 on one purpose-built campus."
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "Founded",
+      "value": "2009"
+    },
+    {
+      "label": "Learners",
+      "value": "650+"
+    },
+    {
+      "label": "Curricula",
+      "value": "NECTA & Cambridge"
+    },
+    {
+      "label": "Campus",
+      "value": "4.2 hectares"
+    },
+    {
+      "label": "Languages taught",
+      "value": "English · Swahili · Arabic"
+    },
+    {
+      "label": "Stages",
+      "value": "Baby Class to Grade / Year 6"
+    }
+  ],
+  "leadership": {
+    "title": "Leadership team",
+    "note": "Photographs are placeholders — replace files in public/media/team/ and update content/about.json.",
+    "people": [
+      {
+        "name": "Dr. Juma A. Khamis",
+        "role": "Head Teacher",
+        "qualification": "PhD Education Leadership, UDSM",
+        "bio": "Twenty-six years in Zanzibari and East African schools. Joined LIS in 2011 and leads both the NECTA and Cambridge wings.",
+        "email": "head@leadersinternationalschool.ac.tz",
+        "photo": ""
+      },
+      {
+        "name": "Mrs. Zainabu Mfaume",
+        "role": "Deputy Head (Academics & Cambridge Wing)",
+        "qualification": "MSc Science Education, SUZA",
+        "bio": "Oversees the timetable, assessment calendar, and our Cambridge Primary & NECTA curriculum standards.",
+        "email": "academics@leadersinternationalschool.ac.tz",
+        "photo": ""
+      },
+      {
+        "name": "Mr. Peter N. Mbwana",
+        "role": "Director of Admissions & Communications",
+        "qualification": "BA Education, SUZA",
+        "bio": "First voice on the phone, and the person who will walk you round the campus. Replies within one working day.",
+        "email": "admissions@leadersinternationalschool.ac.tz",
+        "photo": ""
+      },
+      {
+        "name": "Sister Josephine Nkya",
+        "role": "Head of Pastoral Care & Safeguarding",
+        "qualification": "Dip. Counselling Psychology",
+        "bio": "Runs child protection, pupil wellbeing, new-pupil buddy pairing, and the Tuesday parents' coffee morning.",
+        "email": "pastoral@leadersinternationalschool.ac.tz",
+        "photo": ""
+      }
+    ]
+  },
+  "faculty": {
+    "title": "Who teaches your child",
+    "text": "Forty-two full-time educators and teaching assistants across Pre-Primary, NECTA Primary, and the Cambridge Wing — qualified, vetted, and deeply committed to children.",
+    "stats": [
+      {
+        "value": "42",
+        "label": "Full-time educators"
+      },
+      {
+        "value": "100%",
+        "label": "Certified teaching staff"
+      },
+      {
+        "value": "24:1",
+        "label": "Max primary class size"
+      },
+      {
+        "value": "6 yrs",
+        "label": "Average staff tenure"
+      }
+    ],
+    "departments": [
+      {
+        "name": "Baby Class & Nursery (KG1 & KG2)",
+        "head": "Madam Fatuma Bakari",
+        "detail": "Play-based phonics, early numeracy, creative arts, outdoor discovery, and two adults in every room."
+      },
+      {
+        "name": "English, Literacy & Global Perspectives",
+        "head": "Ms. Amina Suleiman",
+        "detail": "Guided reading in Grades 1–6 & Cambridge Years 1–6, readers theatre, and public speaking."
+      },
+      {
+        "name": "Mathematics & Science",
+        "head": "Mrs. Neza Mgeni",
+        "detail": "Cambridge Primary Science & Maths, NECTA Science, weekly laboratory practicals, and robotics."
+      },
+      {
+        "name": "Kiswahili, Arabic & Madrasa",
+        "head": "Mr. Jassim Kharaziche",
+        "detail": "Daily timetabled Madrasa, Qur'an recitation, moral studies, and Kiswahili heritage."
+      },
+      {
+        "name": "Humanities & ICT",
+        "head": "Mr. Salim Omar",
+        "detail": "Social studies, Zanzibar history, digital literacy, and coding in our 34-seat computer lab."
+      },
+      {
+        "name": "Art & Design, Music & Physical Education",
+        "head": "Coach Hamisi Juma",
+        "detail": "Creative arts, ngoma ensemble, football, netball, athletics, and swimming."
+      }
+    ]
+  },
+  "accreditations": [
+    {
+      "title": "Ministry licensed",
+      "text": "Registered with the President's Office — Ministry of Education and Vocational Training, Zanzibar."
+    },
+    {
+      "title": "Cambridge International Wing",
+      "text": "Offering Cambridge Assessment International Education Primary programme across Years 1–3 and Years 4–6."
+    },
+    {
+      "title": "NECTA National Curriculum",
+      "text": "Approved centre for the Tanzanian National Examinations Council (NECTA) curriculum from Grade 1 to Grade 6.",
+      "logo": "/media/necta.png"
+    },
+    {
+      "title": "Safe-schools commitment",
+      "text": "Signed child-protection policy, vetted staff, first-aid trained office, and nutritious daily meals on site."
+    }
+  ]
+}

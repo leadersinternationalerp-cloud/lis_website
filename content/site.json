@@ -1,0 +1,492 @@
+{
+  "school": {
+    "name": "Leaders International School",
+    "shortName": "LIS",
+    "wordmark": {
+      "line1": "Leaders International",
+      "line2": "School",
+      "line3": "ZANZIBAR"
+    },
+    "tagline": "Learning Today, Leading Tomorrow",
+    "crestMotto": "Learn Today, Lead Tomorrow",
+    "established": 2009,
+    "accreditation": "Licensed by the President's Office — Ministry of Education, Science and Technology (Zanzibar)",
+    "legalName": "Leaders International School — Kisakasaka, Zanzibar"
+  },
+  "seo": {
+    "siteName": "Leaders International School",
+    "titleTemplate": "%s | Leaders International School",
+    "description": "A world-class pre-primary and primary school in Kisakasaka, Zanzibar. NECTA (Tanzanian national) and Cambridge International streams, small classes, science, and leadership programmes.",
+    "keywords": [
+      "school in Zanzibar",
+      "international school Tanzania",
+      "Cambridge curriculum Zanzibar",
+      "primary school Kisakasaka",
+      "nursery school Zanzibar",
+      "NECTA primary Zanzibar",
+      "Cambridge Primary Zanzibar"
+    ],
+    "openGraphImage": "/media/hero-students.jpg"
+  },
+  "location": {
+    "label": "Kisakasaka, Zanzibar",
+    "street": "Kisakasaka Road, near Kizimbani",
+    "area": "Makunducha 'B', Kati District",
+    "city": "Zanzibar Urban/West",
+    "country": "Tanzania",
+    "postalHint": "P.O. Box 1455, Zanzibar",
+    "lat": -6.1482,
+    "lng": 39.2685,
+    "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kisakasaka%2C%20Zanzibar",
+    "osmMapUrl": "https://www.openstreetmap.org/?mlat=-6.1482&mlon=39.2685#map=15/-6.1482/39.2685"
+  },
+  "contact": {
+    "email": "info@leadersinternationalschool.ac.tz",
+    "admissionsEmail": "admissions@leadersinternationalschool.ac.tz",
+    "phoneDisplay": "+255 777 427 140",
+    "phoneHref": "tel:+255777427140",
+    "phoneAltDisplay": "+255 713 427 140",
+    "phoneAltHref": "tel:+255713427140",
+    "whatsappHref": "https://wa.me/255777427140",
+    "officeHours": [
+      {
+        "days": "Monday – Friday",
+        "hours": "7:30 – 17:00"
+      },
+      {
+        "days": "Saturday (admissions desk)",
+        "hours": "9:00 – 13:00"
+      },
+      {
+        "days": "Sunday & public holidays",
+        "hours": "Closed"
+      }
+    ],
+    "termOfficeNote": "During school holidays the front desk opens 8:30 – 14:00, Monday to Friday."
+  },
+  "socials": [
+    {
+      "platform": "facebook",
+      "label": "Facebook",
+      "href": "https://facebook.com/"
+    },
+    {
+      "platform": "instagram",
+      "label": "Instagram",
+      "href": "https://instagram.com/"
+    },
+    {
+      "platform": "youtube",
+      "label": "YouTube",
+      "href": "https://youtube.com/"
+    },
+    {
+      "platform": "whatsapp",
+      "label": "WhatsApp",
+      "href": "https://wa.me/255777427140"
+    }
+  ],
+  "portal": {
+    "label": "Portal Login",
+    "href": "https://portal.leadersinternationalschool.ac.tz",
+    "note": "Parents: view report cards, fees and attendance."
+  },
+  "notice": {
+    "enabled": true,
+    "text": "Admissions open for the January 2027 intake — Baby Class, Nursery (KG1 & KG2), NECTA Grades 1–6 & Cambridge Years 1–6. We are also hiring teachers & staff (deadline 4 Dec 2026).",
+    "href": "/admissions",
+    "linkLabel": "See fees & how to apply"
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Academics",
+      "href": "/academics",
+      "children": [
+        {
+          "label": "Baby Class & Nursery",
+          "href": "/academics#pre-primary",
+          "description": "Baby Class, KG1 & KG2 — learning through play & phonics"
+        },
+        {
+          "label": "NECTA Primary (Grade 1–6)",
+          "href": "/academics#necta-primary",
+          "description": "Tanzanian national curriculum taught at international depth"
+        },
+        {
+          "label": "Cambridge Wing (Year 1–6)",
+          "href": "/academics#cambridge-primary",
+          "description": "Cambridge Assessment International Education Primary stream"
+        },
+        {
+          "label": "Madrasa, Languages & Values",
+          "href": "/academics#languages-values",
+          "description": "English, Swahili, Arabic, Madrasa and character formation"
+        },
+        {
+          "label": "Clubs & Games",
+          "href": "/academics#enrichment",
+          "description": "Robotics, debate, music, athletics, swimming"
+        }
+      ]
+    },
+    {
+      "label": "Admissions",
+      "href": "/admissions",
+      "children": [
+        {
+          "label": "How to Apply",
+          "href": "/admissions#process",
+          "description": "Five steps, from enquiry to first day in January 2027"
+        },
+        {
+          "label": "Entry Requirements",
+          "href": "/admissions#requirements",
+          "description": "Documents and age cut-offs by class"
+        },
+        {
+          "label": "Fees & Monthly Breakdown",
+          "href": "/admissions#fees",
+          "description": "Published 2026/2027 fee structure & 12-month instalment plan"
+        },
+        {
+          "label": "Open Day",
+          "href": "/admissions#openday",
+          "description": "Tour the campus and meet teachers"
+        },
+        {
+          "label": "Apply Online",
+          "href": "/apply",
+          "description": "Takes about 6 minutes — start your January 2027 application"
+        }
+      ]
+    },
+    {
+      "label": "Media",
+      "href": "/gallery",
+      "children": [
+        {
+          "label": "Photo Gallery",
+          "href": "/gallery",
+          "description": "Campus life, sport, culture and results"
+        },
+        {
+          "label": "News & Events",
+          "href": "/news",
+          "description": "Announcements from the school office"
+        },
+        {
+          "label": "Video Tour",
+          "href": "/gallery#video",
+          "description": "Three minutes inside LIS"
+        }
+      ]
+    },
+    {
+      "label": "Resources",
+      "href": "/resources",
+      "children": [
+        {
+          "label": "School Calendar",
+          "href": "/resources#calendar",
+          "description": "Term dates, exams and holidays"
+        },
+        {
+          "label": "Documents",
+          "href": "/resources#documents",
+          "description": "Official 2026/2027 fee structure, application form, uniform list"
+        },
+        {
+          "label": "Uniform & Transport",
+          "href": "/resources#uniform",
+          "description": "Cream & sky-blue polo, navy bottoms, crest on the chest"
+        },
+        {
+          "label": "Parents' FAQ",
+          "href": "/faq",
+          "description": "Answers to the questions we get most"
+        }
+      ]
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact"
+    }
+  ],
+  "hero": {
+    "eyebrow": "Learning Today, Leading Tomorrow",
+    "title": "Shaping Future",
+    "highlight": "Leaders",
+    "lead": "We provide a world-class education that empowers children to excel academically, grow as global citizens, and lead with integrity — from Baby Class & Nursery through Grade 6 / Year 6 across our NECTA and Cambridge wings in Kisakasaka, Zanzibar.",
+    "image": "/media/hero-students.jpg",
+    "imageAlt": "LIS learners of many backgrounds in cream and sky-blue uniforms, reading together in a colourful classroom",
+    "buttons": [
+      {
+        "label": "Apply for Jan 2027",
+        "href": "/apply",
+        "variant": "gold"
+      },
+      {
+        "label": "2026/2027 Fee Structure",
+        "href": "/admissions#fees",
+        "variant": "outline"
+      }
+    ],
+    "badges": [
+      {
+        "icon": "shield",
+        "text": "NECTA National Wing"
+      },
+      {
+        "icon": "globe",
+        "text": "Cambridge International Wing"
+      },
+      {
+        "icon": "clock",
+        "text": "January 2027 Intake Open"
+      }
+    ]
+  },
+  "features": [
+    {
+      "icon": "book",
+      "title": "Dual Curriculum Wings",
+      "text": "Choose between the Tanzanian national (NECTA) curriculum and Cambridge Assessment International Education (Years 1–6).",
+      "href": "/academics"
+    },
+    {
+      "icon": "bulb",
+      "title": "Experienced Teachers",
+      "text": "Dedicated and passionate educators committed to nurturing every learner's academic and personal growth.",
+      "href": "/about#leadership"
+    },
+    {
+      "icon": "monitor",
+      "title": "Modern Facilities",
+      "text": "Bright classrooms, science & ICT labs, a 640-title library, shaded assembly veranda, and daily breakfast & lunch on campus.",
+      "href": "/gallery"
+    },
+    {
+      "icon": "star",
+      "title": "Holistic Development",
+      "text": "Daily Madrasa & values education, robotics, arts, sports, and public speaking woven into the school week.",
+      "href": "/academics#enrichment"
+    }
+  ],
+  "stats": [
+    {
+      "value": "650",
+      "suffix": "+",
+      "label": "Learners on campus",
+      "note": "Baby Class to Grade / Year 6"
+    },
+    {
+      "value": "22",
+      "suffix": ":1",
+      "label": "Average class size",
+      "note": "Capped at 24 per class"
+    },
+    {
+      "value": "98",
+      "suffix": "%",
+      "label": "Primary pass rate",
+      "note": "NECTA & Cambridge Checkpoint"
+    },
+    {
+      "value": "42",
+      "suffix": "",
+      "label": "Teaching & care staff",
+      "note": "Qualified NECTA & Cambridge educators"
+    }
+  ],
+  "whyUs": {
+    "title": "Why families choose LIS",
+    "intro": "Every child is known by name, tracked carefully, and supported by class teachers who partner closely with parents.",
+    "image": "/media/gallery-classroom.jpg",
+    "points": [
+      {
+        "icon": "users",
+        "title": "Small classes, real attention",
+        "text": "A maximum of 24 learners per primary room and 18 in Pre-Primary with two adults, so every child gets daily individual feedback."
+      },
+      {
+        "icon": "globe",
+        "title": "NECTA & Cambridge wings on one campus",
+        "text": "Families can choose the Tanzanian national curriculum (Grades 1–6) or the Cambridge Primary International stream (Years 1–6) under one roof."
+      },
+      {
+        "icon": "flask",
+        "title": "Hands-on science & computing",
+        "text": "Practical science experiments, computer literacy, and coding lessons every week — children learn by doing, not just copying from a board."
+      },
+      {
+        "icon": "heart",
+        "title": "All-inclusive monthly fee plan",
+        "text": "Annual fees are payable in 12 equal monthly instalments and already include tuition, stationery, breakfast & hot lunch, caution fee, and Madrasa."
+      },
+      {
+        "icon": "shield",
+        "title": "One uniform, strong values & safeguarding",
+        "text": "Cream polo with sky-blue trim, navy bottoms, daily Madrasa and moral reflection, and a strict child-protection policy."
+      },
+      {
+        "icon": "trophy",
+        "title": "Leadership from the earliest years",
+        "text": "Morning assembly presentations, reading buddies, debate, robotics, and sports help shy pupils grow into confident speakers."
+      },
+      {
+        "icon": "bus",
+        "title": "Safe transport across Urban West",
+        "text": "Monitored school bus routes across Kisakasaka, Kizimbani, and Stone Town corridors with a female attendant on every vehicle."
+      }
+    ]
+  },
+  "testimonialTitle": "What parents say",
+  "testimonials": [
+    {
+      "quote": "My daughter arrived shy in Grade 2. Within a year she led the Founder's Day assembly in both English and Swahili. The teachers at LIS truly build confidence.",
+      "name": "Asha Msigwa",
+      "role": "Parent, NECTA Primary Wing"
+    },
+    {
+      "quote": "Moving our son into the Cambridge Wing at LIS was the best decision we made. Having breakfast, lunch, stationery, and Madrasa included in one monthly instalment makes planning so easy for parents.",
+      "name": "Hamad Salim",
+      "role": "Parent, Cambridge Year 4"
+    },
+    {
+      "quote": "What I value most is the communication. If something happens at school I hear about it the same day, not at the end of term.",
+      "name": "Grace Juma",
+      "role": "Parent, Nursery (KG2)"
+    },
+    {
+      "quote": "Both my boys love the coding and science fair projects here. They wake up excited for school every single morning.",
+      "name": "Rashid Mohamed",
+      "role": "Parent, Grade 5"
+    }
+  ],
+  "cta": {
+    "title": "Give your child a school that knows their name",
+    "text": "Admissions for the January 2027 intake (2026/2027 academic year) are open across Baby Class, Nursery (KG1 & KG2), NECTA Grades 1–6, and Cambridge Years 1–6.",
+    "primary": {
+      "label": "Start your application",
+      "href": "/apply"
+    },
+    "secondary": {
+      "label": "Book a campus visit",
+      "href": "/admissions#openday"
+    },
+    "phone": "+255 777 427 140",
+    "phoneHref": "tel:+255777427140"
+  },
+  "footer": {
+    "blurb": "Leaders International School is a private, co-educational pre-primary and primary school in Kisakasaka, Zanzibar, offering Baby Class, Nursery, NECTA (Grades 1–6) and Cambridge International (Years 1–6) education.",
+    "columns": [
+      {
+        "title": "Academics",
+        "links": [
+          {
+            "label": "Baby Class & Nursery",
+            "href": "/academics#pre-primary"
+          },
+          {
+            "label": "NECTA Primary (Grades 1–6)",
+            "href": "/academics#necta-primary"
+          },
+          {
+            "label": "Cambridge Wing (Years 1–6)",
+            "href": "/academics#cambridge-primary"
+          },
+          {
+            "label": "Madrasa & Languages",
+            "href": "/academics#languages-values"
+          },
+          {
+            "label": "Clubs & Games",
+            "href": "/academics#enrichment"
+          }
+        ]
+      },
+      {
+        "title": "Admissions",
+        "links": [
+          {
+            "label": "How to Apply",
+            "href": "/admissions#process"
+          },
+          {
+            "label": "2026/2027 Fee Structure",
+            "href": "/admissions#fees"
+          },
+          {
+            "label": "Apply Online",
+            "href": "/apply"
+          },
+          {
+            "label": "Open Day",
+            "href": "/admissions#openday"
+          },
+          {
+            "label": "Parents' FAQ",
+            "href": "/faq"
+          }
+        ]
+      },
+      {
+        "title": "School Life",
+        "links": [
+          {
+            "label": "News & Events",
+            "href": "/news"
+          },
+          {
+            "label": "Photo Gallery",
+            "href": "/gallery"
+          },
+          {
+            "label": "Calendar & Documents",
+            "href": "/resources"
+          },
+          {
+            "label": "About LIS",
+            "href": "/about"
+          },
+          {
+            "label": "Careers at LIS (Hiring)",
+            "href": "/contact#careers"
+          }
+        ]
+      }
+    ],
+    "downloadNote": "The official 2026/2027 Fee Structure PDF, application forms, and policies are available in Resources.",
+    "credits": "Built so that any teacher can update it."
+  },
+  "quickLinks": [
+    {
+      "label": "Apply for Jan 2027",
+      "href": "/apply",
+      "icon": "edit"
+    },
+    {
+      "label": "2026/2027 Fee Structure",
+      "href": "/admissions#fees",
+      "icon": "receipt"
+    },
+    {
+      "label": "We Are Hiring",
+      "href": "/contact#careers",
+      "icon": "graduation"
+    },
+    {
+      "label": "Photo Gallery",
+      "href": "/gallery",
+      "icon": "image"
+    }
+  ]
+}

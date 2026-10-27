@@ -1,0 +1,60 @@
+{
+  "title": "Contact Us",
+  "eyebrow": "We answer quickly",
+  "intro": "One number, one email, one gate. Call or WhatsApp the office and a person answers; the enquiry form is read every morning before 09:00.",
+  "cards": [
+    { "icon": "pin", "title": "Visit the campus", "lines": ["Kisakasaka Road, near Kizimbani", "Makunducha 'B', Kati District", "Zanzibar Urban/West, Tanzania"], "actionLabel": "Open in Maps", "actionHref": "https://www.google.com/maps/search/?api=1&query=Kisakasaka%2C%20Zanzibar" },
+    { "icon": "phone", "title": "Call or WhatsApp", "lines": ["+255 777 427 140 — main office", "+255 713 427 140 — admissions desk", "WhatsApp messages & voice notes welcome"], "actionLabel": "Chat on WhatsApp", "actionHref": "https://wa.me/255777427140" },
+    { "icon": "mail", "title": "Write to us", "lines": ["info@leadersinternationalschool.ac.tz", "admissions@leadersinternationalschool.ac.tz", "Replies within one working day"], "actionLabel": "Send an email", "actionHref": "mailto:info@leadersinternationalschool.ac.tz" },
+    { "icon": "clock", "title": "Office hours", "lines": ["Mon–Fri 7:30–17:00", "Sat (admissions) 9:00–13:00", "Holidays 8:30–14:00"], "actionLabel": "P.O. Box 1455, Zanzibar", "actionHref": "/resources" }
+  ],
+  "departments": [
+    { "name": "Front office & general enquiries", "email": "info@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140", "handles": "Attendance, letters, certificates, timetables, visitors." },
+    { "name": "Admissions (NECTA & Cambridge)", "email": "admissions@leadersinternationalschool.ac.tz", "phone": "+255 713 427 140", "handles": "January 2027 intake, assessments, Open Day tours, transfers." },
+    { "name": "Bursary & fees", "email": "fees@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140 ext. 2", "handles": "2026/2027 fee schedule, 12-month instalments, receipts." },
+    { "name": "Human Resources & Recruitment", "email": "leadersinternationalerp@gmail.com", "phone": "+255 777 427 140", "handles": "Teacher & staff job applications (deadline 4 December 2026)." },
+    { "name": "Pastoral care & counselling", "email": "pastoral@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140 ext. 4", "handles": "Wellbeing, safeguarding, learning support, parent meetings." },
+    { "name": "Transport", "email": "transport@leadersinternationalschool.ac.tz", "phone": "+255 777 427 140 ext. 5", "handles": "Routes, pickups, bus attendants, route changes." }
+  ],
+  "gettingHere": {
+    "title": "Finding us",
+    "text": "We are four kilometres inland from Stone Town on Kisakasaka Road, past the Kizimbani junction. The visitor gate is the second entrance, marked by a blue flag pole and a stone sign.",
+    "landmarks": ["5 minutes from Kizimbani crossroads", "12 minutes from Stone Town by car", "15 minutes from Abeid Amani Karume International Airport", "Dala-dala routes 04 and 07 stop at Kisakasaka stage, then a five-minute walk"],
+    "parking": "Twenty visitor spaces inside the gate on weekdays before 08:00 and after 13:30; during the school day use the Open Day bay beside the library."
+  },
+  "careers": {
+    "title": "We Are Hiring — Join Our Team",
+    "deadline": "4th December 2026",
+    "text": "Be part of a dedicated team shaping future leaders! We are recruiting passionate educators for our Cambridge and NECTA wings as well as key administrative and IT specialists ahead of the January 2027 intake.",
+    "email": "info@leadersinternationalschool.ac.tz",
+    "altEmail": "leadersinternationalerp@gmail.com",
+    "phone": "+255 777 427 140",
+    "requirements": ["Academic documents & certificates", "Updated Curriculum Vitae (CV)", "Cover letter stating the position applied for"],
+    "openings": [
+      "Cambridge Wing Teachers — English, Art & Design, Mathematics/Science, Humanities, PE/Global Perspectives",
+      "General Wing Teachers — All Subjects (Passionate about Education, Team Player, Strong Communication)",
+      "Accountant — Bachelor's degree in Accounting/Finance; financial records, invoicing, reconciliations & budgeting",
+      "Receptionist — Diploma/Certificate in Office Management or Administration; front desk, calls & MS Office",
+      "Media & IT Officer — Degree/Diploma in Media, ICT or Computer Science; school media content, website & IT systems"
+    ],
+    "posters": [
+      {
+        "title": "Cambridge Wing Teacher Recruitment",
+        "subtitle": "English · Art & Design · Mathematics/Science · Humanities · PE/Global Perspectives",
+        "image": "/media/recruitment-cambridge-teachers.png"
+      },
+      {
+        "title": "Administration, Finance & IT Recruitment",
+        "subtitle": "Accountant · Receptionist · Media & IT Officer",
+        "image": "/media/recruitment-admin-it.png"
+      },
+      {
+        "title": "Teachers — All Subjects",
+        "subtitle": "Join our team and make a difference in education",
+        "image": "/media/recruitment-teachers.png"
+      }
+    ]
+  },
+  "map": { "embedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=39.2285%2C-6.2082%2C39.3085%2C-6.0882&layer=mapnik&marker=-6.1482%2C39.2685" },
+  "formNote": "Submitting this form does not apply for a place. It sends a message to the office, and someone replies by phone or email within one working day."
+}

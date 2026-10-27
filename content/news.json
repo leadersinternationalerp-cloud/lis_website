@@ -1,0 +1,193 @@
+{
+  "title": "News & Events",
+  "intro": "Announcements, results, admissions updates, and stories from the LIS community in Kisakasaka, Zanzibar.",
+  "items": [
+    {
+      "slug": "january-2027-admissions-and-fee-structure",
+      "title": "January 2027 Intake & 2026/2027 Fee Structure Released",
+      "category": "Admissions",
+      "date": "2026-10-25",
+      "excerpt": "Applications are now open across Baby Class, Nursery (KG1 & KG2), NECTA Grades 1–6, and Cambridge Years 1–6 with our 12-month instalment plan.",
+      "image": "/media/gallery-reading-corner.jpg",
+      "imageAlt": "Learners reading together in the LIS reading corner",
+      "featured": true,
+      "body": [
+        {
+          "type": "p",
+          "text": "Leaders International School has published the official 2026/2027 Fee Structure and opened admissions for the January 2027 intake across both our NECTA National Wing and our Cambridge Assessment International Education Wing."
+        },
+        {
+          "type": "h2",
+          "text": "Six categories open for enrolment"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Baby Class — TZS 3,200,000 per annum (TZS 266,667 per month).",
+            "Nursery (KG1 & KG2) — TZS 3,500,000 per annum (TZS 291,667 per month).",
+            "NECTA Grade 1 – 3 — TZS 3,700,000 per annum (TZS 308,333 per month).",
+            "NECTA Grade 4 – 6 — TZS 3,900,000 per annum (TZS 325,000 per month).",
+            "Cambridge Year 1 – 3 — TZS 5,400,000 per annum (TZS 450,000 per month).",
+            "Cambridge Year 4 – 6 — TZS 7,020,000 per annum (TZS 585,000 per month)."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Every monthly instalment includes tuition, stationery, caution fee, daily school breakfast & lunch, and daily Madrasa. New students pay a one-time registration fee of TZS 100,000 on admission. Download the official PDF under Resources or apply online today."
+        }
+      ]
+    },
+    {
+      "slug": "we-are-hiring-teachers-and-staff-2026",
+      "title": "We Are Hiring: Cambridge & NECTA Teachers, Accountant, Receptionist & Media/IT",
+      "category": "School Life",
+      "date": "2026-10-26",
+      "excerpt": "Join our dedicated team shaping future leaders in Zanzibar. Applications close on 4th December 2026.",
+      "image": "/media/recruitment-cambridge-teachers.png",
+      "imageAlt": "Leaders International School We Are Hiring poster",
+      "featured": true,
+      "body": [
+        {
+          "type": "p",
+          "text": "As Leaders International School prepares for the January 2027 intake, we are expanding our teaching faculty and administrative team in Kisakasaka, Zanzibar."
+        },
+        {
+          "type": "h2",
+          "text": "Open positions (Deadline: 4th December 2026)"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Cambridge Wing Teachers — English, Art & Design, Mathematics/Science, Humanities, and PE/Global Perspectives.",
+            "Teachers (All Subjects) — Passionate educators with strong communication skills and commitment to student development.",
+            "Accountant — Bachelor's degree in Accounting, Finance or related field; financial reporting, invoicing, reconciliations, and budgeting.",
+            "Receptionist — Diploma or certificate in Office Management/Administration; front desk, visitor care, and MS Office proficiency.",
+            "Media & IT Officer — Degree or diploma in Media, ICT, or Computer Science; digital content creation, school website management, and IT support."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Send your academic documents and CV to info@leadersinternationalschool.ac.tz or leadersinternationalerp@gmail.com, or call +255 777 427 140 before 4th December 2026."
+        }
+      ]
+    },
+    {
+      "slug": "science-fair-2026-inspiring-young-innovators",
+      "title": "Science Fair 2026 – Inspiring Young Innovators",
+      "category": "Academics",
+      "date": "2026-05-31",
+      "excerpt": "Forty-two pupil projects, three district judges, and a first-place district award for our Upper Primary robotics and science team.",
+      "image": "/media/news-science-fair.jpg",
+      "imageAlt": "Pupils presenting a volcano model at the science fair",
+      "featured": true,
+      "body": [
+        {
+          "type": "p",
+          "text": "Our annual Science & Innovation Fair filled the main hall with forty-two working projects built by our NECTA and Cambridge Primary learners, from a low-cost water purifier built from clay and charcoal to an automated solar garden sensor."
+        },
+        {
+          "type": "h2",
+          "text": "The winning projects"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Best in Show — \"Pumza\", a greywater filter for household use, Grade 6.",
+            "Best Lower Primary Project — a model volcano with a natural hibiscus pH indicator, Cambridge Year 3.",
+            "Best STEM Presentation — our Coding & Robotics club greenhouse controller, Year 6."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "The judges were impressed less by the equipment than by how clearly the children explained their scientific reasoning. That is what we teach for.",
+          "author": "Mrs. Zainabu Mfaume, Deputy Head (Academics)"
+        },
+        {
+          "type": "p",
+          "text": "Thanks to the parents who supplied materials, to the visiting judges, and to our science teachers for two weeks of late afternoons in the laboratory."
+        }
+      ]
+    },
+    {
+      "slug": "sports-day-highlights",
+      "title": "Sports Day Highlights on the Kisakasaka Field",
+      "category": "School Life",
+      "date": "2026-05-20",
+      "excerpt": "A day full of energy, teamwork and school spirit — 14 house records broken across Pre-Primary and Primary relays.",
+      "image": "/media/news-sports-day.jpg",
+      "imageAlt": "LIS boys' football team playing on the school field",
+      "featured": false,
+      "body": [
+        {
+          "type": "p",
+          "text": "Learners from Baby Class right up to Grade 6 and Year 6 competed across sprint relays, football, netball, obstacle courses, and the always-contested parents-versus-teachers tug-of-war. Nakupenda house took the overall shield for the third year running."
+        },
+        {
+          "type": "h2",
+          "text": "Highlights from the track"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Boys' 100m (Upper Primary) — new school record, Grade 6.",
+            "Girls' 4x100m Relay — Nakupenda house victory.",
+            "Nursery obstacle relay — every KG1 and KG2 learner crossed the line with a ribbon."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Photographs from the day are in the gallery under Sport."
+        }
+      ]
+    },
+    {
+      "slug": "new-library-resources",
+      "title": "640 New Library Titles & Junior Reading Corner",
+      "category": "Resources",
+      "date": "2026-05-10",
+      "excerpt": "640 new titles, a carpeted reading corner for Baby Class to Grade 3, and offline digital encyclopedias.",
+      "image": "/media/news-library.jpg",
+      "imageAlt": "Two pupils choosing books from the new library shelves",
+      "featured": false,
+      "body": [
+        {
+          "type": "p",
+          "text": "The library has added 640 titles chosen with our English, Kiswahili, and Cambridge Primary teachers: phonics readers for KG1 to Year 3, illustrated science encyclopedias, and East African storybooks."
+        },
+        {
+          "type": "h2",
+          "text": "What changed"
+        },
+        {
+          "type": "list",
+          "items": [
+            "A carpeted reading corner for Lower Primary with 180 picture books.",
+            "Two offline encyclopedia workstations in the library.",
+            "Daily guided reading timetabled for every class before morning break."
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "primary-graduation-and-awards",
+      "title": "Annual Graduation & Academic Awards Ceremony",
+      "category": "Results",
+      "date": "2025-12-13",
+      "excerpt": "Celebrating our graduating KG2 and Grade 6 / Year 6 cohorts with parents, awards, and cultural performances.",
+      "image": "/media/news-graduation.jpg",
+      "imageAlt": "Graduating pupils receiving certificates on stage",
+      "featured": false,
+      "body": [
+        {
+          "type": "p",
+          "text": "Families gathered on the Kisakasaka campus to celebrate our KG2 pupils stepping up into Grade 1 / Year 1 and our senior primary pupils completing Grade 6 with a 98% pass rate."
+        },
+        {
+          "type": "quote",
+          "text": "We were taught here that a leader is not the person at the front of the queue, it is the person who turns round to make sure nobody is left behind.",
+          "author": "Head Pupil Address"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "title": "Photo & Media Gallery",
+  "intro": "Real school life, photographed on our campus in Kisakasaka. One uniform, many backgrounds across our NECTA and Cambridge Primary wings.",
+  "albums": [
+    {
+      "id": "campus",
+      "label": "Campus & Classrooms"
+    },
+    {
+      "id": "science",
+      "label": "Science & Technology"
+    },
+    {
+      "id": "sport",
+      "label": "Sport"
+    },
+    {
+      "id": "culture",
+      "label": "Culture & Assemblies"
+    },
+    {
+      "id": "library",
+      "label": "Library & Reading"
+    }
+  ],
+  "photos": [
+    {
+      "src": "/media/hero-students.jpg",
+      "album": "campus",
+      "title": "Reading group in Grade 4",
+      "caption": "Cream polos with the sky-blue collar and the school crest on the chest — our everyday uniform."
+    },
+    {
+      "src": "/media/gallery-assembly.jpg",
+      "album": "culture",
+      "title": "Morning assembly on the veranda",
+      "caption": "Every learner is in the same colours, whatever their background."
+    },
+    {
+      "src": "/media/gallery-classroom.jpg",
+      "album": "campus",
+      "title": "Guided writing in Primary",
+      "caption": "Small classes and a teacher who knows each child's next step."
+    },
+    {
+      "src": "/media/gallery-class-assembly.jpg",
+      "album": "campus",
+      "title": "Lines before the morning anthem"
+    },
+    {
+      "src": "/media/gallery-reading-corner.jpg",
+      "album": "library",
+      "title": "The junior reading corner",
+      "caption": "640 new titles and a carpet where Nursery and Lower Primary start the day."
+    },
+    {
+      "src": "/media/news-library.jpg",
+      "album": "library",
+      "title": "Choosing books at lunchtime"
+    },
+    {
+      "src": "/media/gallery-lab.jpg",
+      "album": "science",
+      "title": "Practical science in the laboratory",
+      "caption": "Lab coats over the uniform — hands-on experiments every week."
+    },
+    {
+      "src": "/media/gallery-computer-lab.jpg",
+      "album": "science",
+      "title": "Computer lab, 34 workstations"
+    },
+    {
+      "src": "/media/gallery-robotics.jpg",
+      "album": "science",
+      "title": "Coding & robotics lab, Thursday afternoons",
+      "caption": "Block-based coding and STEM kits in our ICT room."
+    },
+    {
+      "src": "/media/news-science-fair.jpg",
+      "album": "science",
+      "title": "Science & Innovation Fair 2026"
+    },
+    {
+      "src": "/media/news-sports-day.jpg",
+      "album": "sport",
+      "title": "Sports Day — house relay"
+    },
+    {
+      "src": "/media/gallery-sports.jpg",
+      "album": "sport",
+      "title": "Athletics on the Kisakasaka field"
+    },
+    {
+      "src": "/media/gallery-culture-day.jpg",
+      "album": "culture",
+      "title": "Culture Day performances",
+      "caption": "Traditional dress and music on stage."
+    },
+    {
+      "src": "/media/gallery-drums.jpg",
+      "album": "culture",
+      "title": "Ngoma drum ensemble"
+    },
+    {
+      "src": "/media/news-graduation.jpg",
+      "album": "culture",
+      "title": "Graduation and awards ceremony"
+    }
+  ],
+  "video": {
+    "enabled": true,
+    "title": "Three minutes inside LIS",
+    "text": "A walk-through of our Kisakasaka campus: morning assembly, NECTA and Cambridge classrooms, science and computer labs, the reading corner, and afternoon sports.",
+    "thumbnail": "/media/gallery-computer-lab.jpg",
+    "href": "https://www.youtube.com/@leader-school"
+  },
+  "count": 92
+}

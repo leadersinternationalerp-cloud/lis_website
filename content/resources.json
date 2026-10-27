@@ -1,0 +1,209 @@
+{
+  "title": "Resources & Documents",
+  "intro": "Everything a family needs before and during enrolment — including the official 2026/2027 Fee Structure PDF, application forms, and school policies.",
+  "documents": [
+    {
+      "title": "Official Fee Structure 2026/2027 (NECTA & Cambridge)",
+      "category": "Fees",
+      "type": "pdf",
+      "size": "1.8 MB",
+      "href": "/documents/fee-structure.pdf",
+      "updated": "2026-10-25",
+      "description": "Official 2026/2027 annual fees and 12-month instalment breakdown for Baby Class, Nursery (KG1 & KG2), NECTA Grades 1–6, and Cambridge Years 1–6."
+    },
+    {
+      "title": "Application Form — January 2027 Intake",
+      "category": "Admissions",
+      "type": "pdf",
+      "size": "312 KB",
+      "href": "/documents/application-form-2026.pdf",
+      "updated": "2026-10-25",
+      "description": "Print and return to the Kisakasaka office, or apply online instead — the questions are identical."
+    },
+    {
+      "title": "School Prospectus",
+      "category": "Admissions",
+      "type": "pdf",
+      "size": "4.1 MB",
+      "href": "/documents/prospectus.pdf",
+      "updated": "2026-10-15",
+      "description": "Overview of our Baby Class, Nursery, NECTA Primary, and Cambridge International Wing, facilities, and campus life."
+    },
+    {
+      "title": "Academic Calendar 2026/2027",
+      "category": "Calendar",
+      "type": "pdf",
+      "size": "96 KB",
+      "href": "/documents/school-calendar.pdf",
+      "updated": "2026-10-20",
+      "description": "Term dates, mid-term breaks, assessment weeks, and public holidays for the 2026/2027 academic year."
+    },
+    {
+      "title": "Uniform, Kit & Equipment List",
+      "category": "Parents",
+      "type": "pdf",
+      "size": "140 KB",
+      "href": "/documents/uniform-list.pdf",
+      "updated": "2026-10-01",
+      "description": "Cream & sky-blue polo, navy trousers/skirt, white head veil with crest, PE kit, and shoe guidelines."
+    },
+    {
+      "title": "Transport Routes & Timetable",
+      "category": "Parents",
+      "type": "pdf",
+      "size": "118 KB",
+      "href": "/documents/transport-routes.pdf",
+      "updated": "2026-10-12",
+      "description": "Monitored school bus routes across Zanzibar Urban/West with pickup times."
+    },
+    {
+      "title": "Child Protection & Safeguarding Policy",
+      "category": "Policies",
+      "type": "pdf",
+      "size": "224 KB",
+      "href": "/documents/safeguarding-policy.pdf",
+      "updated": "2026-09-01",
+      "description": "Reporting routes, screening of staff and volunteers, and our child-safety code."
+    },
+    {
+      "title": "Anti-Bullying & Positive Behaviour Code",
+      "category": "Policies",
+      "type": "pdf",
+      "size": "156 KB",
+      "href": "/documents/behaviour-policy.pdf",
+      "updated": "2026-09-01",
+      "description": "Restorative steps, classroom expectations, and how we partner with parents."
+    },
+    {
+      "title": "Term Report Template & Grading Key",
+      "category": "Academics",
+      "type": "pdf",
+      "size": "88 KB",
+      "href": "/documents/report-template.pdf",
+      "updated": "2026-09-20",
+      "description": "How NECTA and Cambridge Primary assessments are graded and reported to parents."
+    },
+    {
+      "title": "Staff Vacancies — Recruitment Pack (Deadline 4 Dec 2026)",
+      "category": "Careers",
+      "type": "pdf",
+      "size": "102 KB",
+      "href": "/documents/careers.pdf",
+      "updated": "2026-10-26",
+      "description": "Openings for Cambridge & General Teachers, Accountant, Receptionist, and Media & IT Officer."
+    }
+  ],
+  "categories": [
+    "All",
+    "Fees",
+    "Admissions",
+    "Calendar",
+    "Parents",
+    "Policies",
+    "Academics",
+    "Careers"
+  ],
+  "downloadsNote": "Documents are hosted directly on the site. Download the official 2026/2027 Fee Structure PDF above for full annual and monthly fee tables.",
+  "termDates": [
+    {
+      "term": "January 2027 Intake — Term 1",
+      "dates": "11 January 2027 – 9 April 2027",
+      "note": "New family orientation on 8 January 2027. Mid-term break in February."
+    },
+    {
+      "term": "Term 2",
+      "dates": "26 April 2027 – 30 July 2027",
+      "note": "Mid-year NECTA and Cambridge progression assessments and Science Fair."
+    },
+    {
+      "term": "Term 3",
+      "dates": "30 August 2027 – 3 December 2027",
+      "note": "End-of-year assessments, Sports Day, Culture Day, and Graduation ceremony."
+    }
+  ],
+  "keyDates": [
+    {
+      "date": "2026-11-07",
+      "label": "Open Day & Campus Tour (10:00)",
+      "kind": "Admissions"
+    },
+    {
+      "date": "2026-12-04",
+      "label": "Teacher & Staff Recruitment Deadline",
+      "kind": "Careers"
+    },
+    {
+      "date": "2027-01-08",
+      "label": "New Family Orientation Morning",
+      "kind": "Admissions"
+    },
+    {
+      "date": "2027-01-11",
+      "label": "January 2027 Intake — First Day of Term",
+      "kind": "Term"
+    }
+  ],
+  "calendarNote": "The calendar is also shared with parents by WhatsApp and SMS before each term and posted on the parent portal.",
+  "uniform": {
+    "title": "School uniform & appearance",
+    "intro": "One uniform for every learner, worn identically across our NECTA and Cambridge wings. Please note: school uniform and club fees are communicated separately from the annual tuition schedule.",
+    "items": [
+      {
+        "name": "Cream polo shirt",
+        "detail": "Sky-blue collar and cuff trim, school crest embroidered on the left chest."
+      },
+      {
+        "name": "Navy blue trousers or skirt",
+        "detail": "Plain navy trousers or knee-length skirt worn by primary and pre-primary pupils."
+      },
+      {
+        "name": "Head veil (girls who wear it)",
+        "detail": "Plain white or sky-blue trim, with the school crest embroidered cleanly on the front."
+      },
+      {
+        "name": "Navy sweatshirt",
+        "detail": "Optional for cool mornings and rainy days, with the school crest on the chest."
+      },
+      {
+        "name": "Shoes & socks",
+        "detail": "Black closed-toe school shoes with navy or white socks."
+      },
+      {
+        "name": "Sports & PE kit",
+        "detail": "School PE shirt and navy track bottoms/shorts; house-coloured bibs issued on Sports Day."
+      },
+      {
+        "name": "Stationery & exercise books",
+        "detail": "Included directly in your monthly fee structure for both NECTA and Cambridge streams."
+      },
+      {
+        "name": "Lab coats & aprons",
+        "detail": "Provided by the school for science practicals and creative art sessions."
+      }
+    ],
+    "buy": "Uniform details and sizing are provided at the admissions office upon registration.",
+    "note": "No child is ever sent home for a missing uniform item; the office keeps spare stock and helps families sort it out.",
+    "swatches": [
+      {
+        "label": "Cream polo",
+        "hex": "#F4EFE3",
+        "text": "#0d1a2b"
+      },
+      {
+        "label": "Sky collar & cuffs",
+        "hex": "#8FD1F2",
+        "text": "#02324d"
+      },
+      {
+        "label": "Navy trousers / skirt",
+        "hex": "#12294F",
+        "text": "#ffe394"
+      },
+      {
+        "label": "Crest: navy & gold",
+        "hex": "#00275c",
+        "text": "#fdcb24"
+      }
+    ]
+  }
+}

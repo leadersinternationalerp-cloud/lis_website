@@ -1,0 +1,266 @@
+{
+  "title": "Academics",
+  "eyebrow": "Curriculum & Learning",
+  "intro": "Two respected pathways on one campus in Kisakasaka: the NECTA Tanzanian national curriculum (Grades 1–6) and our Cambridge Assessment International Education Wing (Years 1–6), built on a joyful Pre-Primary foundation.",
+  "levels": [
+    {
+      "id": "pre-primary",
+      "name": "Baby Class & Nursery",
+      "ages": "Ages 2.5–5 · Baby Class, KG1 & KG2",
+      "summary": "Play-based early childhood learning where every child builds confidence in phonics, early numeracy, social sharing, and bilingual communication.",
+      "image": "/media/gallery-reading-corner.jpg",
+      "highlights": [
+        "Two caring educators in every room, maximum 18 children",
+        "Daily phonics, storytelling, and hands-on number sense",
+        "Shaded outdoor play, creative arts, and a structured rest hour",
+        "English and Swahili spoken warmly throughout the day",
+        "Breakfast, hot lunch, and daily Madrasa / moral stories included"
+      ],
+      "subjects": [
+        "Early Literacy & Phonics",
+        "Number Sense",
+        "Creative Arts & Music",
+        "World Discovery",
+        "Physical Play & Motor Skills",
+        "Madrasa & Good Manners"
+      ]
+    },
+    {
+      "id": "necta-primary",
+      "name": "NECTA Primary Wing",
+      "ages": "Grades 1–6 (Ages 6–12)",
+      "summary": "The Tanzanian national curriculum taught in English with strong Swahili mastery, small classes, weekly laboratory science, and thorough preparation for national assessments.",
+      "image": "/media/gallery-classroom.jpg",
+      "highlights": [
+        "Capped at 24 pupils per class for personal attention",
+        "Daily 30-minute guided reading and library borrowing",
+        "Practical science and computer lessons from Grade 1",
+        "All stationery, breakfast, hot lunch, and Madrasa included in fees",
+        "Termly parent-teacher conferences with clear written targets"
+      ],
+      "subjects": [
+        "English Language",
+        "Kiswahili",
+        "Mathematics",
+        "Science & Technology",
+        "Social Studies & Civics",
+        "Arabic & Islamic / Moral Studies",
+        "ICT & Coding",
+        "Creative Arts & Sports"
+      ]
+    },
+    {
+      "id": "cambridge-primary",
+      "name": "Cambridge International Wing",
+      "ages": "Cambridge Years 1–6 (Ages 5–11)",
+      "summary": "Our Cambridge Assessment International Education stream develops inquiry, critical thinking, and global fluency across Lower and Upper Primary (Years 1–3 and Years 4–6).",
+      "image": "/media/gallery-lab.jpg",
+      "highlights": [
+        "Official Cambridge Primary progression from Year 1 to Year 6",
+        "Inquiry-led Science and Mathematics in dedicated labs",
+        "Global Perspectives, Art & Design, and strong English literacy",
+        "Seamless international benchmark for globally mobile and local families",
+        "Includes full stationery pack, daily breakfast & lunch, and Madrasa"
+      ],
+      "subjects": [
+        "Cambridge Primary English",
+        "Cambridge Primary Mathematics",
+        "Cambridge Primary Science",
+        "Global Perspectives",
+        "Humanities",
+        "Computing & Digital Literacy",
+        "Art & Design",
+        "Kiswahili & Arabic",
+        "Physical Education"
+      ]
+    },
+    {
+      "id": "languages-values",
+      "name": "Madrasa, Languages & Leadership",
+      "ages": "All Classes · Baby Class to Year 6",
+      "summary": "Rooted in Zanzibari heritage and global citizenship: daily Madrasa and character education alongside English, Kiswahili, and Arabic fluency.",
+      "image": "/media/gallery-culture-day.jpg",
+      "highlights": [
+        "Daily timetabled Madrasa and moral reflection included in the fee structure",
+        "Trilingual exposure: English medium with strong Kiswahili and Arabic",
+        "Weekly assembly speaking roles so every child learns to address an audience",
+        "Nutritious school breakfast and hot lunch served fresh every day",
+        "Safe, inclusive environment with a full-time pastoral care officer"
+      ],
+      "subjects": [
+        "Qur'an & Madrasa Studies",
+        "Character & Ethics",
+        "Public Speaking & Debate",
+        "Arabic Language",
+        "Zanzibar Heritage & Culture",
+        "Community Service"
+      ]
+    }
+  ],
+  "enrichment": {
+    "title": "Clubs, games and leadership",
+    "text": "Every learner joins afternoon clubs and sports alongside their classroom studies, discovering talents in technology, arts, athletics, and leadership.",
+    "items": [
+      {
+        "icon": "cpu",
+        "title": "Robotics & Coding",
+        "text": "Block-based coding, Scratch, and hands-on STEM kits in our 34-workstation computer lab."
+      },
+      {
+        "icon": "mic",
+        "title": "Debate & Public Speaking",
+        "text": "Weekly assembly showcases and junior debate circles in English and Kiswahili."
+      },
+      {
+        "icon": "music",
+        "title": "Arts, Ngoma & Choir",
+        "text": "Drawing, painting, traditional percussion ensemble, and Culture Day performances."
+      },
+      {
+        "icon": "ball",
+        "title": "Football, Netball & Athletics",
+        "text": "House competitions, physical education, and annual Sports Day on the Kisakasaka field."
+      },
+      {
+        "icon": "waves",
+        "title": "Swimming & Water Safety",
+        "text": "Structured learn-to-swim sessions and water confidence for primary classes."
+      },
+      {
+        "icon": "leaf",
+        "title": "Environment & Global Perspectives",
+        "text": "School kitchen garden, recycling projects, and community care around Kisakasaka."
+      },
+      {
+        "icon": "camera",
+        "title": "Media & Storytelling",
+        "text": "Junior photography, school newsletter writing, and creative visual projects."
+      },
+      {
+        "icon": "book",
+        "title": "Reading & Writers Club",
+        "text": "640 library titles, daily reading logs, and our annual bilingual story anthology."
+      }
+    ]
+  },
+  "results": {
+    "title": "Academic standards, honestly reported",
+    "note": "We track every child's literacy, numeracy, and science mastery across both our NECTA and Cambridge Primary wings.",
+    "highlights": [
+      {
+        "value": "98%",
+        "label": "NECTA Primary pass rate (Grade A–B)"
+      },
+      {
+        "value": "24:1",
+        "label": "Maximum pupils per primary classroom"
+      },
+      {
+        "value": "2nd",
+        "label": "Primary average in Kati district"
+      },
+      {
+        "value": "100%",
+        "label": "Transition to top secondary schools"
+      }
+    ],
+    "table": {
+      "caption": "Primary progression & assessment record",
+      "columns": [
+        "Year",
+        "Cohort",
+        "Grade A–B",
+        "Overall Pass",
+        "Highlight"
+      ],
+      "rows": [
+        [
+          "2026",
+          "Grade 6 & Year 6",
+          "84%",
+          "99%",
+          "Top district science project"
+        ],
+        [
+          "2025",
+          "Grade 6 & Year 6",
+          "81%",
+          "98%",
+          "19 straight-A distinctions"
+        ],
+        [
+          "2024",
+          "Standard 6",
+          "78%",
+          "97%",
+          "16 distinctions"
+        ],
+        [
+          "2023",
+          "Standard 6",
+          "74%",
+          "95%",
+          "12 distinctions"
+        ],
+        [
+          "2022",
+          "Standard 6",
+          "71%",
+          "94%",
+          "10 distinctions"
+        ]
+      ]
+    }
+  },
+  "dayInLife": [
+    {
+      "time": "07:15",
+      "text": "Gates open; school buses arrive; teachers welcome pupils at the courtyard."
+    },
+    {
+      "time": "07:35",
+      "text": "Morning assembly, national anthem, and reflection of the day."
+    },
+    {
+      "time": "08:00",
+      "text": "Morning core lessons (English, Mathematics, Science) with school breakfast break at 09:45."
+    },
+    {
+      "time": "12:30",
+      "text": "Hot nutritious lunch from the school kitchen, rest, and library reading corner."
+    },
+    {
+      "time": "13:20",
+      "text": "Afternoon lessons: Humanities, ICT/Lab practicals, Art & Design, and daily Madrasa."
+    },
+    {
+      "time": "15:15",
+      "text": "Clubs, games, and guided homework support on Tuesday and Thursday afternoons."
+    },
+    {
+      "time": "16:15",
+      "text": "School buses depart Kisakasaka campus; parent pick-up at the visitor bay."
+    }
+  ],
+  "approach": {
+    "title": "How we teach",
+    "points": [
+      {
+        "title": "Assessment for learning",
+        "text": "Every unit starts with a short diagnostic and ends with a written target shared with parents. No surprises at the end of term."
+      },
+      {
+        "title": "Language with purpose",
+        "text": "English for academic fluency across NECTA and Cambridge streams, Swahili for national pride, and Arabic in Madrasa."
+      },
+      {
+        "title": "Stationery & meals provided",
+        "text": "Every child receives the same high-quality books, stationery, breakfast, and lunch at school — ready to focus on learning."
+      },
+      {
+        "title": "Reporting every learner by name",
+        "text": "Class teachers review each pupil's progress every half term and invite parents in early whenever extra support is needed."
+      }
+    ]
+  }
+}

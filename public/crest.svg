@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="240" height="240" role="img" aria-label="Leaders International School crest">
+  <defs>
+    <path id="arc" d="M60 60 m-46 0 a46 46 0 1 1 92 0 a46 46 0 1 1 -92 0"/>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d4b93"/><stop offset=".55" stop-color="#00275c"/><stop offset="1" stop-color="#02132c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#navy)"/>
+  <circle cx="60" cy="60" r="57" fill="none" stroke="#fdcb24" stroke-width="1.6"/>
+  <circle cx="60" cy="60" r="35.5" fill="#f5f8fc" stroke="#fdcb24" stroke-width="1.4"/>
+  <text fill="#fdcb24" font-family="Poppins, Segoe UI, sans-serif" font-size="8.6" font-weight="700" letter-spacing="1.4">
+    <textPath href="#arc" startOffset="50%" text-anchor="middle">LEADERS INTERNATIONAL SCHOOL</textPath>
+  </text>
+  <g stroke="#7ba5db" stroke-width="1.7" fill="none" opacity=".9"><path d="M31 74c-6-8-7-19-2-27"/><path d="M89 74c6-8 7-19 2-27"/></g>
+  <g fill="#adc8ea" opacity=".9"><ellipse cx="28.5" cy="60" rx="3.4" ry="1.7" transform="rotate(-28 28.5 60)"/><ellipse cx="27.6" cy="68" rx="3.4" ry="1.7" transform="rotate(-14 27.6 68)"/><ellipse cx="91.5" cy="60" rx="3.4" ry="1.7" transform="rotate(28 91.5 60)"/><ellipse cx="92.4" cy="68" rx="3.4" ry="1.7" transform="rotate(14 92.4 68)"/></g>
+  <path d="M60 30c4.5 5.2 6.8 8.7 6.8 11.8A6.8 6.8 0 0 1 53.2 42c0-3.2 2.3-6.7 6.8-12z" fill="#fdcb24"/>
+  <path d="M60 36.4c2 2.6 2.9 4.2 2.9 5.6a2.9 2.9 0 1 1-5.8 0c0-1.4.9-3 2.9-5.6z" fill="#fff" opacity=".85"/>
+  <rect x="57.6" y="43" width="4.8" height="4" rx="1.2" fill="#0d3c7c"/>
+  <path d="M58.2 47h3.6l1 17h-5.6z" fill="#0d3c7c"/>
+  <path d="M60 70.5c-4-3-9-4-14-3.4v12.6c5-.6 10 .4 14 3.4 4-3 9-4 14-3.4V67.1c-5-.6-10 .4-14 3.4z" fill="#0d3c7c"/>
+  <path d="M60 70.5v12.6" stroke="#f5f8fc" stroke-width="1.4"/>
+  <path d="M49.5 72.5h7M63.5 72.5h7M49.5 76h6M64.5 76h6" stroke="#adc8ea" stroke-width="1.1"/>
+  <path d="M22 88h76l-6 6 6 6H22l6-6z" fill="#fdcb24"/>
+  <text x="60" y="95.6" text-anchor="middle" fill="#02132c" font-family="Poppins, Segoe UI, sans-serif" font-size="7.4" font-weight="700">LEARN TODAY · LEAD TOMORROW</text>
+</svg>
