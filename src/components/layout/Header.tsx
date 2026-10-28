@@ -43,7 +43,7 @@ export function Header({ site }: { site: SiteConfig }) {
   return (
     <header className="no-print sticky top-0 z-50">
       {/* utility bar */}
-      <div className="bg-navy-950 text-[.78rem] text-navy-100">
+      <div className="bg-navy-950/95 backdrop-blur-sm text-[.78rem] text-navy-100">
         <div className="shell flex h-11 items-center justify-between gap-4">
           <div className="flex min-w-0 items-center gap-4">
             <span className="flex items-center gap-1.5 truncate">
@@ -109,7 +109,7 @@ export function Header({ site }: { site: SiteConfig }) {
       <div
         className={cx(
           "relative border-b transition-all duration-300",
-          scrolled ? "border-hairline bg-white/95 shadow-[0_10px_30px_-24px_rgb(0_40_72_.45)] backdrop-blur" : "border-transparent bg-white",
+          scrolled ? "border-hairline/80 bg-white/85 shadow-[0_12px_36px_-24px_rgb(0_40_72_.25)] backdrop-blur-md" : "border-transparent bg-white/95 backdrop-blur-sm",
         )}
         onMouseLeave={() => setMenu(null)}
       >

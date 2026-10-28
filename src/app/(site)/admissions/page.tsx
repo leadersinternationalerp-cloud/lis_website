@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Icon } from "@/components/ui/Icon";
+import { Img } from "@/components/ui/Img";
 import { PageHero } from "@/components/sections/PageHero";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { Timeline } from "@/components/sections/Timeline";
@@ -40,6 +41,61 @@ export default function AdmissionsPage() {
             <span className="max-w-2xl">{admissions.openNote}</span>
           </p>
           <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-quiet shrink-0 !py-2.5 !text-[.86rem]"><Icon name="download" size={15} /> Official 2026/2027 Fee PDF</a>
+        </div>
+      </section>
+
+      {/* Official Admissions Poster Announcement */}
+      <section className="py-12 lg:py-16 bg-white border-b border-hairline">
+        <div className="shell">
+          <div className="overflow-hidden rounded-3xl border border-sky-200/80 bg-paper shadow-card transition duration-500 hover:shadow-lift">
+            <div className="grid lg:grid-cols-[1.12fr_.88fr] items-center">
+              <a
+                href="/media/admissions-open-banner.jpg"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="group relative block aspect-[2/1] w-full overflow-hidden bg-navy-950"
+                title="Click to view full-size admissions poster"
+              >
+                <Img
+                  src="/media/admissions-open-banner.jpg"
+                  alt="Leaders International School Admissions Open All Classes"
+                  priority
+                  unoptimized
+                  cdnWidth={1200}
+                  sizes="(max-width:1024px) 100vw, 55vw"
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-navy-900/10 transition group-hover:bg-transparent" />
+                <span className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-full bg-navy-900/80 px-3 py-1.5 text-[.74rem] font-semibold text-white shadow-soft backdrop-blur-md">
+                  <Icon name="search" size={13} /> View Full Poster
+                </span>
+              </a>
+              <div className="p-7 lg:p-10">
+                <span className="eyebrow eyebrow-sky inline-flex items-center gap-2">
+                  <span className="h-2 w-2 rounded-full bg-gold-400 animate-pulse" />
+                  Interviews Ongoing
+                </span>
+                <h2 className="mt-3 font-display text-[1.65rem] lg:text-[2.1rem] font-extrabold tracking-tight text-navy-900 leading-tight">
+                  Admissions Open for All Classes
+                </h2>
+                <p className="mt-3 text-[.98rem] leading-relaxed text-slate-body">
+                  Leaders International School is now welcoming prospective learners across both Cambridge Assessment International Education and NECTA National curricula — Baby Class, Nursery (KG1 & KG2), through Primary Grades 1–6 / Years 1–6.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <Link href="/apply" className="btn btn-gold">
+                    Apply Online Now <Icon name="arrow-right" size={16} />
+                  </Link>
+                  <a href="tel:+255777427140" className="btn btn-navy">
+                    <Icon name="phone" size={16} /> +255 777 427 140
+                  </a>
+                </div>
+                <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-hairline pt-4 text-[.82rem] text-slate-body">
+                  <span>Direct Admissions: <strong className="text-navy-900">+255 777 427 140</strong></span>
+                  <span>Email: <a href="mailto:admissions@leaderinternationalschool.ac.tz" className="font-semibold text-sky-600 underline">admissions@leaderinternationalschool.ac.tz</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

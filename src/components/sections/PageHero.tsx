@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Icon } from "@/components/ui/Icon";
 import { Img } from "@/components/ui/Img";
 import { cx } from "@/lib/utils";
@@ -33,8 +34,22 @@ export function PageHero({
         </div>
       ) : null}
       <div className="pointer-events-none absolute -left-24 bottom-[-30%] h-[360px] w-[360px] rounded-full bg-sky-400/20 blur-3xl" />
+
+      {/* Transparent logo watermark on the hero header */}
+      <div className="pointer-events-none absolute -right-12 -top-10 sm:-right-8 sm:-top-8 lg:right-10 lg:-top-6 h-64 w-64 lg:h-84 lg:w-84 select-none opacity-[0.08] transition-opacity">
+        <Image
+          src="/logo.png"
+          alt=""
+          width={320}
+          height={320}
+          unoptimized
+          priority
+          className="h-full w-full object-contain"
+        />
+      </div>
+
       <div className={cx("shell relative", align === "center" && "text-center")}>
-        <nav aria-label="Breadcrumb" className={cx("mb-5 flex flex-wrap items-center gap-1.5 text-[.8rem] text-navy-200", align === "center" && "justify-center")}>
+        <nav aria-label="Breadcrumb" className={cx("mb-5 inline-flex flex-wrap items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.06] px-3.5 py-1 text-[.8rem] text-navy-200 backdrop-blur-md shadow-sm", align === "center" && "justify-center")}>
           <Link href="/" className="transition hover:text-sky-300">Home</Link>
           {(crumbs ?? []).map((c) => (
             <span key={c.label} className="flex items-center gap-1.5">

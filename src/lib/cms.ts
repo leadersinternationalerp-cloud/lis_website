@@ -52,7 +52,8 @@ const PHOTO_QUERY = `*[_type == "photo"] | order(order asc, _createdAt desc) {
   "src": image.asset->url,
   title,
   caption,
-  album
+  album,
+  slot
 }`;
 
 const RESOURCE_QUERY = `*[_type == "resource"] | order(category asc, title asc) {
@@ -140,6 +141,20 @@ export const cms = {
     return rows
       .filter((r) => str(r.src))
       .map((r) => ({ src: str(r.src), title: r.title ? str(r.title) : undefined, caption: r.caption ? str(r.caption) : undefined, album: r.album ? str(r.album) : undefined }));
+  },
+
+  async photoSlots(): Promise<Record<string, string>> {
+    const rows = await safe(() => client!.fetch<Loose[]>(PHOTO_QUERY), "photoSlots");
+    const map: Record<string, string> = {};
+    if (!rows?.length) return map;
+    for (const r of rows) {
+      const slot = str(r.slot).trim();
+      const src = str(r.src).trim();
+      if (slot && src && !map[slot]) {
+        map[slot] = src;
+      }
+    }
+    return map;
   },
 
   async resources(): Promise<ResourceDoc[] | null> {

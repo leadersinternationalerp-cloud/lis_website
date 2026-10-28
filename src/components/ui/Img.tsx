@@ -11,10 +11,11 @@ type Props = {
   cdnWidth?: number;
   priority?: boolean;
   rounded?: string;
+  unoptimized?: boolean;
 };
 
 /** fill-based image with sensible defaults for every card and hero on the site. */
-export function Img({ src, alt, className, sizes = "(max-width: 768px) 100vw, 50vw", cdnWidth, priority }: Props) {
+export function Img({ src, alt, className, sizes = "(max-width: 768px) 100vw, 50vw", cdnWidth, priority, unoptimized }: Props) {
   const resolved = resolveSrc(src);
   if (!resolved) {
     return (
@@ -30,6 +31,7 @@ export function Img({ src, alt, className, sizes = "(max-width: 768px) 100vw, 50
       fill
       sizes={sizes}
       priority={priority}
+      unoptimized={unoptimized}
       className={cx("object-cover", className)}
     />
   );

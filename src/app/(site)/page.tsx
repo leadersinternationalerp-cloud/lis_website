@@ -1,6 +1,7 @@
 import { FeatureStrip } from "@/components/sections/FeatureStrip";
 import { GalleryPreview } from "@/components/sections/GalleryPreview";
 import { Hero } from "@/components/sections/Hero";
+import { AdmissionsSpotlight } from "@/components/sections/AdmissionsSpotlight";
 import { NewsPreview } from "@/components/sections/NewsPreview";
 import { ProgramsPreview } from "@/components/sections/ProgramsPreview";
 import { StatsBand } from "@/components/sections/StatsBand";
@@ -16,6 +17,7 @@ export default async function HomePage() {
     <>
       <Hero site={site} />
       <FeatureStrip site={site} />
+      <AdmissionsSpotlight />
       <ProgramsPreview />
       <WhyUs site={site} />
       <StatsBand site={site} />

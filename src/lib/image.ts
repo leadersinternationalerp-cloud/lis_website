@@ -1,12 +1,19 @@
 /**
  * One place that decides how an image reference becomes a usable URL.
- * - "/media/x.jpg"      -> served from /public (works offline, and in the sandboxed preview)
+ * - "/media/x.jpg"      -> served from /public (or overridden by a Sanity photo slot!)
  * - "https://cdn…"      -> Sanity CDN or any absolute URL, optionally resized
  */
+
+let slotOverrides: Record<string, string> = {};
+
+export function setSlotOverrides(map: Record<string, string>) {
+  slotOverrides = map;
+}
 
 export function resolveSrc(ref?: string | null) {
   if (!ref) return "";
   const trimmed = ref.trim();
+  if (slotOverrides[trimmed]) return slotOverrides[trimmed];
   if (trimmed.startsWith("/") || trimmed.startsWith("http")) return trimmed;
   // Sanity asset reference like "image-<id>-1408x768-jpg"
   const m = /^image-([a-f0-9]+)-(\d+)x(\d+)-(\w+)$/.exec(trimmed);

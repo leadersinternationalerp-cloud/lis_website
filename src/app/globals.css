@@ -143,6 +143,34 @@ h1, h2, h3, h4, .font-display { font-family: var(--font-display); }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); border-color: var(--color-sky-300); }
 .card-flat { background: #fff; border: 1px solid var(--color-hairline); border-radius: 16px; }
 
+/* ---------------------------------------------------------------- glass / transparent */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 16px 36px -18px rgb(0 40 72 / 0.16);
+}
+.glass-panel-dark {
+  background: rgba(1, 19, 38, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 20px 40px -20px rgb(0 0 0 / 0.4);
+}
+.glass-pill {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+}
+.glass-pill:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.38);
+  transform: translateY(-1px);
+}
+
 .icon-chip {
   display: grid; place-items: center; width: 54px; height: 54px; border-radius: 999px;
   background: linear-gradient(145deg, #0b4d6c, var(--color-navy-800));

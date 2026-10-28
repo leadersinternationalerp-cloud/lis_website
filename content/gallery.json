@@ -25,10 +25,52 @@
   ],
   "photos": [
     {
+      "src": "/media/admissions-open-banner.jpg",
+      "album": "campus",
+      "title": "Admissions Open — All Classes (Interviews Ongoing)",
+      "caption": "Official Cambridge Assessment International Education & NECTA admissions announcement."
+    },
+    {
       "src": "/media/hero-students.jpg",
       "album": "campus",
       "title": "Reading group in Grade 4",
       "caption": "Cream polos with the sky-blue collar and the school crest on the chest — our everyday uniform."
+    },
+    {
+      "src": "/media/infrastructure-classroom-nursery.jpg",
+      "album": "campus",
+      "title": "Early Years & Nursery Classroom",
+      "caption": "Bright, child-scale learning environment with natural wood furnishings, reading displays, and garden-view windows."
+    },
+    {
+      "src": "/media/infrastructure-activity-room.avif",
+      "album": "campus",
+      "title": "Pre-Primary Play & Discovery Room",
+      "caption": "Interactive sensory toys, play train, activity carpets, and storytelling corners designed for young learners."
+    },
+    {
+      "src": "/media/infrastructure-sports-field.png",
+      "album": "sport",
+      "title": "Campus Sports Turf & Training Pitch",
+      "caption": "Dedicated artificial turf training pitch with agility cones and football goals for physical education."
+    },
+    {
+      "src": "/media/infrastructure-outdoor-garden.png",
+      "album": "campus",
+      "title": "Nature Walkway & Outdoor Learning Garden",
+      "caption": "Stone pathway, open-air activity stations, and hands-on nature discovery beds."
+    },
+    {
+      "src": "/media/learning-blocks-sensory.avif",
+      "album": "library",
+      "title": "Phonics & Sensory Learning Tools",
+      "caption": "Wooden alphabet blocks and sensory building materials for early literacy development."
+    },
+    {
+      "src": "/media/learning-creative-arts.avif",
+      "album": "culture",
+      "title": "Creative Arts & Expression Corner",
+      "caption": "Vibrant painting palettes, brushes, and craft materials inspiring imaginative expression."
     },
     {
       "src": "/media/gallery-assembly.jpg",

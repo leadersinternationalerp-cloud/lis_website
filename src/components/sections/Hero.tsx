@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Img } from "@/components/ui/Img";
 import { Icon } from "@/components/ui/Icon";
 import { ButtonLink } from "@/components/ui/ButtonLink";
@@ -14,6 +15,19 @@ export function Hero({ site }: { site: SiteConfig }) {
         <div className="absolute inset-0 opacity-[.5] [clip-path:polygon(0_0,100%_0,100%_74%,74%_100%,0_92%)] [background-image:linear-gradient(to_right,rgb(56_192_200/.08)_1px,transparent_1px)] [background-size:78px_100%]" />
       </div>
       <div className="pointer-events-none absolute -right-24 top-10 -z-10 h-[460px] w-[460px] rounded-full bg-sky-400/20 blur-3xl" />
+
+      {/* Transparent crest logo watermark in hero header background */}
+      <div className="pointer-events-none absolute right-[44%] top-6 -z-10 hidden h-80 w-80 select-none opacity-[0.065] lg:block">
+        <Image
+          src="/logo.png"
+          alt=""
+          width={340}
+          height={340}
+          unoptimized
+          priority
+          className="h-full w-full object-contain"
+        />
+      </div>
 
       <div className="shell relative grid items-center gap-12 lg:grid-cols-[1.02fr_.98fr] lg:gap-10">
         <div className="reveal-mask max-w-xl">
@@ -42,7 +56,7 @@ export function Hero({ site }: { site: SiteConfig }) {
           <ul className="mt-9 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-sky-300/20 pt-6">
             {(hero.badges ?? []).map((b) => (
               <li key={b.text} className="flex items-center gap-2 text-[.85rem] font-semibold text-navy-100">
-                <span className="grid h-7 w-7 place-items-center rounded-full bg-sky-400/15 text-sky-300 ring-1 ring-sky-400/35">
+                <span className="grid h-7 w-7 place-items-center rounded-full bg-sky-400/15 text-sky-300 ring-1 ring-sky-400/35 backdrop-blur-sm">
                   <Icon name={b.icon} size={14} />
                 </span>
                 {b.text}
@@ -71,7 +85,7 @@ export function Hero({ site }: { site: SiteConfig }) {
             </span>
           </span>
 
-          <div className="absolute -bottom-6 left-4 right-4 rounded-2xl border border-sky-200 bg-white/95 p-3.5 shadow-card backdrop-blur sm:left-auto sm:right-4 sm:top-auto sm:w-[268px]">
+          <div className="absolute -bottom-6 left-4 right-4 rounded-2xl border border-white/50 bg-white/85 p-3.5 shadow-card backdrop-blur-md sm:left-auto sm:right-4 sm:top-auto sm:w-[268px]">
             <div className="flex items-center gap-3">
               <span className="icon-chip icon-chip--sky !h-11 !w-11"><Icon name="trophy" size={19} /></span>
               <div className="min-w-0">
