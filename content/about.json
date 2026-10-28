@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "About Leaders International School",
     "title": "A school built on attention, not assembly lines",
-    "text": "Since 2009 we have taught Zanzibari children to read widely, reason clearly and take responsibility for the person next to them. Today our Kisakasaka campus brings together our NECTA National Wing and our Cambridge International Wing under one caring roof.",
+    "text": "Established in 2026, Leaders International School brings together our NECTA National Wing and Cambridge International Wing on a purpose-built campus in Kisakasaka, Zanzibar. We teach children to read widely, reason clearly, and lead with character.",
     "image": "/media/infrastructure-activity-room.avif"
   },
   "missionVision": [
@@ -55,44 +55,34 @@
     }
   ],
   "story": {
-    "title": "How LIS grew",
+    "title": "Building a Modern School",
     "items": [
       {
-        "year": "2009",
-        "title": "Two classrooms in Kisakasaka",
-        "text": "Forty-one nursery and Grade 1 pupils, three teachers, and a rented hall."
+        "year": "2026",
+        "title": "A Purpose-Built Campus in Kisakasaka",
+        "text": "Construction and commissioning of our modern 4.2-hectare campus, complete with bright classrooms, science labs, ICT facility, and sports grounds."
       },
       {
-        "year": "2013",
-        "title": "First primary cohort completes",
-        "text": "Our primary class sat the leaving examination with the second-highest average in the district."
+        "year": "2026",
+        "title": "Dual Curricula Accreditation",
+        "text": "Full registration with the Ministry of Education Zanzibar, Tanzanian NECTA curriculum approval, and Cambridge Primary pathway integration."
       },
       {
-        "year": "2017",
-        "title": "Science & ICT laboratories open",
-        "text": "Dedicated practical science and computer rooms commissioned for upper primary learners."
-      },
-      {
-        "year": "2021",
-        "title": "Library & Madrasa expansion",
-        "text": "Expanded campus library, hot school kitchen, and integrated daily Madrasa programme."
-      },
-      {
-        "year": "2025",
-        "title": "Cambridge International Wing",
-        "text": "Launch of our Cambridge Assessment International Education Primary stream (Years 1–6) alongside NECTA Grades 1–6."
+        "year": "2026",
+        "title": "Expert Teaching Faculty",
+        "text": "Recruitment and rigorous onboarding of forty-two vetted educators and pastoral leads dedicated to small-class teaching."
       },
       {
         "year": "2026/27",
-        "title": "Growing for the January 2027 intake",
-        "text": "650+ learners across Baby Class, Nursery, NECTA Grades 1–6, and Cambridge Years 1–6 on one purpose-built campus."
+        "title": "January 2027 Inaugural Intake",
+        "text": "Welcoming our foundational cohorts across Baby Class, Nursery (KG1 & KG2), NECTA Grades 1–6, and Cambridge Years 1–6."
       }
     ]
   },
   "facts": [
     {
       "label": "Founded",
-      "value": "2009"
+      "value": "2026"
     },
     {
       "label": "Learners",
@@ -123,7 +113,7 @@
         "name": "Dr. Juma A. Khamis",
         "role": "Head Teacher",
         "qualification": "PhD Education Leadership, UDSM",
-        "bio": "Twenty-six years in Zanzibari and East African schools. Joined LIS in 2011 and leads both the NECTA and Cambridge wings.",
+        "bio": "Over twenty-five years of leadership in Zanzibari and East African education. Appointed Head Teacher at LIS to lead both our NECTA and Cambridge wings.",
         "email": "info@leaderinternationalschool.ac.tz",
         "photo": ""
       },

@@ -13,7 +13,7 @@ import { initials } from "@/lib/utils";
 
 export const metadata = buildMetadata({
   title: "About us",
-  description: "Leaders International School has taught Zanzibari children in Kisakasaka since 2009: Baby Class, Nursery (KG1 & KG2), NECTA Primary (Grades 1–6), and our Cambridge International Wing (Years 1–6).",
+  description: "Leaders International School was established in 2026 in Kisakasaka, Zanzibar: Baby Class, Nursery (KG1 & KG2), NECTA Primary (Grades 1–6), and our Cambridge International Wing (Years 1–6).",
   path: "/about",
   image: "/media/gallery-culture-day.jpg",
 });
@@ -54,7 +54,7 @@ export default function AboutPage() {
             <ul className="mt-4 grid gap-2">
               <li className="flex items-center gap-2.5 text-[.82rem] font-semibold text-navy-900">
                 <span className="grid h-5 w-5 place-items-center rounded-full bg-gold-400 text-navy-950 text-[11px] font-bold">✓</span>
-                <span>Established 2009 · 15+ Years of Care</span>
+                <span>Established 2026 · Purpose-Built Campus</span>
               </li>
               <li className="flex items-center gap-2.5 text-[.82rem] font-semibold text-navy-900">
                 <span className="grid h-5 w-5 place-items-center rounded-full bg-sky-400/20 text-sky-700 text-[11px] font-bold ring-1 ring-sky-300">✓</span>
@@ -91,7 +91,7 @@ export default function AboutPage() {
       <section className="paper border-y border-hairline py-16 lg:py-24">
         <div className="shell grid gap-12 lg:grid-cols-[1.05fr_.95fr] lg:gap-16">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <SectionHead eyebrow="Since 2009" title={about.story.title} lead="Two classrooms in a rented hall, and a promise that nobody in the class would be invisible." />
+            <SectionHead eyebrow="Founded 2026" title={about.story.title} lead="Built from the ground up in Kisakasaka: purpose-built classrooms, modern laboratories, and dual national & international pathways." />
             <div className="mt-8 grid gap-3 sm:grid-cols-2">
               {about.facts.map((f) => (
                 <div key={f.label} className="card-flat px-4 py-3.5">
