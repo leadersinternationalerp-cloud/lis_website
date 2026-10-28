@@ -209,19 +209,22 @@
   },
   "accreditations": [
     {
+      "icon": "shield",
       "title": "Ministry licensed",
       "text": "Registered with the President's Office — Ministry of Education and Vocational Training, Zanzibar."
     },
     {
+      "icon": "globe",
       "title": "Cambridge International Wing",
       "text": "Offering Cambridge Assessment International Education Primary programme across Years 1–3 and Years 4–6."
     },
     {
+      "icon": "award",
       "title": "NECTA National Curriculum",
-      "text": "Approved centre for the Tanzanian National Examinations Council (NECTA) curriculum from Grade 1 to Grade 6.",
-      "logo": "/media/necta.png"
+      "text": "Approved centre for the Tanzanian National Examinations Council (NECTA) curriculum from Grade 1 to Grade 6."
     },
     {
+      "icon": "heart",
       "title": "Safe-schools commitment",
       "text": "Signed child-protection policy, vetted staff, first-aid trained office, and nutritious daily meals on site."
     }

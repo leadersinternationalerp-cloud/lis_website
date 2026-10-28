@@ -188,13 +188,9 @@ export default function AboutPage() {
         <div className="shell grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {about.accreditations.map((a) => (
             <div key={a.title} className="flex gap-3.5">
-              {"logo" in a && a.logo ? (
-                <span className="mt-0.5 grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-full bg-white p-1 ring-1 ring-hairline">
-                  <Img src={a.logo} alt={a.title} cdnWidth={120} sizes="40px" className="object-contain" />
-                </span>
-              ) : (
-                <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-white text-gold-600 ring-1 ring-hairline"><Icon name="shield" size={17} /></span>
-              )}
+              <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-full bg-white text-gold-600 ring-1 ring-hairline shadow-soft">
+                <Icon name={"icon" in a && a.icon ? a.icon : "shield"} size={17} />
+              </span>
               <div>
                 <p className="font-display text-[.98rem] font-bold text-navy-900">{a.title}</p>
                 <p className="mt-1 text-[.86rem] leading-relaxed text-slate-body">{a.text}</p>
