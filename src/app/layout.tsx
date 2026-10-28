@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
-import { schoolJsonLd, SITE_URL, absolute } from "@/lib/seo";
+import { schoolJsonLd, websiteJsonLd, PRIMARY_DOMAIN, absolute } from "@/lib/seo";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,12 +19,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: { default: `${site.seo.siteName} — ${site.school.tagline}`, template: site.seo.titleTemplate },
+  metadataBase: new URL(PRIMARY_DOMAIN),
+  title: {
+    default: "Leaders International School (LIS) — Nursery & Primary School in Zanzibar | NECTA & Cambridge",
+    template: site.seo.titleTemplate,
+  },
   description: site.seo.description,
   keywords: site.seo.keywords,
-  applicationName: site.school.name,
-  authors: [{ name: site.school.name }],
+  applicationName: "Leaders International School (LIS)",
+  authors: [{ name: "Leaders International School (LIS)", url: PRIMARY_DOMAIN }],
+  creator: "Leaders International School",
+  publisher: "Leaders International School",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: PRIMARY_DOMAIN,
+  },
   icons: {
     icon: [
       { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
@@ -36,13 +49,39 @@ export const metadata: Metadata = {
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
-    siteName: site.seo.siteName,
-    title: `${site.seo.siteName} — ${site.school.tagline}`,
+    locale: "en_TZ",
+    alternateLocale: ["sw_TZ", "en_US", "en_GB"],
+    siteName: "Leaders International School (LIS)",
+    title: "Leaders International School (LIS) — Nursery & Primary School in Zanzibar",
     description: site.seo.description,
-    images: site.seo.openGraphImage ? [{ url: absolute(site.seo.openGraphImage), width: 1408, height: 768, alt: site.school.name }] : undefined,
+    url: PRIMARY_DOMAIN,
+    images: site.seo.openGraphImage
+      ? [{ url: absolute(site.seo.openGraphImage), width: 1408, height: 768, alt: "Leaders International School (LIS) Zanzibar Learners" }]
+      : undefined,
   },
-  twitter: { card: "summary_large_image" },
-  other: { "geo.region": "TZ-11", "geo.placename": site.location.label },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leaders International School (LIS) — Nursery & Primary School in Zanzibar",
+    description: site.seo.description,
+    images: site.seo.openGraphImage ? [absolute(site.seo.openGraphImage)] : undefined,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  other: {
+    "geo.region": "TZ-11",
+    "geo.placename": site.location.label,
+    "geo.position": `${site.location.lat};${site.location.lng}`,
+    ICBM: `${site.location.lat}, ${site.location.lng}`,
+  },
 };
 
 export const viewport: Viewport = {
@@ -61,7 +100,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolJsonLd()) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([schoolJsonLd(), websiteJsonLd()]),
+          }}
         />
       </body>
     </html>

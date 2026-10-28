@@ -14,7 +14,30 @@ const nextConfig: NextConfig = {
         output: "export",
         trailingSlash: true,
       }
-    : {}),
+    : {
+        async redirects() {
+          return [
+            {
+              source: "/:path*",
+              has: [{ type: "host", value: "www.leaderinternationalschool.ac.tz" }],
+              destination: "https://leaderinternationalschool.ac.tz/:path*",
+              permanent: true,
+            },
+          ];
+        },
+        async headers() {
+          return [
+            {
+              source: "/(.*)",
+              headers: [
+                { key: "X-Content-Type-Options", value: "nosniff" },
+                { key: "X-Frame-Options", value: "SAMEORIGIN" },
+                { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+              ],
+            },
+          ];
+        },
+      }),
   // Tailwind v4 through Turbopack (the create-next-app --tailwind setup).
   turbopack: {
     rules: {

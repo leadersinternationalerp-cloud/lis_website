@@ -14,17 +14,33 @@
     "legalName": "Leaders International School — Kisakasaka, Zanzibar"
   },
   "seo": {
-    "siteName": "Leaders International School",
-    "titleTemplate": "%s | Leaders International School",
-    "description": "A world-class pre-primary and primary school in Kisakasaka, Zanzibar. NECTA (Tanzanian national) and Cambridge International streams, small classes, science, and leadership programmes.",
+    "siteName": "Leaders International School (LIS)",
+    "titleTemplate": "%s | Leaders International School (LIS) Zanzibar",
+    "description": "Leaders International School (LIS), also known as Leaders School Zanzibar, is a premier co-educational pre-primary and primary school located in Kisakasaka, Zanzibar. Offering dual NECTA (Tanzanian national) and Cambridge International curricula from Baby Class through Grade 6 / Year 6. Official website: leaderinternationalschool.ac.tz.",
     "keywords": [
-      "school in Zanzibar",
-      "international school Tanzania",
+      "LIS",
+      "lis",
+      "LEADERS INTERNATIONAL SCHOOL",
+      "LEADERS SCHOOL",
+      "Leaders International School",
+      "Leaders School",
+      "Leaders School Zanzibar",
+      "LIS Zanzibar",
+      "Leaders International School Zanzibar",
+      "Leaders Capital School",
+      "leaderinternationalschool.ac.tz",
+      "Leaders International School Kisakasaka",
+      "international school in Zanzibar",
+      "best primary school Zanzibar",
+      "Cambridge Primary Zanzibar",
       "Cambridge curriculum Zanzibar",
-      "primary school Kisakasaka",
-      "nursery school Zanzibar",
       "NECTA primary Zanzibar",
-      "Cambridge Primary Zanzibar"
+      "nursery school Zanzibar",
+      "Baby Class Zanzibar",
+      "primary school Kisakasaka",
+      "Wilaya Magharibi B schools",
+      "Zanzibar private schools",
+      "shule ya Leaders Zanzibar"
     ],
     "openGraphImage": "/media/hero-students.jpg"
   },
@@ -219,10 +235,10 @@
     }
   ],
   "hero": {
-    "eyebrow": "Learning Today, Leading Tomorrow",
+    "eyebrow": "Leaders International School (LIS) · Zanzibar",
     "title": "Shaping Future",
     "highlight": "Leaders",
-    "lead": "We provide a world-class education that empowers children to excel academically, grow as global citizens, and lead with integrity — from Baby Class & Nursery through Grade 6 / Year 6 across our NECTA and Cambridge wings in Kisakasaka, Zanzibar.",
+    "lead": "At Leaders International School (LIS) — also known as Leaders School Zanzibar — we provide a world-class education that empowers children to excel academically, grow as global citizens, and lead with integrity, from Baby Class & Nursery through Grade 6 / Year 6 across our NECTA and Cambridge wings in Kisakasaka.",
     "image": "/media/hero-students.jpg",
     "imageAlt": "LIS learners of many backgrounds in cream and sky-blue uniforms, reading together in a colourful classroom",
     "buttons": [
@@ -384,7 +400,7 @@
     "phoneHref": "tel:+255777427140"
   },
   "footer": {
-    "blurb": "Leaders International School is a private, co-educational pre-primary and primary school in Kisakasaka, Zanzibar, offering Baby Class, Nursery, NECTA (Grades 1–6) and Cambridge International (Years 1–6) education.",
+    "blurb": "Leaders International School (LIS) — also known as Leaders School Zanzibar — is a private, co-educational pre-primary and primary school located in Kisakasaka, Zanzibar, offering Baby Class, Nursery, NECTA (Grades 1–6) and Cambridge International (Years 1–6) education.",
     "columns": [
       {
         "title": "Academics",
