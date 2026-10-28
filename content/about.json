@@ -107,39 +107,39 @@
   ],
   "leadership": {
     "title": "Leadership team",
-    "note": "Photographs are placeholders — replace files in public/media/team/ and update content/about.json.",
-    "people": [
+    "lead": "Experienced academic and administrative leadership guiding our NECTA and Cambridge streams, student welfare, and family partnerships.",
+    "roles": [
       {
-        "name": "Dr. Juma A. Khamis",
-        "role": "Head Teacher",
-        "qualification": "PhD Education Leadership, UDSM",
-        "bio": "Over twenty-five years of leadership in Zanzibari and East African education. Appointed Head Teacher at LIS to lead both our NECTA and Cambridge wings.",
-        "email": "info@leaderinternationalschool.ac.tz",
-        "photo": ""
+        "role": "Head Teacher / Head of School",
+        "department": "Whole-School Academic Leadership",
+        "icon": "graduation",
+        "focus": "Directs educational standards, faculty mentoring, and dual NECTA & Cambridge stream alignment across all stages.",
+        "desk": "Office of the Head Teacher",
+        "email": "info@leaderinternationalschool.ac.tz"
       },
       {
-        "name": "Mrs. Zainabu Mfaume",
-        "role": "Deputy Head (Academics & Cambridge Wing)",
-        "qualification": "MSc Science Education, SUZA",
-        "bio": "Oversees the timetable, assessment calendar, and our Cambridge Primary & NECTA curriculum standards.",
-        "email": "info@leaderinternationalschool.ac.tz",
-        "photo": ""
+        "role": "Deputy Head (Academics & Curricula)",
+        "department": "Curriculum Standards & Assessments",
+        "icon": "book",
+        "focus": "Coordinates academic timetables, Cambridge Primary Checkpoints, NECTA national assessments, and teaching progression.",
+        "desk": "Academic Directorate",
+        "email": "info@leaderinternationalschool.ac.tz"
       },
       {
-        "name": "Mr. Peter N. Mbwana",
         "role": "Director of Admissions & Communications",
-        "qualification": "BA Education, SUZA",
-        "bio": "First voice on the phone, and the person who will walk you round the campus. Replies within one working day.",
-        "email": "info@leaderinternationalschool.ac.tz",
-        "photo": ""
+        "department": "Enrolment & Family Relations",
+        "icon": "users",
+        "focus": "First point of contact for prospective families, arranging campus tours, student assessments, and enrolment assistance.",
+        "desk": "Admissions Desk",
+        "email": "info@leaderinternationalschool.ac.tz"
       },
       {
-        "name": "Sister Josephine Nkya",
         "role": "Head of Pastoral Care & Safeguarding",
-        "qualification": "Dip. Counselling Psychology",
-        "bio": "Runs child protection, pupil wellbeing, new-pupil buddy pairing, and the Tuesday parents' coffee morning.",
-        "email": "info@leaderinternationalschool.ac.tz",
-        "photo": ""
+        "department": "Learner Wellbeing & Safe Schools",
+        "icon": "shield",
+        "focus": "Leads child protection policies, pupil welfare, character guidance, Madrasa integration, and parent partnerships.",
+        "desk": "Pastoral & Wellbeing Desk",
+        "email": "info@leaderinternationalschool.ac.tz"
       }
     ]
   },
@@ -167,32 +167,26 @@
     "departments": [
       {
         "name": "Baby Class & Nursery (KG1 & KG2)",
-        "head": "Madam Fatuma Bakari",
         "detail": "Play-based phonics, early numeracy, creative arts, outdoor discovery, and two adults in every room."
       },
       {
         "name": "English, Literacy & Global Perspectives",
-        "head": "Ms. Amina Suleiman",
         "detail": "Guided reading in Grades 1–6 & Cambridge Years 1–6, readers theatre, and public speaking."
       },
       {
         "name": "Mathematics & Science",
-        "head": "Mrs. Neza Mgeni",
         "detail": "Cambridge Primary Science & Maths, NECTA Science, weekly laboratory practicals, and robotics."
       },
       {
         "name": "Kiswahili, Arabic & Madrasa",
-        "head": "Mr. Jassim Kharaziche",
         "detail": "Daily timetabled Madrasa, Qur'an recitation, moral studies, and Kiswahili heritage."
       },
       {
         "name": "Humanities & ICT",
-        "head": "Mr. Salim Omar",
         "detail": "Social studies, Zanzibar history, digital literacy, and coding in our 34-seat computer lab."
       },
       {
         "name": "Art & Design, Music & Physical Education",
-        "head": "Coach Hamisi Juma",
         "detail": "Creative arts, ngoma ensemble, football, netball, athletics, and swimming."
       }
     ]

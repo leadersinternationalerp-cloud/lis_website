@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Crest } from "@/components/ui/Crest";
 import { Icon } from "@/components/ui/Icon";
-import { Img } from "@/components/ui/Img";
 import { PageHero } from "@/components/sections/PageHero";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { Timeline } from "@/components/sections/Timeline";
@@ -9,7 +8,6 @@ import { Reveal } from "@/components/ui/Reveal";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { about, site } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
-import { initials } from "@/lib/utils";
 
 export const metadata = buildMetadata({
   title: "About us",
@@ -124,33 +122,50 @@ export default function AboutPage() {
 
       <section id="leadership" className="dark-section noise relative scroll-mt-28 py-16 lg:py-24">
         <div className="shell relative">
-          <SectionHead tone="light" eyebrow="Leadership" title={about.leadership.title} lead="Four people you will actually meet. Every one of them still teaches." action={<Link href="/contact" className="btn btn-outline">Talk to the office</Link>} />
+          <SectionHead
+            tone="light"
+            eyebrow="Leadership"
+            title={about.leadership.title}
+            lead={about.leadership.lead}
+            action={<Link href="/contact" className="btn btn-outline">Talk to the office</Link>}
+          />
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {about.leadership.people.map((p, i) => (
-              <Reveal key={p.name} delay={i * 80} className="group card overflow-hidden p-0">
-                <div className="relative grid h-44 place-items-center overflow-hidden bg-[linear-gradient(150deg,#0d3c7c,#02132c)]">
-                  {p.photo ? (
-                    <Img src={p.photo} alt={p.name} cdnWidth={500} sizes="24vw" />
-                  ) : (
-                    <>
-                      <span className="font-display text-[2.6rem] font-extrabold text-white/85 transition group-hover:scale-105">{initials(p.name)}</span>
-                      <span className="absolute bottom-3 left-3 rounded-full bg-white/10 px-2.5 py-1 text-[.66rem] font-semibold uppercase tracking-[.14em] text-gold-300 ring-1 ring-white/15">Add photo</span>
-                    </>
-                  )}
+            {about.leadership.roles.map((r, i) => (
+              <Reveal
+                key={r.role}
+                delay={i * 80}
+                className="group card overflow-hidden p-0 !bg-navy-900/70 !border-white/10 hover:!border-gold-400/50 transition-all duration-300 flex flex-col"
+              >
+                <div className="relative flex flex-col items-center justify-center p-6 bg-gradient-to-b from-navy-800/80 to-navy-950/90 border-b border-white/10 text-center">
+                  <span className="grid h-16 w-16 place-items-center rounded-2xl bg-gold-400/15 text-gold-300 ring-1 ring-gold-400/30 group-hover:scale-105 transition-transform duration-300 shadow-soft">
+                    <Icon name={r.icon ?? "graduation"} size={28} />
+                  </span>
+                  <span className="mt-3.5 inline-block rounded-full bg-sky-400/15 px-3 py-1 font-display text-[.7rem] font-bold uppercase tracking-[.14em] text-sky-300 ring-1 ring-sky-300/30">
+                    {r.department}
+                  </span>
                 </div>
-                <div className="p-5">
-                  <h3 className="font-display text-[1.05rem] font-bold text-navy-900">{p.name}</h3>
-                  <p className="mt-0.5 text-[.82rem] font-semibold uppercase tracking-[.12em] text-navy-500">{p.role}</p>
-                  <p className="mt-1 text-[.82rem] text-slate-body">{p.qualification}</p>
-                  <p className="mt-3 text-[.9rem] leading-relaxed text-slate-body">{p.bio}</p>
-                  <a href={`mailto:${p.email}`} className="mt-3.5 inline-flex items-center gap-1.5 font-display text-[.82rem] font-bold text-navy-700 transition hover:text-gold-600">
-                    <Icon name="mail" size={14} /> Email
+                <div className="p-6 flex flex-col justify-between flex-1">
+                  <div>
+                    <h3 className="font-display text-[1.12rem] font-bold text-white leading-snug">
+                      {r.role}
+                    </h3>
+                    <p className="mt-1 text-[.78rem] font-semibold text-gold-300/90">
+                      {r.desk}
+                    </p>
+                    <p className="mt-3 text-[.88rem] leading-relaxed text-slate-300/90">
+                      {r.focus}
+                    </p>
+                  </div>
+                  <a
+                    href={`mailto:${r.email}`}
+                    className="mt-6 inline-flex items-center gap-1.5 font-display text-[.82rem] font-bold text-sky-300 transition hover:text-gold-300"
+                  >
+                    <Icon name="mail" size={14} /> Contact Desk
                   </a>
                 </div>
               </Reveal>
             ))}
           </div>
-          <p className="mt-5 text-[.82rem] text-navy-200/70">{about.leadership.note}</p>
         </div>
       </section>
 
@@ -170,13 +185,12 @@ export default function AboutPage() {
           <ul className="grid gap-3">
             {about.faculty.departments.map((d, i) => (
               <Reveal as="li" key={d.name} delay={i * 50}>
-                <div className="card flex flex-wrap items-center gap-4 p-5">
-                  <span className="icon-chip !h-10 !w-10"><Icon name="book" size={17} /></span>
+                <div className="card flex items-start sm:items-center gap-4 p-5">
+                  <span className="icon-chip !h-10 !w-10 shrink-0"><Icon name="book" size={17} /></span>
                   <div className="min-w-0 flex-1">
                     <h3 className="font-display text-[1.02rem] font-bold text-navy-900">{d.name}</h3>
                     <p className="mt-1 text-[.9rem] text-slate-body">{d.detail}</p>
                   </div>
-                  <p className="shrink-0 rounded-full bg-navy-50 px-3 py-1.5 text-[.78rem] font-semibold text-navy-700">Head: {d.head}</p>
                 </div>
               </Reveal>
             ))}
