@@ -25,6 +25,12 @@
   ],
   "photos": [
     {
+      "src": "/media/school-uniform.jpg",
+      "album": "campus",
+      "title": "Official School Uniforms — All Stages",
+      "caption": "Pre-primary, primary and senior learners in official cream and sky-blue trimmed polos with navy bottoms."
+    },
+    {
       "src": "/media/admissions-open-banner.jpg",
       "album": "campus",
       "title": "Admissions Open — All Classes (Interviews Ongoing)",

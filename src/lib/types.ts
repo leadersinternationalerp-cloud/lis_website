@@ -92,7 +92,8 @@ export type TermDate = { term: string; dates: string; note?: string };
 export type KeyDate = { date: string; label: string; kind?: string };
 export type UniformItem = { name: string; detail: string };
 export type UniformBlock = {
-  title: string; intro?: string; items: UniformItem[]; buy?: string; note?: string;
+  title: string; intro?: string; items?: UniformItem[]; buy?: string; note?: string;
+  image?: string;
   swatches?: { label: string; hex: string; text?: string }[];
 };
 export type Resources = {

@@ -145,64 +145,9 @@
   "calendarNote": "The calendar is also shared with parents by WhatsApp and SMS before each term and posted on the parent portal.",
   "uniform": {
     "title": "School uniform & appearance",
-    "intro": "One uniform for every learner, worn identically across our NECTA and Cambridge wings. Please note: school uniform and club fees are communicated separately from the annual tuition schedule.",
-    "items": [
-      {
-        "name": "Cream polo shirt",
-        "detail": "Sky-blue collar and cuff trim, school crest embroidered on the left chest."
-      },
-      {
-        "name": "Navy blue trousers or skirt",
-        "detail": "Plain navy trousers or knee-length skirt worn by primary and pre-primary pupils."
-      },
-      {
-        "name": "Head veil (girls who wear it)",
-        "detail": "Plain white or sky-blue trim, with the school crest embroidered cleanly on the front."
-      },
-      {
-        "name": "Navy sweatshirt",
-        "detail": "Optional for cool mornings and rainy days, with the school crest on the chest."
-      },
-      {
-        "name": "Shoes & socks",
-        "detail": "Black closed-toe school shoes with navy or white socks."
-      },
-      {
-        "name": "Sports & PE kit",
-        "detail": "School PE shirt and navy track bottoms/shorts; house-coloured bibs issued on Sports Day."
-      },
-      {
-        "name": "Stationery & exercise books",
-        "detail": "Included directly in your monthly fee structure for both NECTA and Cambridge streams."
-      },
-      {
-        "name": "Lab coats & aprons",
-        "detail": "Provided by the school for science practicals and creative art sessions."
-      }
-    ],
-    "buy": "Uniform details and sizing are provided at the admissions office upon registration.",
-    "note": "No child is ever sent home for a missing uniform item; the office keeps spare stock and helps families sort it out.",
-    "swatches": [
-      {
-        "label": "Cream polo",
-        "hex": "#F4EFE3",
-        "text": "#0d1a2b"
-      },
-      {
-        "label": "Sky collar & cuffs",
-        "hex": "#8FD1F2",
-        "text": "#02324d"
-      },
-      {
-        "label": "Navy trousers / skirt",
-        "hex": "#12294F",
-        "text": "#ffe394"
-      },
-      {
-        "label": "Crest: navy, light blue & gold",
-        "hex": "#38C0C8",
-        "text": "#002848"
-      }
-    ]
+    "intro": "One uniform worn identically across our NECTA and Cambridge streams. The official colours are cream, sky-blue trim, and navy blue.",
+    "image": "/media/school-uniform.jpg",
+    "buy": "Uniform details, sizing and fitting samples are available at the admissions office in Kisakasaka upon registration.",
+    "note": "School uniform and sports kit fees are communicated separately upon admission. Spare stock is kept at the school office to support families."
   }
 }

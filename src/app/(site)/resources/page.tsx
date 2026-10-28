@@ -1,4 +1,5 @@
 import { Icon } from "@/components/ui/Icon";
+import { Img } from "@/components/ui/Img";
 import { PageHero } from "@/components/sections/PageHero";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { ResourceBrowser } from "@/components/client/ResourceBrowser";
@@ -84,47 +85,76 @@ export default async function ResourcesPage() {
       </section>
 
 
-      <section id="uniform" className="scroll-mt-28 border-t border-hairline py-16 lg:py-20">
+      <section id="uniform" className="scroll-mt-28 border-t border-hairline py-16 lg:py-24 bg-gradient-to-b from-white via-paper to-white">
         <div className="shell">
-          <SectionHead eyebrow="Cream · sky blue · navy" title={resources.uniform?.title ?? "School uniform"} lead={resources.uniform?.intro}
-            action={<a href="/documents/uniform-list.pdf" className="btn btn-quiet !py-2.5 !text-[.88rem]"><Icon name="download" size={15} /> Uniform list (PDF)</a>} />
+          <SectionHead
+            eyebrow="Cream · sky blue · navy"
+            title={resources.uniform?.title ?? "School uniform"}
+            lead={resources.uniform?.intro}
+            action={
+              <a href="/documents/uniform-list.pdf" className="btn btn-quiet !py-2.5 !text-[.88rem]">
+                <Icon name="download" size={15} /> Uniform list (PDF)
+              </a>
+            }
+          />
 
-          <div className="mt-9 grid gap-6 lg:grid-cols-[1.25fr_.75fr]">
-            <ul className="grid gap-3 sm:grid-cols-2">
-              {resources.uniform?.items.map((u, i) => (
-                <Reveal as="li" key={u.name} delay={i * 45}>
-                  <div className="card flex h-full items-start gap-3.5 p-5">
-                    <span className="mt-0.5 h-8 w-8 shrink-0 rounded-lg border border-hairline" style={{ background: i === 0 ? "#F4EFE3" : i === 1 ? "#12294F" : i === 2 ? "#ffffff" : i % 2 ? "#8FD1F2" : "#00275c" }} />
-                    <div>
-                      <h3 className="h3 text-navy-900">{u.name}</h3>
-                      <p className="mt-1.5 text-[.9rem] leading-relaxed text-slate-body">{u.detail}</p>
+          <div className="mt-10 overflow-hidden rounded-3xl border border-sky-200/90 bg-white shadow-card transition-all duration-500 hover:shadow-lift">
+            <div className="grid lg:grid-cols-[1.18fr_.82fr] items-center">
+              <div className="relative aspect-[3/2] w-full overflow-hidden bg-navy-950">
+                <Img
+                  src={resources.uniform?.image ?? "/media/school-uniform.jpg"}
+                  alt="Leaders International School learners in official uniform"
+                  priority
+                  unoptimized
+                  cdnWidth={1200}
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                  className="h-full w-full object-cover"
+                />
+                <span className="absolute bottom-3 left-3 rounded-full bg-navy-950/85 px-3 py-1 font-display text-[.74rem] font-bold text-sky-300 shadow-soft backdrop-blur-md">
+                  Official LIS Uniform · All Stages
+                </span>
+              </div>
+
+              <div className="flex flex-col justify-center p-7 lg:p-9">
+                <span className="eyebrow eyebrow-sky inline-flex items-center gap-1.5">
+                  <span className="h-2 w-2 rounded-full bg-sky-400" />
+                  Official Colours
+                </span>
+
+                <h3 className="mt-2.5 font-display text-[1.45rem] font-extrabold text-navy-900 leading-tight">
+                  One Uniform Worn with Pride
+                </h3>
+
+                <p className="mt-3 text-[.94rem] leading-relaxed text-slate-body">
+                  Worn identically across both our NECTA National Wing and Cambridge International Wing from Baby Class to Grade 6 / Year 6.
+                </p>
+
+                <div className="mt-5 space-y-3">
+                  <div className="flex items-start gap-3 rounded-xl border border-hairline bg-paper/60 p-3.5">
+                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-gold-400 text-navy-950 text-xs font-bold">✓</span>
+                    <div className="text-[.88rem]">
+                      <strong className="text-navy-900">Everyday Uniform:</strong>
+                      <p className="mt-0.5 text-slate-body">Cream polo shirt with sky-blue collar and trim, embroidered school crest, and navy trousers or pleated skirt with black shoes.</p>
                     </div>
                   </div>
-                </Reveal>
-              ))}
-            </ul>
 
-            <div className="grid gap-4 lg:content-start">
-              <div className="card-flat p-5">
-                <p className="font-display text-[.7rem] font-bold uppercase tracking-[.2em] text-navy-500">The colours, exactly</p>
-                <ul className="mt-4 grid gap-2.5">
-                  {resources.uniform?.swatches?.map((sw) => (
-                    <li key={sw.label} className="flex items-center gap-3">
-                      <span className="h-9 w-16 shrink-0 rounded-lg border border-black/10 shadow-inner" style={{ background: sw.hex }} />
-                      <span className="min-w-0">
-                        <span className="block font-display text-[.92rem] font-bold text-navy-900">{sw.label}</span>
-                        <span className="block font-mono text-[.76rem] uppercase text-slate-body">{sw.hex}</span>
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-4 border-t border-hairline pt-3 text-[.86rem] leading-relaxed text-slate-body">{resources.uniform?.buy}</p>
-              </div>
-              <div className="rounded-2xl border border-sky-uniform-200 bg-sky-uniform-50 p-5">
-                <p className="flex items-center gap-2 font-display text-[.7rem] font-bold uppercase tracking-[.2em] text-sky-uniform-700">
-                  <Icon name="heart" size={15} /> Our practice
-                </p>
-                <p className="mt-2.5 text-[.93rem] leading-relaxed text-navy-800">{resources.uniform?.note}</p>
+                  <div className="flex items-start gap-3 rounded-xl border border-hairline bg-paper/60 p-3.5">
+                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-sky-400 text-navy-950 text-xs font-bold">✓</span>
+                    <div className="text-[.88rem]">
+                      <strong className="text-navy-900">Fittings & Sizing:</strong>
+                      <p className="mt-0.5 text-slate-body">{resources.uniform?.buy ?? "Sizing samples and fitting assistance are provided at the admissions office upon registration."}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-6 flex flex-wrap items-center gap-3">
+                  <a href="/documents/uniform-list.pdf" className="btn btn-navy !py-2.5 !text-[.88rem]">
+                    <Icon name="download" size={15} /> Download Uniform List (PDF)
+                  </a>
+                  <Link href="/admissions" className="btn btn-quiet !py-2.5 !text-[.88rem]">
+                    Admissions Desk
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
