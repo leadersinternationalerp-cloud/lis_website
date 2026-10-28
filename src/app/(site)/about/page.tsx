@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Crest } from "@/components/ui/Crest";
 import { Icon } from "@/components/ui/Icon";
 import { Img } from "@/components/ui/Img";
 import { PageHero } from "@/components/sections/PageHero";
@@ -28,9 +29,50 @@ export default function AboutPage() {
         crumbs={[{ label: "About us" }]}
         actions={
           <>
-            <Link href="/admissions" className="btn btn-gold">Admissions <Icon name="arrow-right" size={16} /></Link>
+            <Link href="/admissions" className="btn btn-gold">Admissions & Fees <Icon name="arrow-right" size={16} /></Link>
             <Link href="/gallery" className="btn btn-outline">See the campus</Link>
           </>
+        }
+        aside={
+          <div className="glass-panel relative rounded-3xl p-6 sm:p-7 shadow-lift border border-white/60">
+            <div className="flex items-center gap-3.5 border-b border-navy-900/10 pb-4">
+              <Crest size={60} className="drop-shadow-sm" />
+              <div>
+                <p className="font-display text-[1.1rem] font-extrabold text-navy-900 leading-tight">
+                  {site.school.name}
+                </p>
+                <p className="mt-0.5 text-[.74rem] font-bold uppercase tracking-[.14em] text-sky-600">
+                  {site.school.crestMotto}
+                </p>
+              </div>
+            </div>
+
+            <p className="mt-4 text-[.9rem] leading-relaxed text-slate-body">
+              Child-centered, values-based early childhood and primary education on our purpose-built campus in Kisakasaka, Zanzibar.
+            </p>
+
+            <ul className="mt-4 grid gap-2">
+              <li className="flex items-center gap-2.5 text-[.82rem] font-semibold text-navy-900">
+                <span className="grid h-5 w-5 place-items-center rounded-full bg-gold-400 text-navy-950 text-[11px] font-bold">✓</span>
+                <span>Established 2009 · 15+ Years of Care</span>
+              </li>
+              <li className="flex items-center gap-2.5 text-[.82rem] font-semibold text-navy-900">
+                <span className="grid h-5 w-5 place-items-center rounded-full bg-sky-400/20 text-sky-700 text-[11px] font-bold ring-1 ring-sky-300">✓</span>
+                <span>Dual Curricula: NECTA & Cambridge</span>
+              </li>
+              <li className="flex items-center gap-2.5 text-[.82rem] font-semibold text-navy-900">
+                <span className="grid h-5 w-5 place-items-center rounded-full bg-sky-400/20 text-sky-700 text-[11px] font-bold ring-1 ring-sky-300">✓</span>
+                <span>Baby Class to Grade 6 / Year 6</span>
+              </li>
+            </ul>
+
+            <div className="mt-5 border-t border-navy-900/10 pt-3.5 flex items-center justify-between text-[.78rem]">
+              <span className="font-semibold text-navy-700">Kisakasaka, Zanzibar</span>
+              <a href={site.contact.phoneHref} className="inline-flex items-center gap-1 font-display font-bold text-sky-700 hover:text-navy-900 transition">
+                <Icon name="phone" size={13} /> {site.contact.phoneDisplay}
+              </a>
+            </div>
+          </div>
         }
       />
 
