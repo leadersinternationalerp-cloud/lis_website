@@ -107,38 +107,46 @@
   ],
   "leadership": {
     "title": "Leadership team",
-    "lead": "Experienced academic and administrative leadership guiding our NECTA and Cambridge streams, student welfare, and family partnerships.",
+    "lead": "Our governance and academic leadership structure overseeing Early Years, NECTA National Primary, Cambridge International stream, and curriculum standards.",
     "roles": [
       {
-        "role": "Head Teacher / Head of School",
-        "department": "Whole-School Academic Leadership",
-        "icon": "graduation",
-        "focus": "Directs educational standards, faculty mentoring, and dual NECTA & Cambridge stream alignment across all stages.",
-        "desk": "Office of the Head Teacher",
+        "role": "School Directors",
+        "department": "Executive Governance",
+        "icon": "building",
+        "focus": "Institutional governance, strategic development, school policy, and purpose-built campus infrastructure oversight.",
+        "desk": "Board of Directors",
         "email": "info@leaderinternationalschool.ac.tz"
       },
       {
-        "role": "Deputy Head (Academics & Curricula)",
+        "role": "Head of School — Nursery",
+        "department": "Early Years & Pre-Primary",
+        "icon": "heart",
+        "focus": "Baby Class and Nursery (KG1 & KG2) foundations: play-based phonics, numeracy, joyful discovery, and child wellbeing.",
+        "desk": "Nursery School Office",
+        "email": "info@leaderinternationalschool.ac.tz"
+      },
+      {
+        "role": "Head of School — Primary",
+        "department": "NECTA National Primary Wing",
+        "icon": "graduation",
+        "focus": "Grades 1 to 6 national curriculum standards, teacher supervision, NECTA examinations preparation, and moral character.",
+        "desk": "National Primary Office",
+        "email": "info@leaderinternationalschool.ac.tz"
+      },
+      {
+        "role": "Head of School — Cambridge",
+        "department": "Cambridge International Wing",
+        "icon": "globe",
+        "focus": "Cambridge Assessment International Education Primary (Years 1–6), inquiry learning, Cambridge Checkpoints, and global readiness.",
+        "desk": "Cambridge Wing Office",
+        "email": "info@leaderinternationalschool.ac.tz"
+      },
+      {
+        "role": "Academic Masters",
         "department": "Curriculum Standards & Assessments",
         "icon": "book",
-        "focus": "Coordinates academic timetables, Cambridge Primary Checkpoints, NECTA national assessments, and teaching progression.",
-        "desk": "Academic Directorate",
-        "email": "info@leaderinternationalschool.ac.tz"
-      },
-      {
-        "role": "Director of Admissions & Communications",
-        "department": "Enrolment & Family Relations",
-        "icon": "users",
-        "focus": "First point of contact for prospective families, arranging campus tours, student assessments, and enrolment assistance.",
-        "desk": "Admissions Desk",
-        "email": "info@leaderinternationalschool.ac.tz"
-      },
-      {
-        "role": "Head of Pastoral Care & Safeguarding",
-        "department": "Learner Wellbeing & Safe Schools",
-        "icon": "shield",
-        "focus": "Leads child protection policies, pupil welfare, character guidance, Madrasa integration, and parent partnerships.",
-        "desk": "Pastoral & Wellbeing Desk",
+        "focus": "Master timetabling, continuous assessments, subject department coordination, and examination moderation across both wings.",
+        "desk": "Academic Masters Office",
         "email": "info@leaderinternationalschool.ac.tz"
       }
     ]

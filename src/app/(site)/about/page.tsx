@@ -129,38 +129,38 @@ export default function AboutPage() {
             lead={about.leadership.lead}
             action={<Link href="/contact" className="btn btn-outline">Talk to the office</Link>}
           />
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {about.leadership.roles.map((r, i) => (
               <Reveal
                 key={r.role}
-                delay={i * 80}
+                delay={i * 70}
                 className="group card overflow-hidden p-0 !bg-navy-900/70 !border-white/10 hover:!border-gold-400/50 transition-all duration-300 flex flex-col"
               >
-                <div className="relative flex flex-col items-center justify-center p-6 bg-gradient-to-b from-navy-800/80 to-navy-950/90 border-b border-white/10 text-center">
-                  <span className="grid h-16 w-16 place-items-center rounded-2xl bg-gold-400/15 text-gold-300 ring-1 ring-gold-400/30 group-hover:scale-105 transition-transform duration-300 shadow-soft">
-                    <Icon name={r.icon ?? "graduation"} size={28} />
+                <div className="relative flex flex-col items-center justify-center p-5 bg-gradient-to-b from-navy-800/80 to-navy-950/90 border-b border-white/10 text-center">
+                  <span className="grid h-14 w-14 place-items-center rounded-2xl bg-gold-400/15 text-gold-300 ring-1 ring-gold-400/30 group-hover:scale-105 transition-transform duration-300 shadow-soft">
+                    <Icon name={r.icon ?? "graduation"} size={26} />
                   </span>
-                  <span className="mt-3.5 inline-block rounded-full bg-sky-400/15 px-3 py-1 font-display text-[.7rem] font-bold uppercase tracking-[.14em] text-sky-300 ring-1 ring-sky-300/30">
+                  <span className="mt-3 inline-block rounded-full bg-sky-400/15 px-2.5 py-0.5 font-display text-[.66rem] font-bold uppercase tracking-[.12em] text-sky-300 ring-1 ring-sky-300/30">
                     {r.department}
                   </span>
                 </div>
-                <div className="p-6 flex flex-col justify-between flex-1">
+                <div className="p-5 flex flex-col justify-between flex-1">
                   <div>
-                    <h3 className="font-display text-[1.12rem] font-bold text-white leading-snug">
+                    <h3 className="font-display text-[1.04rem] font-bold text-white leading-snug">
                       {r.role}
                     </h3>
-                    <p className="mt-1 text-[.78rem] font-semibold text-gold-300/90">
+                    <p className="mt-1 text-[.76rem] font-semibold text-gold-300/90">
                       {r.desk}
                     </p>
-                    <p className="mt-3 text-[.88rem] leading-relaxed text-slate-300/90">
+                    <p className="mt-2.5 text-[.84rem] leading-relaxed text-slate-300/90">
                       {r.focus}
                     </p>
                   </div>
                   <a
                     href={`mailto:${r.email}`}
-                    className="mt-6 inline-flex items-center gap-1.5 font-display text-[.82rem] font-bold text-sky-300 transition hover:text-gold-300"
+                    className="mt-5 inline-flex items-center gap-1.5 font-display text-[.8rem] font-bold text-sky-300 transition hover:text-gold-300"
                   >
-                    <Icon name="mail" size={14} /> Contact Desk
+                    <Icon name="mail" size={13} /> Contact Desk
                   </a>
                 </div>
               </Reveal>
