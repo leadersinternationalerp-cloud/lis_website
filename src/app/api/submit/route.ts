@@ -52,6 +52,36 @@ export async function POST(request: Request) {
   const reference = REFERENCE();
   const record = { kind, reference, submittedAt: new Date().toISOString(), ...payload, source: "website" };
 
+  // 1. Direct integration with Leaders International School ERP Admissions Engine
+  if (kind === "application") {
+    const erpUrl = process.env.ERP_API_URL || process.env.NEXT_PUBLIC_ERP_URL || "http://localhost:3000";
+    try {
+      const erpRes = await fetch(`${erpUrl}/api/admissions/apply`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          reference,
+          ...payload,
+        }),
+        signal: AbortSignal.timeout(12000),
+      });
+
+      if (erpRes.ok) {
+        await queue(record); // keep local record audit log as well
+        return Response.json({
+          status: "cms" as const,
+          reference,
+          message: "Your application has been received and recorded by the admissions desk. The official admission form (PDF) has been dispatched to admissions@leaderinternationalschool.ac.tz.",
+        });
+      } else {
+        const erpErr = await erpRes.json().catch(() => null);
+        console.warn("[submit] ERP responded with error:", erpRes.status, erpErr);
+      }
+    } catch (erpErr) {
+      console.warn("[submit] Could not reach ERP admissions endpoint:", (erpErr as Error).message);
+    }
+  }
+
   if (cms.writeEnabled) {
     try {
       await cms.create(kind, record);
