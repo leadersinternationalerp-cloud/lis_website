@@ -14,7 +14,7 @@
         "Daily phonics, storytelling, and hands-on number sense",
         "Shaded outdoor play, creative arts, and a structured rest hour",
         "English and Swahili spoken warmly throughout the day",
-        "Breakfast, hot lunch, and daily Madrasa / moral stories included"
+        "Breakfast, hot lunch, and daily other curriculum / moral stories included"
       ],
       "subjects": [
         "Early Literacy & Phonics",
@@ -22,7 +22,7 @@
         "Creative Arts & Music",
         "World Discovery",
         "Physical Play & Motor Skills",
-        "Madrasa & Good Manners"
+        "Other Curriculum & Good Manners"
       ]
     },
     {
@@ -35,7 +35,7 @@
         "Capped at 24 pupils per class for personal attention",
         "Daily 30-minute guided reading and library borrowing",
         "Practical science and computer lessons from Grade 1",
-        "All stationery, breakfast, hot lunch, and Madrasa included in fees",
+        "All stationery, breakfast, hot lunch, and other curriculum included in fees",
         "Termly parent-teacher conferences with clear written targets"
       ],
       "subjects": [
@@ -60,7 +60,7 @@
         "Inquiry-led Science and Mathematics in dedicated labs",
         "Global Perspectives, Art & Design, and strong English literacy",
         "Seamless international benchmark for globally mobile and local families",
-        "Includes full stationery pack, daily breakfast & lunch, and Madrasa"
+        "Includes full stationery pack, daily breakfast & lunch, and other curriculum"
       ],
       "subjects": [
         "Cambridge Primary English",
@@ -76,19 +76,19 @@
     },
     {
       "id": "languages-values",
-      "name": "Madrasa, Languages & Leadership",
+      "name": "Other Curriculum, Languages & Leadership",
       "ages": "All Classes · Baby Class to Year 6",
-      "summary": "Rooted in Zanzibari heritage and global citizenship: daily Madrasa and character education alongside English, Kiswahili, and Arabic fluency.",
+      "summary": "Rooted in Zanzibari heritage and global citizenship: daily other curriculum and character education alongside English, Kiswahili, and Arabic fluency.",
       "image": "/media/gallery-culture-day.jpg",
       "highlights": [
-        "Daily timetabled Madrasa and moral reflection included in the fee structure",
+        "Daily timetabled other curriculum and moral reflection included in the fee structure",
         "Trilingual exposure: English medium with strong Kiswahili and Arabic",
         "Weekly assembly speaking roles so every child learns to address an audience",
         "Nutritious school breakfast and hot lunch served fresh every day",
         "Safe, inclusive environment with a full-time pastoral care officer"
       ],
       "subjects": [
-        "Qur'an & Madrasa Studies",
+        "Qur'an & Other Curriculum Studies",
         "Character & Ethics",
         "Public Speaking & Debate",
         "Arabic Language",
@@ -231,7 +231,7 @@
     },
     {
       "time": "13:20",
-      "text": "Afternoon lessons: Humanities, ICT/Lab practicals, Art & Design, and daily Madrasa."
+      "text": "Afternoon lessons: Humanities, ICT/Lab practicals, Art & Design, and daily other curriculum."
     },
     {
       "time": "15:15",
@@ -251,7 +251,7 @@
       },
       {
         "title": "Language with purpose",
-        "text": "English for academic fluency across NECTA and Cambridge streams, Swahili for national pride, and Arabic in Madrasa."
+        "text": "English for academic fluency across NECTA and Cambridge streams, Swahili for national pride, and Arabic in other curriculum."
       },
       {
         "title": "Stationery & meals provided",

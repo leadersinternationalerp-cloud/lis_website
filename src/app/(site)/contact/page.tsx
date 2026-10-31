@@ -154,7 +154,7 @@ export default function ContactPage() {
         <div className="shell">
           <SectionHead
             eyebrow={`Recruitment · Apply by ${contact.careers.deadline}`}
-            title="Current recruitment posters"
+            title="Open Vacancies"
             lead="Click any poster to view full size. Send your CV and academic certificates to info@leaderinternationalschool.ac.tz or leadersinternationalerp@gmail.com."
           />
           <div className="mt-9 grid gap-6 md:grid-cols-3">

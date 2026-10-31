@@ -157,9 +157,9 @@ export function schoolJsonLd() {
       },
       {
         "@type": "EducationalOrganization",
-        name: "Madrasa, Languages & Character Guidance",
+        name: "Other Curriculum, Languages & Character Guidance",
         url: absolute("/academics#languages-values"),
-        description: "Arabic, Swahili heritage, English fluency, daily timetabled Madrasa and leadership.",
+        description: "Arabic, Swahili heritage, English fluency, daily timetabled other curriculum and leadership.",
       },
     ],
   };

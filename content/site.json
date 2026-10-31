@@ -140,9 +140,9 @@
           "description": "Cambridge Assessment International Education Primary stream"
         },
         {
-          "label": "Madrasa, Languages & Values",
+          "label": "Other Curriculum, Languages & Values",
           "href": "/academics#languages-values",
-          "description": "English, Swahili, Arabic, Madrasa and character formation"
+          "description": "English, Swahili, Arabic, other curriculum and character formation"
         },
         {
           "label": "Clubs & Games",
@@ -290,7 +290,7 @@
     {
       "icon": "star",
       "title": "Holistic Development",
-      "text": "Daily Madrasa & values education, robotics, arts, sports, and public speaking woven into the school week.",
+      "text": "Daily other curriculum & values education, robotics, arts, sports, and public speaking woven into the school week.",
       "href": "/academics#enrichment"
     }
   ],
@@ -343,12 +343,12 @@
       {
         "icon": "heart",
         "title": "All-inclusive monthly fee plan",
-        "text": "Annual fees are payable in 12 equal monthly instalments and already include tuition, stationery, breakfast & hot lunch, caution fee, and Madrasa."
+        "text": "Annual fees are payable in 12 equal monthly instalments and already include tuition, stationery, breakfast & hot lunch, caution fee, and other curriculum."
       },
       {
         "icon": "shield",
         "title": "One uniform, strong values & safeguarding",
-        "text": "Cream polo with sky-blue trim, navy bottoms, daily Madrasa and moral reflection, and a strict child-protection policy."
+        "text": "Cream polo with sky-blue trim, navy bottoms, daily other curriculum and moral reflection, and a strict child-protection policy."
       },
       {
         "icon": "trophy",
@@ -370,7 +370,7 @@
       "role": "Parent, NECTA Primary Wing"
     },
     {
-      "quote": "Moving our son into the Cambridge Wing at LIS was the best decision we made. Having breakfast, lunch, stationery, and Madrasa included in one monthly instalment makes planning so easy for parents.",
+      "quote": "Moving our son into the Cambridge Wing at LIS was the best decision we made. Having breakfast, lunch, stationery, and other curriculum included in one monthly instalment makes planning so easy for parents.",
       "name": "Hamad Salim",
       "role": "Parent, Cambridge Year 4"
     },
@@ -418,7 +418,7 @@
             "href": "/academics#cambridge-primary"
           },
           {
-            "label": "Madrasa & Languages",
+            "label": "Other Curriculum & Languages",
             "href": "/academics#languages-values"
           },
           {

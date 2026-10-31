@@ -208,7 +208,7 @@ export default function AdmissionsPage() {
                         <th>Stationery</th>
                         <th>Caution Fee</th>
                         <th>Breakfast & Lunch</th>
-                        <th>Madrasa</th>
+                        <th>Other Curriculum</th>
                         <th>Monthly Total</th>
                       </tr>
                     </thead>
@@ -220,7 +220,7 @@ export default function AdmissionsPage() {
                           <td>{row.stationery}</td>
                           <td>{row.caution}</td>
                           <td>{row.meals}</td>
-                          <td>{row.madrasa}</td>
+                          <td>{(row as Record<string, string>).otherCurriculum}</td>
                           <td className="font-display font-extrabold text-navy-900">{row.total}</td>
                         </tr>
                       ))}

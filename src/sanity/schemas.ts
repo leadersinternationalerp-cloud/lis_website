@@ -40,7 +40,7 @@ const photo = defineType({
           { title: "Admissions — Top Banner & Baby Class / Nursery", value: "/media/gallery-reading-corner.jpg" },
           { title: "Academics — NECTA Primary Wing", value: "/media/gallery-class-assembly.jpg" },
           { title: "Academics — Cambridge International Wing", value: "/media/gallery-robotics.jpg" },
-          { title: "Academics — Madrasa, Languages & Values", value: "/media/gallery-assembly.jpg" },
+          { title: "Academics — Other Curriculum, Languages & Values", value: "/media/gallery-assembly.jpg" },
           { title: "Resources — Top Banner & Computer Lab", value: "/media/gallery-computer-lab.jpg" },
           { title: "Gallery — Sports & Athletics", value: "/media/gallery-sports.jpg" },
           { title: "Gallery — Music & Drums", value: "/media/gallery-drums.jpg" },

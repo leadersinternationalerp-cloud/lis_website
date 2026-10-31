@@ -41,7 +41,7 @@
     {
       "icon": "heart",
       "title": "Compassion",
-      "text": "Daily Madrasa, moral reflection, and community care projects in our surrounding wards."
+      "text": "Daily other curriculum, moral reflection, and community care projects in our surrounding wards."
     },
     {
       "icon": "shield",
@@ -186,8 +186,8 @@
         "detail": "Cambridge Primary Science & Maths, NECTA Science, weekly laboratory practicals, and robotics."
       },
       {
-        "name": "Kiswahili, Arabic & Madrasa",
-        "detail": "Daily timetabled Madrasa, Qur'an recitation, moral studies, and Kiswahili heritage."
+        "name": "Kiswahili, Arabic & Other Curriculum",
+        "detail": "Daily timetabled other curriculum, Qur'an recitation, moral studies, and Kiswahili heritage."
       },
       {
         "name": "Humanities & ICT",
