@@ -10,7 +10,7 @@
       { "title": "Enquire or visit", "text": "Call, WhatsApp +255 777 427 140, or fill the enquiry form. Ask for a Saturday Open Day tour at 10:00 or any weekday morning by appointment.", "duration": "1 day" },
       { "title": "Submit the application", "text": "Apply online in about six minutes, or collect the paper form from the front office in Kisakasaka.", "duration": "15 minutes" },
       { "title": "Assessment & family meeting", "text": "Play-based observation for Baby Class & Nursery, or a friendly placement check in English and numeracy for Grades 1–6 / Years 1–6, plus a conversation with parents.", "duration": "1–2 hours, on campus" },
-      { "title": "Offer & registration", "text": "Written offers are sent within five working days with the official 2026/2027 fee schedule. New students pay the one-time TZS 100,000 registration fee and first instalment to confirm their place.", "duration": "5 working days" },
+      { "title": "Offer & registration", "text": "Written offers are sent within five working days with the official 2027 fee schedule. New students pay the one-time TZS 250,000 admission fee and first instalment to confirm their place.", "duration": "5 working days" },
       { "title": "Orientation & first day", "text": "Uniform fitting, stationery pack allocation, school bus route assignment, and new-family orientation before classes begin in January 2027.", "duration": "Half a day" }
     ]
   },
@@ -43,49 +43,75 @@
     ]
   },
   "fees": {
-    "title": "Official 2026/2027 Fee Structure",
-    "issuedDate": "25 October 2026",
-    "academicYear": "Academic Year 2026/2027",
-    "note": "Fees for the NECTA (Tanzanian national) and Cambridge (international) curricula are set per annum in Tanzanian Shillings (TZS) and may be paid in twelve (12) equal monthly instalments.",
+    "title": "School Fee Structure 2027",
+    "issuedDate": "31 October 2026",
+    "academicYear": "Academic Year 2027",
+    "note": "Official approved fees for Baby Class, KG 1 & 2, and Primary Grades 1–6 (NECTA National and Cambridge streams). Fees may be paid in twelve (12) equal monthly instalments or three (3) termly instalments.",
     "registrationFee": {
-      "amount": "TZS 100,000",
-      "label": "Registration Fee — New Students Only",
-      "text": "A one-time registration fee of TZS 100,000 is payable by all new students on admission, in addition to the annual fees below."
+      "amount": "TZS 250,000",
+      "label": "Admission Fee — New Students Only",
+      "text": "A one-time admission fee of TZS 250,000 is payable by all new students on admission, in addition to the annual fees below."
     },
     "covers": [
       "All timetabled tuition (NECTA or Cambridge Wing)",
       "Complete stationery & exercise book pack",
       "Daily school breakfast & hot nutritious lunch",
       "Daily other curriculum & moral studies",
-      "Caution fee (included in the monthly schedule)",
+      "Caution fee (included in the fee schedule)",
       "Science laboratory, ICT lab & library borrowing"
     ],
     "excluded": [
-      "One-time registration fee of TZS 100,000 (new students only)",
-      "School uniform and sports kit (communicated separately)",
-      "Optional specialist club fees (communicated separately)",
-      "School bus transport (per-route fare where applicable)"
+      "One-time admission fee of TZS 250,000 (new students only)",
+      "School uniform and sports kit (charged separately)",
+      "Optional club fees (charged separately)",
+      "School bus transport (charged separately per route)"
     ],
     "table": [
       { "level": "Baby Class", "curriculum": "Early Years", "annualTzs": "3,200,000", "monthlyTzs": "266,667" },
-      { "level": "Nursery (KG1 & KG2)", "curriculum": "Early Years", "annualTzs": "3,500,000", "monthlyTzs": "291,667" },
+      { "level": "KG 1 & 2", "curriculum": "Early Years", "annualTzs": "3,500,000", "monthlyTzs": "291,667" },
       { "level": "NECTA Grade 1 – 3", "curriculum": "NECTA National", "annualTzs": "3,700,000", "monthlyTzs": "308,333" },
       { "level": "NECTA Grade 4 – 6", "curriculum": "NECTA National", "annualTzs": "3,900,000", "monthlyTzs": "325,000" },
       { "level": "Cambridge Year 1 – 3", "curriculum": "Cambridge Wing", "annualTzs": "5,400,000", "monthlyTzs": "450,000" },
       { "level": "Cambridge Year 4 – 6", "curriculum": "Cambridge Wing", "annualTzs": "7,020,000", "monthlyTzs": "585,000" }
     ],
     "breakdown": [
+      { "category": "Baby Class", "tuition": "76,667", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "266,667" },
+      { "category": "KG 1 & 2", "tuition": "101,667", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "291,667" },
       { "category": "NECTA Grade 1 – 3", "tuition": "118,333", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "308,333" },
       { "category": "NECTA Grade 4 – 6", "tuition": "135,000", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "325,000" },
       { "category": "Cambridge Year 1 – 3", "tuition": "200,000", "stationery": "125,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "450,000" },
       { "category": "Cambridge Year 4 – 6", "tuition": "300,000", "stationery": "145,000", "caution": "40,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "585,000" }
     ],
-    "footnote": "All fees are quoted in Tanzanian Shillings (TZS) and apply per student. Monthly instalments are the annual fee divided into twelve equal parts, rounded to the nearest shilling; the annual fee is the binding amount. School uniform and club fees are not yet included in this fee structure and will be communicated separately.",
+    "annualBreakdown": [
+      { "category": "Baby Class", "tuition": "920,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,200,000" },
+      { "category": "KG 1 & 2", "tuition": "1,220,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,500,000" },
+      { "category": "Grade 1 – 3", "tuition": "1,420,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,700,000" },
+      { "category": "Grade 4 – 6", "tuition": "1,620,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,900,000" }
+    ],
+    "instalments": [
+      { "instalment": "1st Instalment", "dueDate": "by 8 January 2027", "babyClass": "1,070,000", "kg": "1,170,000", "grade1_3": "1,240,000", "grade4_6": "1,300,000" },
+      { "instalment": "2nd Instalment", "dueDate": "by 20 April 2027", "babyClass": "1,065,000", "kg": "1,165,000", "grade1_3": "1,230,000", "grade4_6": "1,300,000" },
+      { "instalment": "3rd Instalment", "dueDate": "by 5 August 2027", "babyClass": "1,065,000", "kg": "1,165,000", "grade1_3": "1,230,000", "grade4_6": "1,300,000" }
+    ],
+    "instalmentTotals": {
+      "babyClass": "3,200,000",
+      "kg": "3,500,000",
+      "grade1_3": "3,700,000",
+      "grade4_6": "3,900,000"
+    },
+    "officialNotes": [
+      "Admission fee (new students only): a one-time TZS 250,000, payable on admission.",
+      "Not included: transport, uniform and club fees are charged separately.",
+      "Fees apply per student; the annual fee is binding and monthly amounts are one twelfth of it.",
+      "The 2nd and 3rd instalments are rounded to the nearest thousand; the 1st carries the balance.",
+      "Pay by bank transfer or at the school office. For fee enquiries contact the school administration."
+    ],
+    "footnote": "All fees are quoted in Tanzanian Shillings (TZS) and apply per student. Annual fees are binding; payment may be made in 12 equal monthly instalments or 3 termly instalments. Transport, uniform and club fees are charged separately.",
     "discounts": [
+      { "label": "3-Term Instalment Plan", "value": "Due Jan 8, Apr 20, Aug 5" },
       { "label": "12-Month Payment Plan", "value": "12 equal monthly instalments" },
-      { "label": "Registration Fee (New Students)", "value": "TZS 100,000 one-time" },
-      { "label": "Meals & Stationery", "value": "Included in monthly fee" },
-      { "label": "Other Curriculum & Lab Access", "value": "Included in monthly fee" }
+      { "label": "Admission Fee (New Students)", "value": "TZS 250,000 one-time" },
+      { "label": "Meals & Stationery", "value": "Included in fee schedule" }
     ]
   },
   "bursaries": {
@@ -96,7 +122,7 @@
       { "band": "Academic Merit", "covers": "Partial tuition support", "for": "Outstanding performance in primary placement or continuing assessments" },
       { "band": "Hardship Support", "covers": "Case-by-case review", "for": "Verified household need reviewed confidentially by the school board" }
     ],
-    "how": "Download the official 2026/2027 Fee Structure PDF or visit the administration office on Kisakasaka Road to discuss payment plans."
+    "how": "Download the official School Fee Structure PDF or visit the administration office on Kisakasaka Road to discuss payment plans."
   },
   "openday": {
     "title": "Open Day & campus visits",
@@ -108,13 +134,13 @@
       "NECTA & Cambridge Primary classrooms in action",
       "Science laboratory, ICT / coding lab, and library",
       "A conversation with the Head Teacher and Admissions team",
-      "Uniform samples, bus route check, and 2026/2027 fee breakdown"
+      "Uniform samples, bus route check, and 2027 fee breakdown"
     ],
     "book": "Book a place on the enquiry form or WhatsApp +255 777 427 140.",
     "nextDates": ["Saturday 7 November 2026", "Saturday 21 November 2026", "Saturday 5 December 2026"]
   },
   "calendar": [
-    { "label": "2026/2027 Fee Structure issued", "date": "25 October 2026" },
+    { "label": "School Fee Structure 2027 issued", "date": "31 October 2026" },
     { "label": "Campus tours & placement checks", "date": "November – December 2026" },
     { "label": "Staff recruitment deadline", "date": "4 December 2026" },
     { "label": "Registration & uniform fitting", "date": "December 2026" },

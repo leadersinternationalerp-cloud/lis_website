@@ -10,8 +10,8 @@ import { admissions, site } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Admissions & 2026/2027 Fee Structure",
-  description: "Apply to Leaders International School for the January 2027 intake: Baby Class, Nursery (KG1 & KG2), NECTA Grades 1–6, and Cambridge Years 1–6. Official 2026/2027 fee structure and monthly instalment breakdown.",
+  title: "Admissions & School Fee Structure 2027",
+  description: "Apply to Leaders International School for the January 2027 intake: Baby Class, Nursery (KG 1 & 2), NECTA Grades 1–6, and Cambridge Years 1–6. Official School Fee Structure 2027, monthly breakdown, and 3-term instalment schedule.",
   path: "/admissions",
   image: "/media/gallery-reading-corner.jpg",
 });
@@ -40,7 +40,7 @@ export default function AdmissionsPage() {
             <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-gold-400 text-navy-900"><Icon name="sparkles" size={15} /></span>
             <span className="max-w-2xl">{admissions.openNote}</span>
           </p>
-          <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-quiet shrink-0 !py-2.5 !text-[.86rem]"><Icon name="download" size={15} /> Official 2026/2027 Fee PDF</a>
+          <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-quiet shrink-0 !py-2.5 !text-[.86rem]"><Icon name="download" size={15} /> Official 2027 Fee PDF</a>
         </div>
       </section>
 
@@ -196,8 +196,11 @@ export default function AdmissionsPage() {
               {/* Table 2: Monthly Fee Breakdown */}
               <div className="card overflow-hidden !p-0">
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-5 py-3.5">
-                  <h3 className="font-display text-[.98rem] font-bold text-navy-900">2. Monthly Fee Breakdown (TZS per month)</h3>
-                  <span className="text-[.8rem] text-slate-body">All-inclusive monthly schedule for Grades 1–6 & Years 1–6</span>
+                  <div>
+                    <h3 className="font-display text-[.98rem] font-bold text-navy-900">2. Monthly Fee Breakdown (TZS per month)</h3>
+                    <p className="text-[.8rem] text-slate-body mt-0.5">12 equal monthly instalments across Pre-Primary, NECTA, and Cambridge</p>
+                  </div>
+                  <span className="rounded-full bg-navy-100 px-3 py-1 font-display text-[.72rem] font-bold uppercase tracking-[.14em] text-navy-800">Monthly Plan</span>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="lis-table">
@@ -220,11 +223,97 @@ export default function AdmissionsPage() {
                           <td>{row.stationery}</td>
                           <td>{row.caution}</td>
                           <td>{row.meals}</td>
-                          <td>{(row as Record<string, string>).otherCurriculum}</td>
+                          <td>{row.otherCurriculum}</td>
                           <td className="font-display font-extrabold text-navy-900">{row.total}</td>
                         </tr>
                       ))}
                     </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Table 3: Annual Fee Breakdown */}
+              <div className="card overflow-hidden !p-0">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-5 py-3.5">
+                  <div>
+                    <h3 className="font-display text-[.98rem] font-bold text-navy-900">3. Annual Fee Breakdown — NECTA Wing & Pre-Primary (TZS)</h3>
+                    <p className="text-[.8rem] text-slate-body mt-0.5">Component breakdown: Tuition, Stationery, Caution, Meals, Other Curriculum</p>
+                  </div>
+                  <span className="rounded-full bg-navy-800 px-3 py-1 font-display text-[.72rem] font-bold uppercase tracking-[.14em] text-gold-300">Annual Totals</span>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="lis-table">
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Tuition</th>
+                        <th>Stationery</th>
+                        <th>Caution Fee</th>
+                        <th>Breakfast & Lunch</th>
+                        <th>Other Curriculum</th>
+                        <th>Annual Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {admissions.fees.annualBreakdown.map((row) => (
+                        <tr key={row.category}>
+                          <td className="font-semibold text-navy-900 whitespace-nowrap">{row.category}</td>
+                          <td>{row.tuition}</td>
+                          <td>{row.stationery}</td>
+                          <td>{row.caution}</td>
+                          <td>{row.meals}</td>
+                          <td>{row.otherCurriculum}</td>
+                          <td className="font-display font-extrabold text-navy-900">{row.total}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Table 4: Three-Term Instalment Schedule */}
+              <div className="card overflow-hidden !p-0">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-5 py-3.5">
+                  <div>
+                    <h3 className="font-display text-[.98rem] font-bold text-navy-900">4. Three-Term Instalment Schedule (TZS)</h3>
+                    <p className="text-[.8rem] text-slate-body mt-0.5">Termly payment schedule with official due dates</p>
+                  </div>
+                  <span className="rounded-full bg-gold-100 px-3 py-1 font-display text-[.72rem] font-bold uppercase tracking-[.14em] text-gold-800">3 Termly Payments</span>
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="lis-table">
+                    <thead>
+                      <tr>
+                        <th>Instalment</th>
+                        <th>Due Date</th>
+                        <th>Baby Class (TZS)</th>
+                        <th>KG 1 & 2 (TZS)</th>
+                        <th>Grade 1 – 3 (TZS)</th>
+                        <th>Grade 4 – 6 (TZS)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {admissions.fees.instalments.map((row) => (
+                        <tr key={row.instalment}>
+                          <td className="font-semibold text-navy-900 whitespace-nowrap">{row.instalment}</td>
+                          <td className="text-[.86rem] font-medium text-sky-700 whitespace-nowrap">{row.dueDate}</td>
+                          <td className="font-display font-semibold text-navy-800">{row.babyClass}</td>
+                          <td className="font-display font-semibold text-navy-800">{row.kg}</td>
+                          <td className="font-display font-semibold text-navy-800">{row.grade1_3}</td>
+                          <td className="font-display font-semibold text-navy-800">{row.grade4_6}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                    <tfoot>
+                      <tr className="border-t-2 border-hairline bg-paper font-display font-bold text-navy-900">
+                        <td>Total Annual</td>
+                        <td className="text-[.82rem] font-normal text-slate-body uppercase tracking-wider">Full Year</td>
+                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.babyClass}</td>
+                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.kg}</td>
+                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.grade1_3}</td>
+                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.grade4_6}</td>
+                      </tr>
+                    </tfoot>
                   </table>
                 </div>
                 <div className="border-t border-hairline bg-paper px-5 py-3.5 text-[.83rem] leading-relaxed text-slate-body">
@@ -235,12 +324,25 @@ export default function AdmissionsPage() {
 
             <div className="grid gap-4 lg:content-start">
               {/* Registration Fee Banner */}
-              <div className="rounded-2xl border border-gold-300 bg-gold-50 p-5">
+              <div className="rounded-2xl border border-gold-300 bg-gold-50 p-5 shadow-sm">
                 <p className="flex items-center gap-2 font-display text-[.72rem] font-bold uppercase tracking-[.18em] text-gold-700">
-                  <Icon name="award" size={16} /> 3. {admissions.fees.registrationFee.label}
+                  <Icon name="award" size={16} /> 5. {admissions.fees.registrationFee.label}
                 </p>
                 <p className="mt-2 font-display text-2xl font-extrabold text-navy-900">{admissions.fees.registrationFee.amount}</p>
                 <p className="mt-1.5 text-[.9rem] leading-relaxed text-navy-800">{admissions.fees.registrationFee.text}</p>
+              </div>
+
+              {/* Official Document Notes */}
+              <div className="card-flat p-5">
+                <p className="font-display text-[.7rem] font-bold uppercase tracking-[.2em] text-navy-500">Official document notes</p>
+                <ul className="mt-3 grid gap-2.5">
+                  {admissions.fees.officialNotes.map((note) => (
+                    <li key={note} className="flex items-start gap-2.5 text-[.88rem] leading-relaxed text-slate-body">
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-gold-500" />
+                      <span>{note}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <div className="card-flat p-5">
@@ -280,7 +382,7 @@ export default function AdmissionsPage() {
                 <p className="eyebrow mb-2" style={{ color: "var(--color-gold-700)" }}>Payment flexibility</p>
                 <h3 className="h2 text-navy-900">{admissions.bursaries.title}</h3>
                 <p className="lead mt-3">{admissions.bursaries.text}</p>
-                <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-navy mt-5 !py-2.5 !text-[.88rem]"><Icon name="download" size={15} /> Official 2026/2027 Fee Structure (PDF)</a>
+                <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-navy mt-5 !py-2.5 !text-[.88rem]"><Icon name="download" size={15} /> School Fee Structure 2027 (PDF)</a>
               </div>
               <div className="overflow-hidden rounded-2xl border border-gold-200 bg-white">
                 <table className="lis-table">

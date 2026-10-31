@@ -166,9 +166,9 @@
           "description": "Documents and age cut-offs by class"
         },
         {
-          "label": "Fees & Monthly Breakdown",
+          "label": "Fees & Breakdown",
           "href": "/admissions#fees",
-          "description": "Published 2026/2027 fee structure & 12-month instalment plan"
+          "description": "Published 2027 fee structure & flexible payment plans"
         },
         {
           "label": "Open Day",
@@ -215,7 +215,7 @@
         {
           "label": "Documents",
           "href": "/resources#documents",
-          "description": "Official 2026/2027 fee structure, application form, uniform list"
+          "description": "Official 2027 fee structure, application form, uniform list"
         },
         {
           "label": "Uniform & Transport",
@@ -248,7 +248,7 @@
         "variant": "gold"
       },
       {
-        "label": "2026/2027 Fee Structure",
+        "label": "2027 Fee Structure",
         "href": "/admissions#fees",
         "variant": "outline"
       }
@@ -435,7 +435,7 @@
             "href": "/admissions#process"
           },
           {
-            "label": "2026/2027 Fee Structure",
+            "label": "2027 Fee Structure",
             "href": "/admissions#fees"
           },
           {
@@ -478,7 +478,7 @@
         ]
       }
     ],
-    "downloadNote": "The official 2026/2027 Fee Structure PDF, application forms, and policies are available in Resources.",
+    "downloadNote": "The official 2027 Fee Structure PDF, application forms, and policies are available in Resources.",
     "credits": "Built so that any teacher can update it."
   },
   "quickLinks": [
@@ -488,7 +488,7 @@
       "icon": "edit"
     },
     {
-      "label": "2026/2027 Fee Structure",
+      "label": "2027 Fee Structure",
       "href": "/admissions#fees",
       "icon": "receipt"
     },
