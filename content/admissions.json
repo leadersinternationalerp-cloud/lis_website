@@ -10,7 +10,7 @@
       { "title": "Enquire or visit", "text": "Call, WhatsApp +255 777 427 140, or fill the enquiry form. Ask for a Saturday Open Day tour at 10:00 or any weekday morning by appointment.", "duration": "1 day" },
       { "title": "Submit the application", "text": "Apply online in about six minutes, or collect the paper form from the front office in Kisakasaka.", "duration": "15 minutes" },
       { "title": "Assessment & family meeting", "text": "Play-based observation for Baby Class & Nursery, or a friendly placement check in English and numeracy for Grades 1–6 / Years 1–6, plus a conversation with parents.", "duration": "1–2 hours, on campus" },
-      { "title": "Offer & registration", "text": "Written offers are sent within five working days with the official 2027 fee schedule. New students pay the one-time TZS 250,000 admission fee and first instalment to confirm their place.", "duration": "5 working days" },
+      { "title": "Offer & registration", "text": "Written offers are sent within five working days with the official 2027 fee schedule. New students pay the one-time TZS 150,000 admission fee and first instalment to confirm their place.", "duration": "5 working days" },
       { "title": "Orientation & first day", "text": "Uniform fitting, stationery pack allocation, school bus route assignment, and new-family orientation before classes begin in January 2027.", "duration": "Half a day" }
     ]
   },
@@ -44,73 +44,91 @@
   },
   "fees": {
     "title": "School Fee Structure 2027",
-    "issuedDate": "31 October 2026",
+    "issuedDate": "November 2026",
     "academicYear": "Academic Year 2027",
-    "note": "Official approved fees for Baby Class, KG 1 & 2, and Primary Grades 1–6 (NECTA National and Cambridge streams). Fees may be paid in twelve (12) equal monthly instalments or three (3) termly instalments.",
+    "note": "Official approved fee schedules for our NECTA Wing (Baby Class, Nursery, Primary 1–6) and Cambridge Wing (Year 1–6). Fees are binding per academic year and payable in 12 monthly instalments or 3 termly instalments.",
     "registrationFee": {
-      "amount": "TZS 250,000",
+      "amount": "TZS 150,000",
       "label": "Admission Fee — New Students Only",
-      "text": "A one-time admission fee of TZS 250,000 is payable by all new students on admission, in addition to the annual fees below."
+      "text": "A one-time admission fee of TZS 150,000 is payable by all new students on admission, in addition to the annual fees."
     },
     "covers": [
-      "All timetabled tuition (NECTA or Cambridge Wing)",
-      "Complete stationery & exercise book pack",
+      "All timetabled academic tuition (NECTA or Cambridge)",
+      "Complete stationery & learning materials pack",
       "Daily school breakfast & hot nutritious lunch",
-      "Daily other curriculum & moral studies",
-      "Caution fee (included in the fee schedule)",
-      "Science laboratory, ICT lab & library borrowing"
+      "Daily moral studies & other curriculums (NECTA Wing)",
+      "Science laboratory, ICT lab & library access"
     ],
     "excluded": [
-      "One-time admission fee of TZS 250,000 (new students only)",
+      "One-time admission fee of TZS 150,000 (new students only)",
       "School uniform and sports kit (charged separately)",
-      "Optional club fees (charged separately)",
+      "Optional extracurricular clubs (charged separately)",
       "School bus transport (charged separately per route)"
     ],
     "table": [
-      { "level": "Baby Class", "curriculum": "Early Years", "annualTzs": "3,200,000", "monthlyTzs": "266,667" },
-      { "level": "KG 1 & 2", "curriculum": "Early Years", "annualTzs": "3,500,000", "monthlyTzs": "291,667" },
-      { "level": "NECTA Grade 1 – 3", "curriculum": "NECTA National", "annualTzs": "3,700,000", "monthlyTzs": "308,333" },
-      { "level": "NECTA Grade 4 – 6", "curriculum": "NECTA National", "annualTzs": "3,900,000", "monthlyTzs": "325,000" },
-      { "level": "Cambridge Year 1 – 3", "curriculum": "Cambridge Wing", "annualTzs": "5,400,000", "monthlyTzs": "450,000" },
-      { "level": "Cambridge Year 4 – 6", "curriculum": "Cambridge Wing", "annualTzs": "7,020,000", "monthlyTzs": "585,000" }
+      { "level": "Baby Class", "curriculum": "Pre-Primary / NECTA", "annualTzs": "1,800,000", "monthlyTzs": "150,000" },
+      { "level": "Nursery", "curriculum": "Pre-Primary / NECTA", "annualTzs": "2,000,000", "monthlyTzs": "166,667" },
+      { "level": "Primary 1 – 6", "curriculum": "NECTA National", "annualTzs": "2,200,000", "monthlyTzs": "183,333" },
+      { "level": "Cambridge Primary Year 1 – 3", "curriculum": "Cambridge International", "annualTzs": "4,320,000", "monthlyTzs": "360,000" },
+      { "level": "Cambridge Primary Year 4 – 6", "curriculum": "Cambridge International", "annualTzs": "5,616,000", "monthlyTzs": "468,000" }
     ],
-    "breakdown": [
-      { "category": "Baby Class", "tuition": "76,667", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "266,667" },
-      { "category": "KG 1 & 2", "tuition": "101,667", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "291,667" },
-      { "category": "NECTA Grade 1 – 3", "tuition": "118,333", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "308,333" },
-      { "category": "NECTA Grade 4 – 6", "tuition": "135,000", "stationery": "65,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "325,000" },
-      { "category": "Cambridge Year 1 – 3", "tuition": "200,000", "stationery": "125,000", "caution": "25,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "450,000" },
-      { "category": "Cambridge Year 4 – 6", "tuition": "300,000", "stationery": "145,000", "caution": "40,000", "meals": "80,000", "otherCurriculum": "20,000", "total": "585,000" }
-    ],
-    "annualBreakdown": [
-      { "category": "Baby Class", "tuition": "920,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,200,000" },
-      { "category": "KG 1 & 2", "tuition": "1,220,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,500,000" },
-      { "category": "Grade 1 – 3", "tuition": "1,420,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,700,000" },
-      { "category": "Grade 4 – 6", "tuition": "1,620,000", "stationery": "780,000", "caution": "300,000", "meals": "960,000", "otherCurriculum": "240,000", "total": "3,900,000" }
-    ],
-    "instalments": [
-      { "instalment": "1st Instalment", "dueDate": "by 8 January 2027", "babyClass": "1,070,000", "kg": "1,170,000", "grade1_3": "1,240,000", "grade4_6": "1,300,000" },
-      { "instalment": "2nd Instalment", "dueDate": "by 20 April 2027", "babyClass": "1,065,000", "kg": "1,165,000", "grade1_3": "1,230,000", "grade4_6": "1,300,000" },
-      { "instalment": "3rd Instalment", "dueDate": "by 5 August 2027", "babyClass": "1,065,000", "kg": "1,165,000", "grade1_3": "1,230,000", "grade4_6": "1,300,000" }
-    ],
-    "instalmentTotals": {
-      "babyClass": "3,200,000",
-      "kg": "3,500,000",
-      "grade1_3": "3,700,000",
-      "grade4_6": "3,900,000"
+    "necta": {
+      "wing": "NECTA Wing & Pre-Primary",
+      "levels": "Baby Class • Nursery • Primary 1 – 6",
+      "pdfHref": "/documents/necta-fee-structure-2027.pdf",
+      "monthly": [
+        { "head": "Tuition", "babyClass": "43,333", "nursery": "60,000", "primary1_6": "76,666" },
+        { "head": "Stationery, Meals & Other Curriculums", "babyClass": "106,667", "nursery": "106,667", "primary1_6": "106,667" },
+        { "head": "Total per Month", "babyClass": "150,000", "nursery": "166,667", "primary1_6": "183,333" }
+      ],
+      "annual": [
+        { "head": "Tuition", "babyClass": "520,000", "nursery": "720,000", "primary1_6": "920,000" },
+        { "head": "Stationery, Meals & Other Curriculums", "babyClass": "1,280,000", "nursery": "1,280,000", "primary1_6": "1,280,000" },
+        { "head": "Total per Year", "babyClass": "1,800,000", "nursery": "2,000,000", "primary1_6": "2,200,000" }
+      ],
+      "instalments": [
+        { "instalment": "1st Instalment", "dueDate": "by 8 January 2027", "babyClass": "600,000", "nursery": "670,000", "primary1_6": "740,000" },
+        { "instalment": "2nd Instalment", "dueDate": "by 20 April 2027", "babyClass": "600,000", "nursery": "665,000", "primary1_6": "730,000" },
+        { "instalment": "3rd Instalment", "dueDate": "by 5 August 2027", "babyClass": "600,000", "nursery": "665,000", "primary1_6": "730,000" }
+      ],
+      "totals": { "babyClass": "1,800,000", "nursery": "2,000,000", "primary1_6": "2,200,000" }
+    },
+    "cambridge": {
+      "wing": "Cambridge Wing",
+      "levels": "Cambridge Primary Year 1 – 6",
+      "pdfHref": "/documents/cambridge-fee-structure-2027.pdf",
+      "monthly": [
+        { "head": "Tuition", "year1_3": "155,000", "year4_6": "243,000" },
+        { "head": "Stationery", "year1_3": "125,000", "year4_6": "145,000" },
+        { "head": "Meals (Breakfast & Lunch)", "year1_3": "80,000", "year4_6": "80,000" },
+        { "head": "Total per Month", "year1_3": "360,000", "year4_6": "468,000" }
+      ],
+      "annual": [
+        { "head": "Tuition", "year1_3": "1,860,000", "year4_6": "2,916,000" },
+        { "head": "Stationery", "year1_3": "1,500,000", "year4_6": "1,740,000" },
+        { "head": "Meals (Breakfast & Lunch)", "year1_3": "960,000", "year4_6": "960,000" },
+        { "head": "Total per Year", "year1_3": "4,320,000", "year4_6": "5,616,000" }
+      ],
+      "instalments": [
+        { "instalment": "1st Instalment", "dueDate": "by 8 January 2027", "year1_3": "1,440,000", "year4_6": "1,872,000" },
+        { "instalment": "2nd Instalment", "dueDate": "by 20 April 2027", "year1_3": "1,440,000", "year4_6": "1,872,000" },
+        { "instalment": "3rd Instalment", "dueDate": "by 5 August 2027", "year1_3": "1,440,000", "year4_6": "1,872,000" }
+      ],
+      "totals": { "year1_3": "4,320,000", "year4_6": "5,616,000" }
     },
     "officialNotes": [
-      "Admission fee (new students only): a one-time TZS 250,000, payable on admission.",
+      "Admission fee (new students only): a one-time TZS 150,000, payable on admission.",
       "Not included: transport, uniform and club fees are charged separately.",
-      "Fees apply per student; the annual fee is binding and monthly amounts are one twelfth of it.",
-      "The 2nd and 3rd instalments are rounded to the nearest thousand; the 1st carries the balance.",
+      "Fees apply per student; the annual fee is binding and monthly amounts are one twelfth of it (rounded to the nearest shilling).",
+      "NECTA instalments: the 2nd and 3rd instalments are rounded to the nearest thousand; the 1st carries the balance.",
+      "Cambridge instalments: the annual fee is payable in three equal instalments by the dates shown.",
       "Pay by bank transfer or at the school office. For fee enquiries contact the school administration."
     ],
     "footnote": "All fees are quoted in Tanzanian Shillings (TZS) and apply per student. Annual fees are binding; payment may be made in 12 equal monthly instalments or 3 termly instalments. Transport, uniform and club fees are charged separately.",
     "discounts": [
       { "label": "3-Term Instalment Plan", "value": "Due Jan 8, Apr 20, Aug 5" },
       { "label": "12-Month Payment Plan", "value": "12 equal monthly instalments" },
-      { "label": "Admission Fee (New Students)", "value": "TZS 250,000 one-time" },
+      { "label": "Admission Fee (New Students)", "value": "TZS 150,000 one-time" },
       { "label": "Meals & Stationery", "value": "Included in fee schedule" }
     ]
   },

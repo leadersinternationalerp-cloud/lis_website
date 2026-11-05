@@ -1,15 +1,24 @@
 {
   "title": "Resources & Documents",
-  "intro": "Everything a family needs before and during enrolment — including the official 2027 Fee Structure PDF, application forms, and school policies.",
+  "intro": "Everything a family needs before and during enrolment — including official 2027 Fee Structure PDFs for NECTA and Cambridge wings, application forms, and school policies.",
   "documents": [
     {
       "title": "School Fee Structure 2027 (NECTA Wing & Pre-Primary)",
       "category": "Fees",
       "type": "pdf",
       "size": "2.0 MB",
-      "href": "/documents/fee-structure.pdf",
-      "updated": "2026-10-31",
-      "description": "Official 2027 annual fee breakdown, monthly instalment breakdown, and 3-term schedule for Baby Class, KG 1 & 2, and NECTA Grades 1–6."
+      "href": "/documents/necta-fee-structure-2027.pdf",
+      "updated": "2026-11-05",
+      "description": "Official 2027 annual fee breakdown, monthly instalment breakdown, and 3-term schedule for Baby Class, Nursery, and NECTA Primary 1–6."
+    },
+    {
+      "title": "School Fee Structure 2027 (Cambridge Primary Wing)",
+      "category": "Fees",
+      "type": "pdf",
+      "size": "1.9 MB",
+      "href": "/documents/cambridge-fee-structure-2027.pdf",
+      "updated": "2026-11-05",
+      "description": "Official 2027 annual fee breakdown, monthly instalment breakdown, and 3-term schedule for Cambridge Primary Year 1–3 and Year 4–6."
     },
     {
       "title": "Application Form — January 2027 Intake",

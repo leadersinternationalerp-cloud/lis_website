@@ -28,7 +28,8 @@ export default function AdmissionsPage() {
         actions={
           <>
             <Link href="/apply" className="btn btn-gold">Apply for Jan 2027 <Icon name="arrow-right" size={16} /></Link>
-            <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-outline"><Icon name="download" size={16} /> Fee Structure PDF</a>
+            <a href="/documents/necta-fee-structure-2027.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-outline"><Icon name="download" size={16} /> NECTA Fees PDF</a>
+            <a href="/documents/cambridge-fee-structure-2027.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-outline"><Icon name="download" size={16} /> Cambridge Fees PDF</a>
             <a href={site.contact.whatsappHref} className="btn btn-outline"><Icon name="whatsapp" size={16} /> Ask a question</a>
           </>
         }
@@ -40,7 +41,10 @@ export default function AdmissionsPage() {
             <span className="mt-0.5 grid h-7 w-7 shrink-0 place-items-center rounded-full bg-gold-400 text-navy-900"><Icon name="sparkles" size={15} /></span>
             <span className="max-w-2xl">{admissions.openNote}</span>
           </p>
-          <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-quiet shrink-0 !py-2.5 !text-[.86rem]"><Icon name="download" size={15} /> Official 2027 Fee PDF</a>
+          <div className="flex flex-wrap items-center gap-2 shrink-0">
+            <a href="/documents/necta-fee-structure-2027.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-quiet !py-2 !text-[.82rem]"><Icon name="download" size={14} /> NECTA PDF</a>
+            <a href="/documents/cambridge-fee-structure-2027.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-quiet !py-2 !text-[.82rem]"><Icon name="download" size={14} /> Cambridge PDF</a>
+          </div>
         </div>
       </section>
 
@@ -151,7 +155,8 @@ export default function AdmissionsPage() {
             lead={admissions.fees.note}
             action={
               <div className="flex flex-wrap gap-2.5">
-                <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-quiet"><Icon name="download" size={16} /> Download PDF</a>
+                <a href={admissions.fees.necta.pdfHref} target="_blank" rel="noreferrer noopener" className="btn btn-quiet"><Icon name="download" size={16} /> NECTA PDF</a>
+                <a href={admissions.fees.cambridge.pdfHref} target="_blank" rel="noreferrer noopener" className="btn btn-quiet"><Icon name="download" size={16} /> Cambridge PDF</a>
                 <Link href="/apply" className="btn btn-navy">Start application</Link>
               </div>
             }
@@ -162,15 +167,18 @@ export default function AdmissionsPage() {
               {/* Table 1: Annual Fees by Category */}
               <div className="card overflow-hidden !p-0">
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-5 py-3.5">
-                  <h3 className="font-display text-[.98rem] font-bold text-navy-900">1. Annual Fees by Category</h3>
+                  <div>
+                    <h3 className="font-display text-[.98rem] font-bold text-navy-900">1. Annual Fees & Monthly Instalment Overview</h3>
+                    <p className="text-[.8rem] text-slate-body mt-0.5">Quick summary across NECTA and Cambridge streams</p>
+                  </div>
                   <span className="rounded-full bg-navy-800 px-3 py-1 font-display text-[.72rem] font-bold uppercase tracking-[.14em] text-gold-300">12 Equal Monthly Instalments</span>
                 </div>
                 <div className="overflow-x-auto">
                   <table className="lis-table">
                     <thead>
                       <tr>
-                        <th>Category</th>
-                        <th>Wing</th>
+                        <th>Class / Category</th>
+                        <th>Curriculum Wing</th>
                         <th>Annual Fee (TZS)</th>
                         <th>Monthly Instalment (TZS)</th>
                       </tr>
@@ -193,131 +201,240 @@ export default function AdmissionsPage() {
                 </div>
               </div>
 
-              {/* Table 2: Monthly Fee Breakdown */}
-              <div className="card overflow-hidden !p-0">
-                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-5 py-3.5">
+              {/* SECTION: NECTA Wing & Pre-Primary */}
+              <div className="rounded-2xl border border-sky-200/90 bg-sky-50/30 p-5 lg:p-6 grid gap-5">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-sky-200/80 pb-4">
                   <div>
-                    <h3 className="font-display text-[.98rem] font-bold text-navy-900">2. Monthly Fee Breakdown (TZS per month)</h3>
-                    <p className="text-[.8rem] text-slate-body mt-0.5">12 equal monthly instalments across Pre-Primary, NECTA, and Cambridge</p>
+                    <span className="eyebrow eyebrow-sky !text-[.72rem]">NECTA National Stream</span>
+                    <h3 className="font-display text-[1.22rem] font-bold text-navy-900 mt-1">
+                      {admissions.fees.necta.wing}
+                    </h3>
+                    <p className="text-[.84rem] text-slate-body">{admissions.fees.necta.levels} · All amounts in TZS</p>
                   </div>
-                  <span className="rounded-full bg-navy-100 px-3 py-1 font-display text-[.72rem] font-bold uppercase tracking-[.14em] text-navy-800">Monthly Plan</span>
+                  <a
+                    href={admissions.fees.necta.pdfHref}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="btn btn-navy !py-2 !text-[.82rem]"
+                  >
+                    <Icon name="download" size={14} /> Official NECTA PDF (2.0 MB)
+                  </a>
                 </div>
-                <div className="overflow-x-auto">
-                  <table className="lis-table">
-                    <thead>
-                      <tr>
-                        <th>Category</th>
-                        <th>Tuition</th>
-                        <th>Stationery</th>
-                        <th>Caution Fee</th>
-                        <th>Breakfast & Lunch</th>
-                        <th>Other Curriculum</th>
-                        <th>Monthly Total</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {admissions.fees.breakdown.map((row) => (
-                        <tr key={row.category}>
-                          <td className="font-semibold text-navy-900 whitespace-nowrap">{row.category}</td>
-                          <td>{row.tuition}</td>
-                          <td>{row.stationery}</td>
-                          <td>{row.caution}</td>
-                          <td>{row.meals}</td>
-                          <td>{row.otherCurriculum}</td>
-                          <td className="font-display font-extrabold text-navy-900">{row.total}</td>
+
+                {/* Table: NECTA Monthly */}
+                <div className="card overflow-hidden !p-0">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-4 py-3">
+                    <h4 className="font-display text-[.92rem] font-bold text-navy-900">NECTA Monthly Fee Breakdown (TZS)</h4>
+                    <span className="text-[.76rem] text-slate-body">Per month · 12 equal monthly instalments</span>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="lis-table">
+                      <thead>
+                        <tr>
+                          <th>Vote Head</th>
+                          <th>Baby Class</th>
+                          <th>Nursery</th>
+                          <th>Primary 1 – 6</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {admissions.fees.necta.monthly.map((row) => (
+                          <tr key={row.head} className={row.head.startsWith("Total") ? "bg-paper font-bold text-navy-900" : ""}>
+                            <td className="font-semibold text-navy-900">{row.head}</td>
+                            <td className="font-display">{row.babyClass}</td>
+                            <td className="font-display">{row.nursery}</td>
+                            <td className="font-display">{row.primary1_6}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Table: NECTA Annual */}
+                <div className="card overflow-hidden !p-0">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-4 py-3">
+                    <h4 className="font-display text-[.92rem] font-bold text-navy-900">NECTA Annual Fee Breakdown (TZS)</h4>
+                    <span className="text-[.76rem] text-slate-body">Binding yearly schedule</span>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="lis-table">
+                      <thead>
+                        <tr>
+                          <th>Vote Head</th>
+                          <th>Baby Class</th>
+                          <th>Nursery</th>
+                          <th>Primary 1 – 6</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {admissions.fees.necta.annual.map((row) => (
+                          <tr key={row.head} className={row.head.startsWith("Total") ? "bg-paper font-bold text-navy-900" : ""}>
+                            <td className="font-semibold text-navy-900">{row.head}</td>
+                            <td className="font-display">{row.babyClass}</td>
+                            <td className="font-display">{row.nursery}</td>
+                            <td className="font-display">{row.primary1_6}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Table: NECTA 3-Term Instalment */}
+                <div className="card overflow-hidden !p-0">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-4 py-3">
+                    <h4 className="font-display text-[.92rem] font-bold text-navy-900">NECTA 3-Term Instalment Schedule (TZS)</h4>
+                    <span className="rounded-full bg-gold-100 px-2.5 py-0.5 font-display text-[.7rem] font-bold uppercase tracking-[.14em] text-gold-800">3 Termly Payments</span>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="lis-table">
+                      <thead>
+                        <tr>
+                          <th>Instalment</th>
+                          <th>Due Date</th>
+                          <th>Baby Class</th>
+                          <th>Nursery</th>
+                          <th>Primary 1 – 6</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {admissions.fees.necta.instalments.map((row) => (
+                          <tr key={row.instalment}>
+                            <td className="font-semibold text-navy-900">{row.instalment}</td>
+                            <td className="text-[.84rem] font-medium text-sky-700 whitespace-nowrap">{row.dueDate}</td>
+                            <td className="font-display">{row.babyClass}</td>
+                            <td className="font-display">{row.nursery}</td>
+                            <td className="font-display">{row.primary1_6}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                      <tfoot>
+                        <tr className="border-t-2 border-hairline bg-paper font-display font-bold text-navy-900">
+                          <td>Total Annual Fee</td>
+                          <td className="text-[.8rem] font-normal text-slate-body uppercase">Full Year</td>
+                          <td className="text-navy-950 font-extrabold">{admissions.fees.necta.totals.babyClass}</td>
+                          <td className="text-navy-950 font-extrabold">{admissions.fees.necta.totals.nursery}</td>
+                          <td className="text-navy-950 font-extrabold">{admissions.fees.necta.totals.primary1_6}</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
                 </div>
               </div>
 
-              {/* Table 3: Annual Fee Breakdown */}
-              <div className="card overflow-hidden !p-0">
-                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-5 py-3.5">
+              {/* SECTION: Cambridge Wing */}
+              <div className="rounded-2xl border border-gold-200/90 bg-gold-50/25 p-5 lg:p-6 grid gap-5">
+                <div className="flex flex-wrap items-center justify-between gap-3 border-b border-gold-200/80 pb-4">
                   <div>
-                    <h3 className="font-display text-[.98rem] font-bold text-navy-900">3. Annual Fee Breakdown — NECTA Wing & Pre-Primary (TZS)</h3>
-                    <p className="text-[.8rem] text-slate-body mt-0.5">Component breakdown: Tuition, Stationery, Caution, Meals, Other Curriculum</p>
+                    <span className="eyebrow eyebrow-gold !text-[.72rem]">International Stream</span>
+                    <h3 className="font-display text-[1.22rem] font-bold text-navy-900 mt-1">
+                      {admissions.fees.cambridge.wing}
+                    </h3>
+                    <p className="text-[.84rem] text-slate-body">{admissions.fees.cambridge.levels} · All amounts in TZS</p>
                   </div>
-                  <span className="rounded-full bg-navy-800 px-3 py-1 font-display text-[.72rem] font-bold uppercase tracking-[.14em] text-gold-300">Annual Totals</span>
+                  <a
+                    href={admissions.fees.cambridge.pdfHref}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="btn btn-navy !py-2 !text-[.82rem]"
+                  >
+                    <Icon name="download" size={14} /> Official Cambridge PDF (1.9 MB)
+                  </a>
                 </div>
-                <div className="overflow-x-auto">
-                  <table className="lis-table">
-                    <thead>
-                      <tr>
-                        <th>Category</th>
-                        <th>Tuition</th>
-                        <th>Stationery</th>
-                        <th>Caution Fee</th>
-                        <th>Breakfast & Lunch</th>
-                        <th>Other Curriculum</th>
-                        <th>Annual Total</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {admissions.fees.annualBreakdown.map((row) => (
-                        <tr key={row.category}>
-                          <td className="font-semibold text-navy-900 whitespace-nowrap">{row.category}</td>
-                          <td>{row.tuition}</td>
-                          <td>{row.stationery}</td>
-                          <td>{row.caution}</td>
-                          <td>{row.meals}</td>
-                          <td>{row.otherCurriculum}</td>
-                          <td className="font-display font-extrabold text-navy-900">{row.total}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
 
-              {/* Table 4: Three-Term Instalment Schedule */}
-              <div className="card overflow-hidden !p-0">
-                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-5 py-3.5">
-                  <div>
-                    <h3 className="font-display text-[.98rem] font-bold text-navy-900">4. Three-Term Instalment Schedule (TZS)</h3>
-                    <p className="text-[.8rem] text-slate-body mt-0.5">Termly payment schedule with official due dates</p>
+                {/* Table: Cambridge Monthly */}
+                <div className="card overflow-hidden !p-0">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-4 py-3">
+                    <h4 className="font-display text-[.92rem] font-bold text-navy-900">Cambridge Monthly Fee Breakdown (TZS)</h4>
+                    <span className="text-[.76rem] text-slate-body">Per month · 12 equal monthly instalments</span>
                   </div>
-                  <span className="rounded-full bg-gold-100 px-3 py-1 font-display text-[.72rem] font-bold uppercase tracking-[.14em] text-gold-800">3 Termly Payments</span>
-                </div>
-                <div className="overflow-x-auto">
-                  <table className="lis-table">
-                    <thead>
-                      <tr>
-                        <th>Instalment</th>
-                        <th>Due Date</th>
-                        <th>Baby Class (TZS)</th>
-                        <th>KG 1 & 2 (TZS)</th>
-                        <th>Grade 1 – 3 (TZS)</th>
-                        <th>Grade 4 – 6 (TZS)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {admissions.fees.instalments.map((row) => (
-                        <tr key={row.instalment}>
-                          <td className="font-semibold text-navy-900 whitespace-nowrap">{row.instalment}</td>
-                          <td className="text-[.86rem] font-medium text-sky-700 whitespace-nowrap">{row.dueDate}</td>
-                          <td className="font-display font-semibold text-navy-800">{row.babyClass}</td>
-                          <td className="font-display font-semibold text-navy-800">{row.kg}</td>
-                          <td className="font-display font-semibold text-navy-800">{row.grade1_3}</td>
-                          <td className="font-display font-semibold text-navy-800">{row.grade4_6}</td>
+                  <div className="overflow-x-auto">
+                    <table className="lis-table">
+                      <thead>
+                        <tr>
+                          <th>Vote Head</th>
+                          <th>Year 1 – 3</th>
+                          <th>Year 4 – 6</th>
                         </tr>
-                      ))}
-                    </tbody>
-                    <tfoot>
-                      <tr className="border-t-2 border-hairline bg-paper font-display font-bold text-navy-900">
-                        <td>Total Annual</td>
-                        <td className="text-[.82rem] font-normal text-slate-body uppercase tracking-wider">Full Year</td>
-                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.babyClass}</td>
-                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.kg}</td>
-                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.grade1_3}</td>
-                        <td className="text-navy-950 font-extrabold">{admissions.fees.instalmentTotals.grade4_6}</td>
-                      </tr>
-                    </tfoot>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {admissions.fees.cambridge.monthly.map((row) => (
+                          <tr key={row.head} className={row.head.startsWith("Total") ? "bg-paper font-bold text-navy-900" : ""}>
+                            <td className="font-semibold text-navy-900">{row.head}</td>
+                            <td className="font-display">{row.year1_3}</td>
+                            <td className="font-display">{row.year4_6}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
-                <div className="border-t border-hairline bg-paper px-5 py-3.5 text-[.83rem] leading-relaxed text-slate-body">
-                  {admissions.fees.footnote}
+
+                {/* Table: Cambridge Annual */}
+                <div className="card overflow-hidden !p-0">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-4 py-3">
+                    <h4 className="font-display text-[.92rem] font-bold text-navy-900">Cambridge Annual Fee Breakdown (TZS)</h4>
+                    <span className="text-[.76rem] text-slate-body">Binding yearly schedule</span>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="lis-table">
+                      <thead>
+                        <tr>
+                          <th>Vote Head</th>
+                          <th>Year 1 – 3</th>
+                          <th>Year 4 – 6</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {admissions.fees.cambridge.annual.map((row) => (
+                          <tr key={row.head} className={row.head.startsWith("Total") ? "bg-paper font-bold text-navy-900" : ""}>
+                            <td className="font-semibold text-navy-900">{row.head}</td>
+                            <td className="font-display">{row.year1_3}</td>
+                            <td className="font-display">{row.year4_6}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Table: Cambridge 3-Term Instalment */}
+                <div className="card overflow-hidden !p-0">
+                  <div className="flex flex-wrap items-center justify-between gap-2 border-b border-hairline bg-paper px-4 py-3">
+                    <h4 className="font-display text-[.92rem] font-bold text-navy-900">Cambridge 3-Term Instalment Schedule (TZS)</h4>
+                    <span className="rounded-full bg-gold-100 px-2.5 py-0.5 font-display text-[.7rem] font-bold uppercase tracking-[.14em] text-gold-800">3 Equal Termly Payments</span>
+                  </div>
+                  <div className="overflow-x-auto">
+                    <table className="lis-table">
+                      <thead>
+                        <tr>
+                          <th>Instalment</th>
+                          <th>Due Date</th>
+                          <th>Year 1 – 3</th>
+                          <th>Year 4 – 6</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {admissions.fees.cambridge.instalments.map((row) => (
+                          <tr key={row.instalment}>
+                            <td className="font-semibold text-navy-900">{row.instalment}</td>
+                            <td className="text-[.84rem] font-medium text-sky-700 whitespace-nowrap">{row.dueDate}</td>
+                            <td className="font-display">{row.year1_3}</td>
+                            <td className="font-display">{row.year4_6}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                      <tfoot>
+                        <tr className="border-t-2 border-hairline bg-paper font-display font-bold text-navy-900">
+                          <td>Total Annual Fee</td>
+                          <td className="text-[.8rem] font-normal text-slate-body uppercase">Full Year</td>
+                          <td className="text-navy-950 font-extrabold">{admissions.fees.cambridge.totals.year1_3}</td>
+                          <td className="text-navy-950 font-extrabold">{admissions.fees.cambridge.totals.year4_6}</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -326,10 +443,41 @@ export default function AdmissionsPage() {
               {/* Registration Fee Banner */}
               <div className="rounded-2xl border border-gold-300 bg-gold-50 p-5 shadow-sm">
                 <p className="flex items-center gap-2 font-display text-[.72rem] font-bold uppercase tracking-[.18em] text-gold-700">
-                  <Icon name="award" size={16} /> 5. {admissions.fees.registrationFee.label}
+                  <Icon name="award" size={16} /> {admissions.fees.registrationFee.label}
                 </p>
                 <p className="mt-2 font-display text-2xl font-extrabold text-navy-900">{admissions.fees.registrationFee.amount}</p>
                 <p className="mt-1.5 text-[.9rem] leading-relaxed text-navy-800">{admissions.fees.registrationFee.text}</p>
+              </div>
+
+              {/* PDF Downloads Quick Box */}
+              <div className="card-flat p-5">
+                <p className="font-display text-[.7rem] font-bold uppercase tracking-[.2em] text-navy-500">Official 2027 PDF Documents</p>
+                <div className="mt-3 grid gap-2.5">
+                  <a
+                    href={admissions.fees.necta.pdfHref}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="flex items-center justify-between gap-3 rounded-xl border border-sky-200 bg-paper p-3 text-[.86rem] font-semibold text-navy-900 transition hover:border-sky-400 hover:bg-sky-50/40"
+                  >
+                    <span className="flex items-center gap-2.5">
+                      <Icon name="file" size={16} className="text-sky-600" />
+                      <span>NECTA Wing Fee Structure</span>
+                    </span>
+                    <span className="text-[.76rem] font-normal text-slate-body">2.0 MB · PDF</span>
+                  </a>
+                  <a
+                    href={admissions.fees.cambridge.pdfHref}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="flex items-center justify-between gap-3 rounded-xl border border-gold-200 bg-paper p-3 text-[.86rem] font-semibold text-navy-900 transition hover:border-gold-400 hover:bg-gold-50/40"
+                  >
+                    <span className="flex items-center gap-2.5">
+                      <Icon name="file" size={16} className="text-gold-600" />
+                      <span>Cambridge Wing Fee Structure</span>
+                    </span>
+                    <span className="text-[.76rem] font-normal text-slate-body">1.9 MB · PDF</span>
+                  </a>
+                </div>
               </div>
 
               {/* Official Document Notes */}
@@ -346,7 +494,7 @@ export default function AdmissionsPage() {
               </div>
 
               <div className="card-flat p-5">
-                <p className="font-display text-[.7rem] font-bold uppercase tracking-[.2em] text-navy-500">Included in your monthly fee</p>
+                <p className="font-display text-[.7rem] font-bold uppercase tracking-[.2em] text-navy-500">Included in your fee</p>
                 <ul className="mt-3 grid gap-2">
                   {admissions.fees.covers.map((c) => (
                     <li key={c} className="flex items-start gap-2.5 text-[.9rem] text-slate-body"><Icon name="check" size={14} className="mt-1 shrink-0 text-navy-600" />{c}</li>
@@ -382,7 +530,10 @@ export default function AdmissionsPage() {
                 <p className="eyebrow mb-2" style={{ color: "var(--color-gold-700)" }}>Payment flexibility</p>
                 <h3 className="h2 text-navy-900">{admissions.bursaries.title}</h3>
                 <p className="lead mt-3">{admissions.bursaries.text}</p>
-                <a href="/documents/fee-structure.pdf" target="_blank" rel="noreferrer noopener" className="btn btn-navy mt-5 !py-2.5 !text-[.88rem]"><Icon name="download" size={15} /> School Fee Structure 2027 (PDF)</a>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <a href={admissions.fees.necta.pdfHref} target="_blank" rel="noreferrer noopener" className="btn btn-navy !py-2.5 !text-[.88rem]"><Icon name="download" size={15} /> NECTA Fee Structure (PDF)</a>
+                  <a href={admissions.fees.cambridge.pdfHref} target="_blank" rel="noreferrer noopener" className="btn btn-outline !py-2.5 !text-[.88rem]"><Icon name="download" size={15} /> Cambridge Fee Structure (PDF)</a>
+                </div>
               </div>
               <div className="overflow-hidden rounded-2xl border border-gold-200 bg-white">
                 <table className="lis-table">
