@@ -161,6 +161,9 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
           Your application to start in <strong>{data.applyingFor}</strong> ({data.curriculum} Curriculum) has been recorded.
           The official 2027 Admission Form has been generated and dispatched to the admissions office at <strong>{admissionsEmail}</strong>.
         </p>
+        <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/90 p-4 text-[.88rem] leading-relaxed text-navy-900">
+          <strong>Application Form Fee / Ada ya Fomu:</strong> TZS 20,000 — payable after application. Our admissions office will share payment instructions and confirm your assessment &amp; interview date.
+        </div>
         <FormStatus result={result} pending={pending} />
         <div className="mt-7 flex flex-wrap gap-3">
           <a href="/resources#documents" className="btn btn-quiet"><Icon name="file" size={16} /> Documents to prepare</a>
@@ -208,7 +211,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
         </p>
         <p className="mt-1 text-[.85rem] leading-relaxed text-navy-900">
           <strong>Cambridge International</strong> &amp; <strong>NECTA National Curriculum</strong> (Nursery · Primary · Secondary).
-          Online applications are <strong>free of charge</strong>. Once submitted, our admissions desk will confirm your learner&apos;s assessment &amp; interview date.
+          Application form fee is <strong>TZS 20,000</strong>, payable after submitting your application. Once submitted, our admissions desk will confirm your learner&apos;s assessment &amp; interview date.
         </p>
       </div>
 

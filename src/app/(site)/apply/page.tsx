@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export const metadata = buildMetadata({
   title: "Apply online",
-  description: "Apply to Leaders International School in about six minutes. No application fee, no agent — the admissions desk reads every form.",
+  description: "Apply to Leaders International School in about six minutes. Application form fee: TZS 20,000, payable after application.",
   path: "/apply",
 });
 
