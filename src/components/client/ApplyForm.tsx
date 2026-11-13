@@ -4,7 +4,11 @@ import { Icon } from "@/components/ui/Icon";
 import { FormStatus, useSubmit } from "./FormShell";
 import { cx } from "@/lib/utils";
 
-const STEPS = ["Student", "Family", "Placement"] as const;
+const STEPS = [
+  { label: "Student", sw: "Mwanafunzi" },
+  { label: "Family", sw: "Mzazi / Walezi" },
+  { label: "Placement", sw: "Darasa na Huduma" },
+] as const;
 
 const CLUBS = [
   { id: "Football / Sports", label: "Football / Sports", desc: "Pitch training, athletic skills & inter-school fixtures" },
@@ -17,6 +21,7 @@ const CLUBS = [
 type Data = {
   // Step 1: Student
   firstName: string;
+  middleName: string;
   lastName: string;
   dob: string;
   gender: "Male" | "Female";
@@ -24,6 +29,7 @@ type Data = {
   nationality: string;
   idNumber: string;
   previousSchool: string;
+  previousClass: string;
 
   // Step 2: Family
   parentName: string;
@@ -49,6 +55,7 @@ type Data = {
   startTerm: string;
   boarding: string;
   transport: string;
+  dietaryPreference: string;
   clubs: string[];
   subjects: string;
   medical: string;
@@ -58,6 +65,7 @@ type Data = {
 
 const EMPTY: Data = {
   firstName: "",
+  middleName: "",
   lastName: "",
   dob: "",
   gender: "Male",
@@ -65,6 +73,7 @@ const EMPTY: Data = {
   nationality: "Tanzanian",
   idNumber: "",
   previousSchool: "",
+  previousClass: "",
 
   parentName: "",
   relationship: "Mother",
@@ -87,7 +96,8 @@ const EMPTY: Data = {
   applyingFor: "Cambridge Year 1",
   startTerm: "January 2027 Intake",
   boarding: "12 Equal Monthly Instalments",
-  transport: "Yes, please send routes",
+  transport: "Yes, please send routes & rates",
+  dietaryPreference: "Standard / No restriction",
   clubs: ["Robotics & Coding"],
   subjects: "",
   medical: "",
@@ -99,6 +109,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
   const [step, setStep] = useState(0);
   const [data, setData] = useState<Data>(EMPTY);
   const [touched, setTouched] = useState<Record<string, boolean>>({});
+  const [showPrivacy, setShowPrivacy] = useState(false);
   const { pending, result, error, submit } = useSubmit("/api/submit");
 
   const set = (key: keyof Data) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -123,6 +134,23 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
   }, [data, step]);
 
   const stepValid = Object.keys(errors).length === 0;
+
+  const handleNextStep = () => {
+    const stepFields: Record<number, (keyof Data)[]> = {
+      0: ["firstName", "lastName", "dob"],
+      1: ["parentName", "email", "phone"],
+      2: ["consent"],
+    };
+    const toTouch = stepFields[step] || [];
+    if (toTouch.length > 0) {
+      setTouched((t) => ({
+        ...t,
+        ...Object.fromEntries(toTouch.map((k) => [k, true])),
+      }));
+    }
+    if (!stepValid) return;
+    setStep((s) => Math.min(STEPS.length - 1, s + 1));
+  };
 
   if (result) {
     return (
@@ -151,23 +179,60 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
         e.preventDefault();
         setTouched(Object.fromEntries(Object.keys(data).map((k) => [k, true])));
         if (!stepValid) return;
-        await submit({ kind: "application", ...data });
+        const medicalWithDiet = [
+          data.dietaryPreference && data.dietaryPreference !== "Standard / No restriction"
+            ? `Dietary: ${data.dietaryPreference}`
+            : "",
+          data.medical.trim(),
+        ]
+          .filter(Boolean)
+          .join(" | ");
+        const additionalWithPrevClass = [
+          data.previousClass.trim() ? `Previous class: ${data.previousClass.trim()}` : "",
+          data.additional.trim(),
+        ]
+          .filter(Boolean)
+          .join(" | ");
+        await submit({
+          kind: "application",
+          ...data,
+          medical: medicalWithDiet,
+          additional: additionalWithPrevClass,
+        });
       }}
     >
+      {/* Notice Banner (Lipa Ada inspired) */}
+      <div className="border-b border-sky-200 bg-sky-50/90 px-6 py-4 lg:px-8">
+        <p className="font-display text-[.72rem] font-bold uppercase tracking-[.16em] text-navy-800">
+          Notice · Taarifa Muhimu
+        </p>
+        <p className="mt-1 text-[.85rem] leading-relaxed text-navy-900">
+          <strong>Cambridge International</strong> &amp; <strong>NECTA National Curriculum</strong> (Nursery · Primary · Secondary).
+          Online applications are <strong>free of charge</strong>. Once submitted, our admissions desk will confirm your learner&apos;s assessment &amp; interview date.
+        </p>
+      </div>
+
       {/* progress */}
       <div className="border-b border-hairline bg-paper px-6 py-5 lg:px-8">
         <ol className="flex flex-wrap items-center gap-3">
-          {STEPS.map((label, i) => (
-            <li key={label} className="flex items-center gap-3">
+          {STEPS.map((s, i) => (
+            <li key={s.label} className="flex items-center gap-3">
               <button
                 type="button"
-                onClick={() => setStep(i)}
+                onClick={() => {
+                  if (i <= step || stepValid) setStep(i);
+                }}
                 className={cx("flex items-center gap-2.5 rounded-full px-3 py-1.5 font-display text-[.85rem] font-semibold transition", i === step ? "bg-navy-800 text-white" : "bg-white text-navy-600 hover:bg-navy-50")}
               >
                 <span className={cx("grid h-5 w-5 place-items-center rounded-full text-[.68rem] font-bold", i === step ? "bg-gold-400 text-navy-900" : i < step ? "bg-navy-800 text-white" : "bg-navy-100 text-navy-500")}>
                   {i < step ? <Icon name="check" size={11} strokeWidth={3} /> : i + 1}
                 </span>
-                {label}
+                <span>
+                  {s.label}{" "}
+                  <span className={cx("hidden sm:inline font-normal text-[.75rem]", i === step ? "text-navy-200" : "text-navy-400")}>
+                    / {s.sw}
+                  </span>
+                </span>
               </button>
               {i < STEPS.length - 1 ? <span className="hidden h-px w-8 bg-navy-200 sm:block" /> : null}
             </li>
@@ -178,62 +243,69 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
       <div className="grid gap-6 p-6 lg:grid-cols-2 lg:gap-6 lg:p-8">
         {step === 0 ? (
           <>
-            <Field label="Student's first name" error={shown("firstName")}>
+            <Field label="Student's first name" sw="Jina la Kwanza *" error={shown("firstName")}>
               <input value={data.firstName} onChange={set("firstName")} onBlur={blur("firstName")} placeholder="e.g. Amina" className="input" />
             </Field>
-            <Field label="Surname" error={shown("lastName")}>
+            <Field label="Middle name (optional)" sw="Jina la Kati">
+              <input value={data.middleName} onChange={set("middleName")} placeholder="e.g. Hassan" className="input" />
+            </Field>
+            <Field label="Surname" sw="Jina la Ukoo *" error={shown("lastName")}>
               <input value={data.lastName} onChange={set("lastName")} onBlur={blur("lastName")} placeholder="e.g. Juma" className="input" />
             </Field>
-            <Field label="Date of birth" error={shown("dob")}>
+            <Field label="Date of birth" sw="Tarehe ya Kuzaliwa *" error={shown("dob")}>
               <input type="date" value={data.dob} onChange={set("dob")} onBlur={blur("dob")} className="input" />
             </Field>
-            <Field label="Gender">
+            <Field label="Gender" sw="Jinsia">
               <select value={data.gender} onChange={set("gender")} className="input">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
+                <option value="Male">Male / Mvulana</option>
+                <option value="Female">Female / Msichana</option>
               </select>
             </Field>
-            <Field label="Nationality">
+            <Field label="Nationality" sw="Uraia">
               <input value={data.nationality} onChange={set("nationality")} placeholder="Tanzanian" className="input" />
             </Field>
-            <Field label="Place of birth">
+            <Field label="Place of birth" sw="Mahali pa Kuzaliwa">
               <input value={data.placeOfBirth} onChange={set("placeOfBirth")} placeholder="e.g. Zanzibar, Dar es Salaam" className="input" />
             </Field>
-            <Field label="Birth cert. or passport number (optional)">
+            <Field label="Birth cert. or passport number (optional)" sw="Cheti cha Kuzaliwa / Pasipoti">
               <input value={data.idNumber} onChange={set("idNumber")} placeholder="Birth certificate / National ID / Passport" className="input" />
             </Field>
-            <Field label="Current or previous school">
+            <Field label="Current or previous school (optional)" sw="Shule ya Awali">
               <input value={data.previousSchool} onChange={set("previousSchool")} placeholder="Leave blank if first placement" className="input" />
+            </Field>
+            <Field label="Previous class attended (optional)" sw="Darasa la Awali">
+              <input value={data.previousClass} onChange={set("previousClass")} placeholder="e.g. KG2, Grade 2, Year 3" className="input" />
             </Field>
           </>
         ) : null}
 
         {step === 1 ? (
           <>
-            <Field label="Parent / guardian name" error={shown("parentName")}>
+            <Field label="Parent / guardian name" sw="Jina Kamili la Mzazi *" error={shown("parentName")}>
               <input value={data.parentName} onChange={set("parentName")} onBlur={blur("parentName")} placeholder="Full legal name" className="input" />
             </Field>
-            <Field label="Relationship to student">
+            <Field label="Relationship to student" sw="Uhusiano na Mwanafunzi">
               <select value={data.relationship} onChange={set("relationship")} className="input">
                 {["Mother", "Father", "Guardian", "Grandparent", "Other"].map((r) => <option key={r}>{r}</option>)}
               </select>
             </Field>
-            <Field label="Occupation / profession (optional)">
+            <Field label="Occupation / profession (optional)" sw="Kazi / Taaluma">
               <input value={data.occupation} onChange={set("occupation")} placeholder="e.g. Civil Engineer, Accountant" className="input" />
             </Field>
-            <Field label="Employer / organisation (optional)">
+            <Field label="Employer / organisation (optional)" sw="Mwajiri">
               <input value={data.employer} onChange={set("employer")} placeholder="e.g. Government, Hospital, Business" className="input" />
             </Field>
-            <Field label="Email address" error={shown("email")}>
+            <Field label="Email address" sw="Barua Pepe *" error={shown("email")}>
               <input type="email" value={data.email} onChange={set("email")} onBlur={blur("email")} placeholder="parent@example.com" className="input" />
             </Field>
-            <Field label="Phone number" error={shown("phone")}>
-              <input value={data.phone} onChange={set("phone")} onBlur={blur("phone")} placeholder="+255 7.." className="input" />
+            <Field label="Phone number" sw="Simu ya Mzazi *" error={shown("phone")}>
+              <input type="tel" value={data.phone} onChange={set("phone")} onBlur={blur("phone")} placeholder="07XXXXXXXX or +255 7XX XXX XXX" className="input" />
+              <span className="mt-1 block text-[.72rem] text-slate-body">Use an active mobile number (e.g. 0712345678 or +255712345678)</span>
             </Field>
-            <Field label="WhatsApp number (optional)">
-              <input value={data.whatsapp} onChange={set("whatsapp")} placeholder="+255 7.." className="input" />
+            <Field label="WhatsApp number (optional)" sw="Namba ya WhatsApp">
+              <input type="tel" value={data.whatsapp} onChange={set("whatsapp")} placeholder="+255 7.." className="input" />
             </Field>
-            <Field label="Home address / physical residence">
+            <Field label="Home address / physical residence" sw="Anwani / Makazi">
               <input value={data.address} onChange={set("address")} placeholder="e.g. Mazizini, Zanzibar" className="input" />
             </Field>
 
@@ -280,7 +352,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
 
         {step === 2 ? (
           <>
-            <Field label="Curriculum wing">
+            <Field label="Curriculum wing" sw="Mtaala">
               <select
                 value={data.curriculum}
                 onChange={(e) => {
@@ -298,7 +370,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
               </select>
             </Field>
 
-            <Field label="Class / Grade level applying for">
+            <Field label="Class / Grade level applying for" sw="Darasa Analoomba">
               <select value={data.applyingFor} onChange={set("applyingFor")} className="input">
                 <optgroup label="Early Years">
                   <option>Baby Class</option>
@@ -324,21 +396,34 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
               </select>
             </Field>
 
-            <Field label="Preferred start term">
+            <Field label="Preferred start term" sw="Muhula wa Kuanza">
               <select value={data.startTerm} onChange={set("startTerm")} className="input">
                 {["January 2027 Intake", "Mid-term transfer", "September 2027"].map((c) => <option key={c}>{c}</option>)}
               </select>
             </Field>
 
-            <Field label="Fee payment plan">
+            <Field label="Fee payment plan" sw="Mpango wa Malipo">
               <select value={data.boarding} onChange={set("boarding")} className="input">
                 {["12 Equal Monthly Instalments", "Termly payments", "Full annual fee"].map((c) => <option key={c}>{c}</option>)}
               </select>
             </Field>
 
-            <Field className="lg:col-span-2" label="School transport service">
+            <Field label="School transport service" sw="Huduma ya Usafiri">
               <select value={data.transport} onChange={set("transport")} className="input">
                 {["Yes, please send routes & rates", "No, private family transport", "Not sure yet"].map((c) => <option key={c}>{c}</option>)}
+              </select>
+            </Field>
+
+            <Field label="Dietary preference" sw="Chakula / Mlo">
+              <select value={data.dietaryPreference} onChange={set("dietaryPreference")} className="input">
+                {[
+                  "Standard / No restriction",
+                  "Halal",
+                  "Vegetarian",
+                  "Other dietary preference (specify below)",
+                ].map((c) => (
+                  <option key={c}>{c}</option>
+                ))}
               </select>
             </Field>
 
@@ -388,13 +473,38 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
               <textarea rows={2} value={data.additional} onChange={set("additional")} placeholder="Any questions or special requests for the head teacher..." className="input" />
             </Field>
 
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 grid gap-3">
               <label className="flex cursor-pointer items-start gap-3 rounded-2xl border border-hairline bg-paper p-4">
                 <input type="checkbox" checked={data.consent} onChange={set("consent")} className="mt-1 h-4 w-4 accent-[var(--color-navy-800)]" />
-                <span className="text-[.9rem] leading-relaxed text-slate-body">
-                  I confirm the information provided is accurate and declare my request for admission to Leaders International School. {shown("consent") ? <span className="mt-1 block font-semibold text-maroon-500">{errors.consent}</span> : null}
+                <span className="text-[.88rem] leading-relaxed text-slate-body">
+                  I confirm the information provided is accurate and declare my request for admission to Leaders International School. I understand that submitting this application initiates the assessment &amp; interview process and does not guarantee placement until seat availability and assessment results are confirmed.
+                  {shown("consent") ? <span className="mt-1 block font-semibold text-maroon-500">{errors.consent}</span> : null}
                 </span>
               </label>
+
+              {/* Privacy Notice / Taarifa ya Faragha Accordion */}
+              <div className="rounded-2xl border border-hairline bg-white">
+                <button
+                  type="button"
+                  onClick={() => setShowPrivacy((v) => !v)}
+                  className="flex w-full items-center justify-between px-4 py-3 text-left text-[.82rem] font-semibold text-navy-800 hover:bg-paper rounded-2xl transition"
+                >
+                  <span>
+                    Privacy Notice <span className="font-normal text-navy-400">/ Taarifa ya Faragha</span>
+                  </span>
+                  <span className="text-xs text-navy-500">{showPrivacy ? "Hide −" : "Read +"}</span>
+                </button>
+                {showPrivacy ? (
+                  <div className="border-t border-hairline px-4 py-3 text-[.8rem] leading-relaxed text-slate-body space-y-1.5">
+                    <p>
+                      Personal details submitted in this form are collected solely for student admissions, assessment scheduling, and official school records in accordance with the Tanzania Personal Data Protection Act.
+                    </p>
+                    <p className="text-navy-500">
+                      Taarifa binafsi zinazotumwa kupitia fomu hii zinatumika kwa ajili ya mchakato wa udahili, upangaji wa usaili, na kumbukumbu za shule pekee kwa mujibu wa Sheria ya Ulinzi wa Taarifa Binafsi ya Tanzania.
+                    </p>
+                  </div>
+                ) : null}
+              </div>
             </div>
           </>
         ) : null}
@@ -412,7 +522,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
         <div className="flex items-center gap-3">
           {error ? <p className="text-[.84rem] font-semibold text-maroon-500">{error}</p> : null}
           {step < STEPS.length - 1 ? (
-            <button type="button" onClick={() => setStep(step + 1)} className="btn btn-navy group !py-2.5 !text-[.9rem]">
+            <button type="button" onClick={handleNextStep} className="btn btn-navy group !py-2.5 !text-[.9rem]">
               Continue <Icon name="arrow-right" size={15} className="transition-transform group-hover:translate-x-1" />
             </button>
           ) : (
@@ -436,12 +546,15 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
   }
 }
 
-function Field({ label, error, children, className }: { label: string; error?: string | false; children: React.ReactNode; className?: string }) {
+function Field({ label, sw, error, children, className }: { label: string; sw?: string; error?: string | false; children: React.ReactNode; className?: string }) {
   return (
     <label className={cx("field", className)}>
-      <span className="flex items-baseline justify-between">
-        {label}
-        {error ? <span className="text-[.72rem] font-semibold text-maroon-500">{error}</span> : null}
+      <span className="flex items-baseline justify-between gap-2">
+        <span>
+          {label}
+          {sw ? <span className="ml-1.5 font-normal text-[.75rem] text-navy-400">/ {sw}</span> : null}
+        </span>
+        {error ? <span className="text-[.72rem] font-semibold text-maroon-500 shrink-0">{error}</span> : null}
       </span>
       {children}
     </label>
