@@ -156,8 +156,8 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
   if (result) {
     const ref = result.reference || `LIS-${new Date().getFullYear()}-APP`;
     const invoiceNo = `INV-${ref.replace(/[^A-Z0-9-]/gi, "")}`;
-    const handleDownloadInvoice = () => {
-      const blob = buildApplicationInvoicePdf({
+    const handleDownloadInvoice = async () => {
+      const blob = await buildApplicationInvoicePdf({
         reference: ref,
         invoiceNo,
         issueDate: new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }),
