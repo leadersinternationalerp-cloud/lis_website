@@ -2,6 +2,7 @@
 import { useMemo, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { FormStatus, useSubmit } from "./FormShell";
+import { buildApplicationInvoicePdf } from "@/lib/invoicePdf";
 import { cx } from "@/lib/utils";
 
 const STEPS = [
@@ -110,7 +111,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
   const [data, setData] = useState<Data>(EMPTY);
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [showPrivacy, setShowPrivacy] = useState(false);
-  const { pending, result, error, submit } = useSubmit("/api/submit");
+  const { pending, result, error, submit, reset } = useSubmit("/api/submit");
 
   const set = (key: keyof Data) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const target = e.target as HTMLInputElement;
@@ -153,6 +154,32 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
   };
 
   if (result) {
+    const ref = result.reference || `LIS-${new Date().getFullYear()}-APP`;
+    const invoiceNo = `INV-${ref.replace(/[^A-Z0-9-]/gi, "")}`;
+    const handleDownloadInvoice = () => {
+      const blob = buildApplicationInvoicePdf({
+        reference: ref,
+        invoiceNo,
+        issueDate: new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }),
+        studentName: [data.firstName, data.middleName, data.lastName].filter(Boolean).join(" ") || "Applicant",
+        parentName: data.parentName || "Parent / Guardian",
+        parentPhone: data.phone || "-",
+        parentEmail: data.email || "-",
+        curriculum: data.curriculum,
+        applyingFor: data.applyingFor,
+        startTerm: data.startTerm,
+        admissionsEmail,
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `LIS-Invoice-${ref}.pdf`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    };
+
     return (
       <div className="card p-8 lg:p-10">
         <span className="icon-chip icon-chip--gold"><Icon name="check" size={22} /></span>
@@ -161,13 +188,41 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
           Your application to start in <strong>{data.applyingFor}</strong> ({data.curriculum} Curriculum) has been recorded.
           The official 2027 Admission Form has been generated and dispatched to the admissions office at <strong>{admissionsEmail}</strong>.
         </p>
-        <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/90 p-4 text-[.88rem] leading-relaxed text-navy-900">
-          <strong>Application Form Fee / Ada ya Fomu:</strong> TZS 20,000 — payable after application. Our admissions office will share payment instructions and confirm your assessment &amp; interview date.
+
+        <div className="mt-6 rounded-2xl border border-navy-200 bg-paper p-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div>
+            <p className="font-display text-[.72rem] font-bold uppercase tracking-[.16em] text-navy-500">
+              Application Fee Invoice Ready
+            </p>
+            <p className="mt-1 font-display text-lg font-bold text-navy-900">
+              TZS 20,000 <span className="text-sm font-normal text-slate-body">· {invoiceNo}</span>
+            </p>
+            <p className="text-[.82rem] text-slate-body mt-0.5">
+              Download your invoice to complete payment using reference <strong>{ref}</strong>.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={handleDownloadInvoice}
+            className="btn btn-gold shrink-0 !py-2.5 !text-[.88rem]"
+          >
+            <Icon name="file" size={16} /> Download Invoice (TZS 20,000)
+          </button>
         </div>
+
         <FormStatus result={result} pending={pending} />
         <div className="mt-7 flex flex-wrap gap-3">
           <a href="/resources#documents" className="btn btn-quiet"><Icon name="file" size={16} /> Documents to prepare</a>
-          <button type="button" className="btn btn-navy" onClick={() => { setData(EMPTY); setStep(0); }}>
+          <button
+            type="button"
+            className="btn btn-navy"
+            onClick={() => {
+              reset();
+              setData(EMPTY);
+              setTouched({});
+              setStep(0);
+            }}
+          >
             {result.status === "email" ? "Send another" : "Start another application"}
           </button>
         </div>
@@ -211,7 +266,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
         </p>
         <p className="mt-1 text-[.85rem] leading-relaxed text-navy-900">
           <strong>Cambridge International</strong> &amp; <strong>NECTA National Curriculum</strong> (Nursery · Primary · Secondary).
-          Application form fee is <strong>TZS 20,000</strong>, payable after submitting your application. Once submitted, our admissions desk will confirm your learner&apos;s assessment &amp; interview date.
+          Once submitted, our admissions desk will confirm your learner&apos;s assessment &amp; interview date.
         </p>
       </div>
 
@@ -530,7 +585,7 @@ export function ApplyForm({ admissionsEmail }: { admissionsEmail: string }) {
             </button>
           ) : (
             <button type="submit" disabled={pending} className="btn btn-gold !py-2.5 !text-[.9rem] disabled:opacity-60">
-              {pending ? "Sending & Generating Form…" : "Submit Admission Application"} <Icon name="check" size={15} />
+              {pending ? "Submitting & Generating Invoice…" : "Submit & Pay"} <Icon name="check" size={15} />
             </button>
           )}
         </div>
