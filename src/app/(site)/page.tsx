@@ -10,6 +10,12 @@ import { WhyUs } from "@/components/sections/WhyUs";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { UpcomingBand } from "@/components/sections/UpcomingBand";
 import { getFeaturedNews, getGallery, site } from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata = buildMetadata({
+  path: "/",
+  description: site.seo.description,
+});
 
 export default async function HomePage() {
   const [news, gallery] = await Promise.all([getFeaturedNews(), getGallery()]);

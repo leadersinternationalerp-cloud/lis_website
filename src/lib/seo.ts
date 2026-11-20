@@ -38,7 +38,9 @@ export function buildMetadata(input: {
   const description = input.description ?? site.seo.description;
   const canonicalUrl = absolute(input.path ?? "/");
   const image = resolveSrc(input.image ?? site.seo.openGraphImage);
-  const pageTitle = input.title ? `${input.title} | ${site.seo.siteName} Zanzibar` : `${site.seo.siteName} — ${site.school.tagline}`;
+  const pageTitle = input.title
+    ? `${input.title} | ${site.seo.siteName} Zanzibar`
+    : "Leaders International School (LIS) — Nursery & Primary School in Zanzibar | NECTA & Cambridge";
   const ogType = input.type ?? "website";
 
   return {
@@ -135,7 +137,15 @@ export function schoolJsonLd() {
     email: site.contact.email,
     telephone: site.contact.phoneDisplay,
     motto: site.school.crestMotto,
-    logo: absolute("/logo.png"),
+    logo: {
+      "@type": "ImageObject",
+      "@id": `${PRIMARY_DOMAIN}/#logo`,
+      url: absolute("/logo.png"),
+      contentUrl: absolute("/logo.png"),
+      width: 512,
+      height: 512,
+      caption: site.school.name,
+    },
     image: absolute(resolveSrc(site.seo.openGraphImage)),
     priceRange: "TZS",
     address: {
@@ -200,16 +210,12 @@ export function websiteJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${PRIMARY_DOMAIN}/#website`,
-    url: PRIMARY_DOMAIN,
-    name: "Leaders International School",
+    url: `${PRIMARY_DOMAIN}/`,
+    name: site.seo.siteName,
     alternateName: [
-      "LIS",
-      "lis",
-      "LEADERS INTERNATIONAL SCHOOL",
-      "LEADERS SCHOOL",
-      "Leaders School",
-      "Leaders School Zanzibar",
+      "Leaders International School",
       "LIS Zanzibar",
+      "Leaders School Zanzibar",
     ],
     publisher: {
       "@id": `${PRIMARY_DOMAIN}/#school`,
