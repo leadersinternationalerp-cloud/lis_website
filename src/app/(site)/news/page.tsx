@@ -7,8 +7,8 @@ import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-  title: "News & events",
-  description: "Announcements, results and stories from Leaders International School, Zanzibar.",
+  title: "School News, Announcements & Events",
+  description: "Latest news, January 2027 admissions updates, academic results, and campus events from Leaders International School (LIS) in Kisakasaka, Zanzibar.",
   path: "/news",
 });
 

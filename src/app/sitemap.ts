@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getNewsSlugs } from "@/lib/content";
+import { getNews } from "@/lib/content";
 import { absolute } from "@/lib/seo";
 
 export const dynamic = "force-static";
@@ -27,13 +27,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: p.priority,
   }));
 
-  const posts = await getNewsSlugs();
-  const newsEntries = posts.map((slug) => ({
-    url: absolute(`/news/${slug}`),
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: 0.65,
-  }));
+  const posts = await getNews();
+  const newsEntries = posts.map((post) => {
+    const parsedDate = post.date ? new Date(post.date) : now;
+    const lastModified = Number.isNaN(parsedDate.getTime()) ? now : parsedDate;
+    return {
+      url: absolute(`/news/${post.slug}`),
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
+    };
+  });
 
   return [...statics, ...newsEntries];
 }

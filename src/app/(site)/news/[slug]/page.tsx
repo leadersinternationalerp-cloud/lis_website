@@ -6,7 +6,7 @@ import { Blocks } from "@/components/sections/Blocks";
 import { NewsCard } from "@/components/sections/NewsCard";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { getNews, getNewsPost, getNewsSlugs, getNewsSiblings, site } from "@/lib/content";
-import { buildMetadata, absolute } from "@/lib/seo";
+import { buildMetadata, absolute, breadcrumbJsonLd, newsArticleJsonLd, serializeJsonLd } from "@/lib/seo";
 import { formatDate, readingTime } from "@/lib/utils";
 import type { Block } from "@/lib/types";
 
@@ -30,6 +30,9 @@ export async function generateMetadata({ params }: Params) {
     description: item.excerpt,
     path: `/news/${item.slug}`,
     image: item.image,
+    type: "article",
+    publishedTime: item.date,
+    section: item.category,
   });
 }
 
@@ -125,6 +128,18 @@ export default async function NewsArticlePage({ params }: Params) {
       ) : null}
 
       <CtaBand site={site} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd([
+            newsArticleJsonLd(item, blocksText(item.body)),
+            breadcrumbJsonLd([
+              { label: "News", href: "/news" },
+              { label: item.title, href: `/news/${item.slug}` },
+            ]),
+          ]),
+        }}
+      />
     </>
   );
 }

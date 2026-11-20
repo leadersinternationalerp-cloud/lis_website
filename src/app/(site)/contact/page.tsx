@@ -6,7 +6,7 @@ import { SectionHead } from "@/components/ui/SectionHead";
 import { EnquiryForm } from "@/components/client/EnquiryForm";
 import { Reveal } from "@/components/ui/Reveal";
 import { contact, site } from "@/lib/content";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, jobPostingsJsonLd, serializeJsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Contact us & Careers",
@@ -177,6 +177,12 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(jobPostingsJsonLd()),
+        }}
+      />
     </>
   );
 }

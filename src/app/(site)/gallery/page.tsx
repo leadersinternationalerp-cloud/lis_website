@@ -8,8 +8,8 @@ import { getGallery, site } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Photo & media gallery",
-  description: "Photographs of LIS campus life in Kisakasaka: classrooms, laboratories, library, sport, culture day and assemblies.",
+  title: "Campus Photo Gallery & Video Tour — Kisakasaka, Zanzibar",
+  description: "Explore photographs and video of Leaders International School (LIS) in Kisakasaka, Zanzibar: nursery & primary classrooms, science and ICT labs, library, sports field, and cultural events.",
   path: "/gallery",
 });
 

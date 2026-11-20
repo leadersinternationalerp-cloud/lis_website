@@ -3,11 +3,11 @@ import { Icon } from "@/components/ui/Icon";
 import { PageHero } from "@/components/sections/PageHero";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { faq, site } from "@/lib/content";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, faqPageJsonLd, serializeJsonLd } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Parents' FAQ",
-  description: "Answers to the questions families ask most before applying to Leaders International School, Zanzibar.",
+  title: "Parents' FAQ — Fees, NECTA vs. Cambridge, Meals & Transport",
+  description: "Frequently asked questions about Leaders International School (LIS) in Kisakasaka, Zanzibar: January 2027 intake classes, 12-month & 3-term fee payment plans, NECTA vs. Cambridge wings, school meals, and bus transport.",
   path: "/faq",
 });
 
@@ -89,6 +89,12 @@ export default function FaqPage() {
       </section>
 
       <CtaBand site={site} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(faqPageJsonLd()),
+        }}
+      />
     </>
   );
 }

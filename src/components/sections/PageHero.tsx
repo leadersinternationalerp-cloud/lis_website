@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@/components/ui/Icon";
 import { Img } from "@/components/ui/Img";
+import { breadcrumbJsonLd, serializeJsonLd } from "@/lib/seo";
 import { cx } from "@/lib/utils";
 
 type Crumb = { label: string; href?: string };
@@ -86,6 +87,14 @@ export function PageHero({
         </div>
       </div>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[2px] bg-[linear-gradient(to_right,transparent,rgb(56_192_200/.75),rgb(253_203_36/.65),transparent)]" />
+      {crumbs?.length ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: serializeJsonLd(breadcrumbJsonLd(crumbs)),
+          }}
+        />
+      ) : null}
     </section>
   );
 }

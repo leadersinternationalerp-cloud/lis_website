@@ -10,8 +10,8 @@ import { formatDate } from "@/lib/utils";
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-  title: "Resources & documents",
-  description: "Download the LIS application form, prospectus, fee structure, school calendar, uniform list and policies.",
+  title: "School Calendar, Fee Structure PDFs, Uniform & Policies",
+  description: "Download official Leaders International School (LIS) 2027 fee structure PDFs (NECTA & Cambridge), application forms, term dates, uniform requirements, and safeguarding policies.",
   path: "/resources",
 });
 

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
-import { schoolJsonLd, websiteJsonLd, PRIMARY_DOMAIN, absolute } from "@/lib/seo";
+import { schoolJsonLd, websiteJsonLd, serializeJsonLd, PRIMARY_DOMAIN, absolute } from "@/lib/seo";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -101,7 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([schoolJsonLd(), websiteJsonLd()]),
+            __html: serializeJsonLd([schoolJsonLd(), websiteJsonLd()]),
           }}
         />
       </body>

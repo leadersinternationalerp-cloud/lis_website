@@ -6,8 +6,8 @@ import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 
 export const metadata = buildMetadata({
-  title: "Apply online",
-  description: "Apply to Leaders International School in about six minutes. Application form fee: TZS 20,000, payable after application.",
+  title: "Apply Online for January 2027 Intake — Nursery & Primary Admissions",
+  description: "Submit your child's online application for Leaders International School (LIS) Zanzibar in 6 minutes: enrolling Baby Class, Nursery (KG1 & KG2), NECTA Primary (Grades 1–6), and Cambridge Primary (Years 1–6).",
   path: "/apply",
 });
 

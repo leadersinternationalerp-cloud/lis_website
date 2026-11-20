@@ -6,12 +6,12 @@ import { SectionHead } from "@/components/ui/SectionHead";
 import { Reveal } from "@/components/ui/Reveal";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { academics, site } from "@/lib/content";
-import { buildMetadata } from "@/lib/seo";
+import { buildMetadata, coursesJsonLd, serializeJsonLd } from "@/lib/seo";
 import { cx } from "@/lib/utils";
 
 export const metadata = buildMetadata({
-  title: "Academics",
-  description: "Baby Class, Nursery (KG1 & KG2), NECTA Primary (Grades 1–6), and our Cambridge International Wing (Years 1–6) at Leaders International School, Kisakasaka, Zanzibar.",
+  title: "Cambridge & NECTA Primary Curriculum — Baby Class to Year 6",
+  description: "Explore Leaders International School's dual curriculum in Kisakasaka, Zanzibar: Baby Class & Nursery (KG1 & KG2), NECTA Primary Wing (Grades 1–6), and Cambridge Assessment International Education Wing (Years 1–6).",
   path: "/academics",
   image: "/media/gallery-lab.jpg",
 });
@@ -41,7 +41,7 @@ export default function AcademicsPage() {
           <div className={cx("shell grid items-center gap-10 lg:grid-cols-2 lg:gap-14", i % 2 === 1 && "lg:[&>*:first-child]:order-2")}>
             <Reveal className="relative">
               <div className="relative aspect-[4/3] overflow-hidden rounded-[24px] rounded-tr-[80px] shadow-card">
-                <Img src={level.image} alt={level.name} cdnWidth={1000} sizes="(max-width:1024px) 92vw, 46vw" className="transition-transform duration-[1400ms] hover:scale-105" />
+                <Img src={level.image} alt={`${level.name} (${level.ages}) at Leaders International School Zanzibar`} cdnWidth={1000} sizes="(max-width:1024px) 92vw, 46vw" className="transition-transform duration-[1400ms] hover:scale-105" />
               </div>
               <span className="absolute -bottom-5 left-6 rounded-2xl bg-navy-800 px-4 py-3 text-white shadow-lift">
                 <span className="block font-display text-[.66rem] font-bold uppercase tracking-[.18em] text-gold-300">Stage 0{i + 1}</span>
@@ -64,6 +64,14 @@ export default function AcademicsPage() {
                 {level.subjects.map((s) => (
                   <span key={s} className="rounded-full border border-hairline bg-white px-3 py-1.5 text-[.8rem] font-semibold text-navy-700">{s}</span>
                 ))}
+              </div>
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                <Link href="/admissions#fees" className="btn btn-quiet !py-2 !text-[.84rem]">
+                  View 2027 Fee Schedule
+                </Link>
+                <Link href="/apply" className="inline-flex items-center gap-1.5 font-display text-[.84rem] font-bold text-navy-700 hover:text-gold-600">
+                  Apply for {level.name} <Icon name="arrow-right" size={14} />
+                </Link>
               </div>
             </div>
           </div>
@@ -162,6 +170,12 @@ export default function AcademicsPage() {
       </section>
 
       <CtaBand site={site} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(coursesJsonLd()),
+        }}
+      />
     </>
   );
 }
