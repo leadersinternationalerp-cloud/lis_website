@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(PRIMARY_DOMAIN),
   title: {
-    default: "Leaders International School (LIS) — Nursery & Primary School in Zanzibar | NECTA & Cambridge",
+    default: "Leaders International School (LIS) — Leaders School Zanzibar | NECTA & Cambridge",
     template: site.seo.titleTemplate,
   },
   description: site.seo.description,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     locale: "en_TZ",
     alternateLocale: ["sw_TZ", "en_US", "en_GB"],
     siteName: "Leaders International School (LIS)",
-    title: "Leaders International School (LIS) — Nursery & Primary School in Zanzibar",
+    title: "Leaders International School (LIS) — Leaders School Zanzibar | NECTA & Cambridge",
     description: site.seo.description,
     url: PRIMARY_DOMAIN,
     images: site.seo.openGraphImage
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Leaders International School (LIS) — Nursery & Primary School in Zanzibar",
+    title: "Leaders International School (LIS) — Leaders School Zanzibar | NECTA & Cambridge",
     description: site.seo.description,
     images: site.seo.openGraphImage ? [absolute(site.seo.openGraphImage)] : undefined,
   },

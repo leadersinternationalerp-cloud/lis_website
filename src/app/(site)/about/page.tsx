@@ -10,8 +10,8 @@ import { about, site } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "About Leaders International School — Campus, Vision & Leadership",
-  description: "Founded in Kisakasaka, Zanzibar, Leaders International School (LIS) is a licensed co-educational pre-primary and primary school offering dual NECTA and Cambridge International curricula, modern labs, and small class sizes.",
+  title: "About Leaders International School (Leaders School Zanzibar) — Campus & Leadership",
+  description: "Founded in Kisakasaka, Zanzibar, Leaders International School (LIS) — also known as Leaders School Zanzibar — offers dual NECTA and Cambridge Primary curricula, modern labs, and small class sizes.",
   path: "/about",
   image: "/media/gallery-culture-day.jpg",
 });

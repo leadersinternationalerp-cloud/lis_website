@@ -40,7 +40,7 @@ export function buildMetadata(input: {
   const image = resolveSrc(input.image ?? site.seo.openGraphImage);
   const pageTitle = input.title
     ? `${input.title} | ${site.seo.siteName} Zanzibar`
-    : "Leaders International School (LIS) — Nursery & Primary School in Zanzibar | NECTA & Cambridge";
+    : "Leaders International School (LIS) — Leaders School Zanzibar | NECTA & Cambridge";
   const ogType = input.type ?? "website";
 
   return {
@@ -214,8 +214,9 @@ export function websiteJsonLd() {
     name: site.seo.siteName,
     alternateName: [
       "Leaders International School",
-      "LIS Zanzibar",
+      "Leaders School",
       "Leaders School Zanzibar",
+      "LIS Zanzibar",
     ],
     publisher: {
       "@id": `${PRIMARY_DOMAIN}/#school`,

@@ -10,8 +10,8 @@ import { admissions, site } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Admissions & School Fee Structure 2027",
-  description: "Apply to Leaders International School for the January 2027 intake: Baby Class, Nursery (KG 1 & 2), NECTA Grades 1–6, and Cambridge Years 1–6. Official School Fee Structure 2027, monthly breakdown, and 3-term instalment schedule.",
+  title: "Admissions & School Fee Structure 2027 — Leaders School Zanzibar",
+  description: "Apply to Leaders International School (Leaders School Zanzibar) for the January 2027 intake: Baby Class, Nursery (KG 1 & 2), NECTA Grades 1–6, and Cambridge Years 1–6. Official 2027 School Fee Structure, monthly breakdown & 3-term instalments.",
   path: "/admissions",
   image: "/media/gallery-reading-corner.jpg",
 });

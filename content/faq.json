@@ -1,8 +1,9 @@
 {
   "title": "Parents' Questions",
-  "intro": "The fifteen things families ask most before they apply. If yours is not here, WhatsApp +255 777 427 140 — a person reads it.",
+  "intro": "The sixteen things families ask most before they apply. If yours is not here, WhatsApp +255 777 427 140 — a person reads it.",
   "groups": [
     { "title": "Admissions & January 2027 Intake", "items": [
+      { "q": "Where is Leaders School (Leaders International School) located in Zanzibar?", "a": "Leaders International School (LIS), commonly known as Leaders School Zanzibar, is located in Kisakasaka, near Kombeni in Wilaya Magharibi 'B', Zanzibar Urban/West — about 15 minutes from Abeid Amani Karume International Airport." },
       { "q": "Which classes are open for the January 2027 intake?", "a": "We are enrolling across all six categories: Baby Class, Nursery (KG1 & KG2), NECTA Grades 1–3, NECTA Grades 4–6, Cambridge Years 1–3, and Cambridge Years 4–6." },
       { "q": "Is there an admission fee?", "a": "Submitting an enquiry, touring the campus, and sitting the placement observation are free. Once your child is offered a place, a one-time admission fee of TZS 150,000 is payable by all new students on admission." },
       { "q": "My child is transferring from another school. Can they join?", "a": "Yes, subject to space in the appropriate grade or year. Bring their latest school reports and birth certificate; we can usually complete placement within five working days." },
