@@ -12,7 +12,7 @@ export const metadata = buildMetadata({
   title: "Contact us & Careers",
   description: "Talk to Leaders International School in Kisakasaka, Zanzibar: phone, WhatsApp, email, department contacts, directions, and teacher & staff recruitment (deadline 4 Dec 2026).",
   path: "/contact",
-  image: "/media/gallery-classroom.jpg",
+  image: "/media/classroom-primary-1.jpg",
 });
 
 export default function ContactPage() {
@@ -22,7 +22,7 @@ export default function ContactPage() {
         eyebrow={contact.eyebrow}
         title={contact.title}
         intro={contact.intro}
-        image="/media/gallery-classroom.jpg"
+        image="/media/classroom-primary-1.jpg"
         crumbs={[{ label: "Contact" }]}
         actions={
           <div className="flex flex-wrap gap-2">

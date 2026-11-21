@@ -45,14 +45,20 @@
     {
       "src": "/media/infrastructure-classroom-nursery.jpg",
       "album": "campus",
-      "title": "Early Years & Nursery Classroom",
-      "caption": "Bright, child-scale learning environment with natural wood furnishings, reading displays, and garden-view windows."
+      "title": "Early Years & Nursery Smart Classroom",
+      "caption": "Bright, air-conditioned nursery classroom with child-scale colourful tables, an interactive smart display, and soft interlocking play mats."
     },
     {
-      "src": "/media/infrastructure-activity-room.avif",
+      "src": "/media/infrastructure-activity-room.jpg",
       "album": "campus",
-      "title": "Pre-Primary Play & Discovery Room",
-      "caption": "Interactive sensory toys, play train, activity carpets, and storytelling corners designed for young learners."
+      "title": "Pre-Primary Activity & Play Room",
+      "caption": "Colourful group tables, wall picture displays, and a cushioned interlocking play mat area built for joyful early discovery."
+    },
+    {
+      "src": "/media/classroom-primary-1.jpg",
+      "album": "campus",
+      "title": "Modern Primary Classroom",
+      "caption": "Sunlit primary classroom equipped with individual ergonomic student desks, dual ceiling fans, and natural ventilation."
     },
     {
       "src": "/media/infrastructure-sports-field.png",
@@ -85,10 +91,16 @@
       "caption": "Every learner is in the same colours, whatever their background."
     },
     {
-      "src": "/media/gallery-classroom.jpg",
+      "src": "/media/classroom-primary-2.jpg",
       "album": "campus",
-      "title": "Guided writing in Primary",
-      "caption": "Small classes and a teacher who knows each child's next step."
+      "title": "Primary Wing Classroom — Kisakasaka Campus",
+      "caption": "Spacious, well-lit rows of individual ergonomic desks designed for focused small-class learning."
+    },
+    {
+      "src": "/media/core-values-poster.jpg",
+      "album": "campus",
+      "title": "Our Core Values — L.E.A.D.E.R.S",
+      "caption": "Lifelong Learning, Excellence, Adaptability & Innovation, Discipline & Integrity, Empowered Thinking, Respect & Care, Service & Leadership."
     },
     {
       "src": "/media/gallery-class-assembly.jpg",

@@ -14,7 +14,7 @@ export function WhyUs({ site }: { site: SiteConfig }) {
           {whyUs.image ? (
             <Reveal className="relative mt-8 hidden lg:block">
               <div className="relative aspect-[5/4] overflow-hidden rounded-[22px] rounded-bl-[86px] border-2 border-sky-200 shadow-card">
-                <Img src={whyUs.image} alt="A teacher working with pupils at LIS" cdnWidth={900} sizes="38vw" className="transition-transform duration-[1200ms] hover:scale-105" />
+                <Img src={whyUs.image} alt="Modern primary classroom at Leaders International School Zanzibar" cdnWidth={900} sizes="38vw" className="transition-transform duration-[1200ms] hover:scale-105" />
               </div>
               <div className="absolute -bottom-6 -right-4 w-[210px] rounded-2xl border border-sky-200 bg-white p-4 shadow-soft">
                 <p className="flex items-center gap-2 font-display text-[.7rem] font-bold uppercase tracking-[.16em] text-sky-600">
