@@ -6,4 +6,10 @@ export default defineCliConfig({
     dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || "production",
   },
   studioHost: "leaderinternationalschool-ac-tz",
+  deployment: {
+    appId: "zc93b808rxn5kulni3r5bral",
+  },
+  vite: {
+    publicDir: false,
+  },
 });
